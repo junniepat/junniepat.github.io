@@ -1,0 +1,154 @@
+h3{
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width:460px){
+    #_valorWrapper{
+        height: 1160px;
+        width: 100%;
+    }
+    
+    ._valorHalf{
+        display: inline-block;
+    width:100%;
+    height: 50%;
+    clear: both;
+}
+    
+    ._valorHalf img{
+        width: 50%;
+    }
+    ._valorDisplay1{
+        font-size:2.5em;
+        clear: both;
+        display: block;
+        
+    }
+    h3{
+        margin-top;5%;
+        font-size: 4.2em;
+    }
+    ._valorQuarter{
+    width:100%;
+    height: 40%;
+}
+    ._valorPadi1{
+        padding: 0;
+        margin: 5%;
+    }
+  
+
+    
+}
+
+@media only screen and (max-width:601px){
+    #_valorWrapper{
+        height: 1160px;
+        width: 100%;
+    }
+    
+    ._valorHalf{
+        display: inline-block;
+    width:100%;
+    height: 50%;
+    clear: both;
+}
+    
+    ._valorHalf img{
+        width: 50%;
+    }
+    ._valorDisplay1{
+        font-size:2.5em;
+        clear: both;
+        display: block;
+        
+    }
+    h3{
+        margin-top;5%;
+        font-size: 4.2em;
+    }
+    ._valorQuarter{
+    width:100%;
+    height: 40%;
+}
+    ._valorPadi1{
+        padding: 0;
+        margin: 8%;
+    }
+  
+
+    
+}
+
+
+@media only screen and (max-width:960px){
+    #_valorWrapper{
+        height: 1200px;
+        width: 100%;
+    }
+    
+    ._valorHalf{
+        display: inline-block;
+    width:100%;
+    height: 50%;
+    clear: both;
+}
+    
+    ._valorHalf img{
+        width: 50%;
+    }
+    
+    ._valorQuarter2{
+        width: 100%;
+    }
+    ._valorDisplay1{
+        font-size:2.5em;
+        clear: both;
+        display: block;
+        
+    }
+    h3{
+        background: rgba(0,0,0,0.1);
+        padding: 10px;
+        word-wrap: break-word;
+        margin-top:30%;
+        font-size: 4.2em;
+        bottom: 0;
+    }
+    ._valorQuarter{
+    width:100%;
+    height: 40%;
+}
+    ._valorPadi1{
+        padding: 0;
+        margin: 10% 18%;
+        right: 0;
+        top:0;
+        bottom: 0;
+        left:0;
+        position: absolute;
+    }
+  
+@keyframes _valorSlideLeft{
+    0%{
+        top:0;
+    }
+
+    100%{
+        top:-100%;
+    }
+}
+
+@keyframes _valorSlideRight{
+    0%{
+        bottom:0;
+    }
+
+    100%{
+        bottom:-100%;
+        visibility: hidden;
+    }
+}
+
+    
+}
