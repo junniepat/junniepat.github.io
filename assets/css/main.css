@@ -1,11 +1,6 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
-/*
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 /* Reset */
 
@@ -2071,7 +2066,7 @@
 
 	body, input, select, textarea {
 		color: #7f888f;
-		font-family: "Open Sans", sans-serif;
+		font-family: 'Raleway', sans-serif;
 		font-size: 13pt;
 		font-weight: 400;
 		line-height: 1.65;
@@ -2135,7 +2130,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #3d4449;
-		font-family: "Roboto Slab", serif;
+		font-family: 'Raleway', sans-serif;
 		font-weight: 700;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
@@ -2273,7 +2268,7 @@
 	}
 
 	header p {
-		font-family: "Roboto Slab", serif;
+		font-family: 'Raleway', sans-serif;
 		font-size: 1em;
 		font-weight: 400;
 		letter-spacing: 0.075em;
@@ -2282,6 +2277,7 @@
 	}
 
 	header.major > :last-child {
+		color: #fff;
 		border-bottom: solid 3px #f56a6a;
 		display: inline-block;
 		margin: 0 0 2em 0;
@@ -2957,7 +2953,7 @@
 		color: #f56a6a !important;
 		cursor: pointer;
 		display: inline-block;
-		font-family: "Roboto Slab", serif;
+		font-family: 'Raleway', sans-serif;
 		font-size: 0.8em;
 		font-weight: 700;
 		height: 3.5em;
@@ -3038,6 +3034,7 @@
 			button.special:hover,
 			.button.special:hover {
 				background-color: #f67878;
+				 box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
 			}
 
 			input[type="submit"].special:active,
@@ -3587,7 +3584,10 @@
 		-webkit-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
 		-ms-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
 		transition: margin-left 0.5s ease, box-shadow 0.5s ease;
-		background-color: #f5f6f7;
+		background: #333;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #333, #555);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #333, #555); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		color: #fff !important;
 		font-size: 0.9em;
 		position: relative;
 		width: 26em;
@@ -3620,7 +3620,7 @@
 				}
 
 			#sidebar > .inner > .alt {
-				background-color: #eff1f2;
+				background-color: #FEC606;
 				border-bottom: 0;
 				margin: -2.22222em 0 4.44444em -2.22222em;
 				padding: 2.22222em;
@@ -3808,7 +3808,7 @@
 		#header .logo {
 			border-bottom: 0;
 			color: inherit;
-			font-family: "Roboto Slab", serif;
+			font-family: 'Raleway', sans-serif;
 			font-size: 1.125em;
 		}
 
@@ -3962,13 +3962,14 @@
 
 /* Menu */
 
+
 	#menu ul {
 		-moz-user-select: none;
 		-webkit-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
-		color: #3d4449;
-		font-family: "Roboto Slab", serif;
+		color: #fff;
+		font-family: 'Raleway', sans-serif;
 		font-family: 400;
 		letter-spacing: 0.075em;
 		list-style: none;
