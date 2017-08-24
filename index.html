@@ -1,402 +1,217 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="Patrick">
-<title>Twocraft</title>
-      
-      <link rel="stylesheet" href="css/valor.css" media="all">
-      <link rel="stylesheet" href="css/valorTwo.css" media="all">
-    </head>
-    <body>
-    <div id="_valorWrapper">
-             <ul class="_valorNavigate" id="navigationController">
-                <li class="active" data-target-div="introDiv"></li>
-                 <li data-target-div="ourWorksDiv"></li>
-                <li data-target-div="skillSetDiv"></li>
-                 <li data-target-div="blogDiv"></li>
-                 <li data-target-div="contactDiv"></li>
-             </ul>
-
-                <div id="mySidenav" class="sidenav">            
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">HOME</a>
-  <a href="#">OUR WORKS</a>
-  <a href="#">OUR SKILLS</a>
-  <a href="#">BLOG</a>                          
-  <a href="#">CONTACT</a>               
-</div>
-
-<div style="font-size:18px;  cursor:pointer; position:absolute; top:20px; 
-background:rgba(225,225,225,0.6); border:1px solid #fff; z-index: 1200;
- color:#333; width:100px; margin-left:10px; text-align:center;" onclick="openNav()">  &#9776; MENU</div>
-
-
-
-<div id="_allWrapper"style="width:100%; height:100%;">
-
-<div id="introDiv" class="_valorScaleIn element" style="height:100%; width:100%; ">
-    <div class="_valorHalf _left _child1" >
-    <div class="_valorContainer" style="background: yellow;">
-        <div class="_valorPad1 _ValorFade ">
-
-
-
-<div class="_right _ValorFade" style="padding:50px;">
-    <img src="./img/logo.png" width="230" height="250">
-    <h4>We are a Creative Agency</h4>
-</div>
-        </div>
-    </div>
-
-    </div>
-
-    <div class="_valorHalf _right valor_right _ValorFade _child2">
-        <div class="_valorPadi1">
-        <div class="_valorShake" 
-        style="text-align:center;height:400px; width:420px;">
-         <img src="img/bulb.fw.png">
-         <br><br>
-            <span class="_valorDisplay1">
-                Hello! we build ideas into real products</span><br>
-     <button class="_btn _btnWhite"  data-target-div="contactDiv">Hire Us</button>
-     <br> 
-
-        </div></div>
-    </div>
-</div>
-
-
-<div id="ourWorksDiv" class="_valorScaleIn element" style="height:100%; width:100%; position:relative;  display: none;">
-    <div class="_valorWorks _valorQuarter _left  _child1">
-    
-    <div class="_valorContainer" 
-         style="background:rgba(44, 201, 144, 0.3);">
-        <div class="_valorPad1 _ValorFade">
-
-<div class="_right" >   
-<br><br>
-    <h3>Our Works</h3>
-</div>
-        </div>
-    </div>
-
-    </div>
-
-    <div  class="_valorQuarter2 _right valor_right2 _ValorFade  _child2"><br>
-        <div class="_valorPad4">
-
-               <div class="_valorCard">
-           <div class="_valorImage"></div>
-           <div class="_valorInfo">
-               <h6>Valor Ui Conceptography</h6>
-             Building an all in one nigerian and african ui presence         </div>
-           <div class="_valorBottom">Jan 2017</div>
-       </div>
-
-        <div class="_valorCard">
-           <div class="_valorImage"></div>
-           <div class="_valorInfo">
-               <h6>Valor Ui Conceptography</h6>
-             Building an all in one nigerian and african ui presence         </div>
-           <div class="_valorBottom">2 days ago</div>
-       </div>
-
-      
-
-     
-
-        </div>
-    </div>
-</div>
-
-
-
-<div id="skillSetDiv" class="_valorScaleIn element" style="height:100%; width:100%; display:none;">
-    <div class="_valorQuarter _left _child1  _valorSkill">
-    <div class="_valorContainer" 
-         style="background:rgba(147, 34, 141, 0.4);">
-        <div class="_valorPad1 _ValorFade">
-
-<div class="_right" >
-    <br><br>
-    <h3>Our Skillset</h3>
-</div>
-        </div>
-    </div>
-
-    </div>
-
-    <div class="_valorQuarter2 _right valor_right1 _ValorFade _child2">
-        <br>
-        <div class="_valorPad4">
-            <div class="_valorPills">Android</div>
-          <div class="_valorPills">Css</div>
-           <div class="_valorPills">C++</div>
-            <div class="_valorPills">C#</div>
-            <div class="_valorPills">Database Management</div>
-             <div class="_valorPills">Go lang</div>
-             <div class="_valorPills">Javascript</div>
-             <div class="_valorPills">Node Js</div>
-            <div class="_valorPills">Python</div>
-         <div class="_valorPills">Html</div>
-            
-             
-               
-        </div>
-    </div>
-</div>
-
-
-<div id="blogDiv" class="_valorScaleIn element" style="height:100%; width:100%; display:none;">
-    <div class="_valorQuarter _left _child1 _valorBlog" >
-    <div class="_valorContainer" style="background:rgba(229, 27, 49, 0.4);">
-        <div class="_valorPad1 _ValorFade">
-
-<div class="_right _ValorFade" >
-    <br><br>
-    <h3>Blog</h3>
-</div>
-        </div>
-    </div>
-
-    </div>
-
-    <div class="_valorQuarter2 _right valor_right4 _ValorFade _child2"><br>
-        <div class="_valorPad4">
-       
-     
-
-       
-
-       <div class="_valorCard">
-           <div class="_valorImage"></div>
-           <div class="_valorInfo">
-               <h6>Valor Ui concept</h6>
-              Patrick's Playground           </div>
-           <div class="_valorBottom">Saturday 2:00pm 11/19/2016</div>
-       </div>
-
-
-        </div>
-    </div>
-</div>
-
-
-
-<div id="contactDiv" class="_valorScaleIn element" style="height:100%; width:100%; display:none;">
-
-
-
-
-    <div class="_valorQuarter _left _child1  _valorContact">
-    <div class="_valorContainer" style="background:rgba(45, 204, 112, 0.4);">
-        <div class="_valorPad1 _ValorFade">
-
-<div class="_right _ValorFade" >
-    <br><br>
-    <h3>Contact Us</h3>
-</div>
-        </div>
-    </div>
-
-    </div>
-
-
-
-    <div class="_valorQuarter2 _right valor_right3 _ValorFade _child2">
-        <div class="_valorPad4">
-      <form method="POST" action="sendmail.php" id="contactus">
-      <div id="notification" class="notification"></div>
-        <div>
-            <sub>First Name isn't correct</sub>
-            <input type="text" class="_valorInput" data-verification-type="1" name="firstname" placeholder="first name">
-      </div>
-      <div>
-        <sub>Last Name isn't correct</sub>
-        <input type="text" class="_valorInput" data-verification-type="1" name="lastname" placeholder="last name">
-      <div>
-      <div>
-        <sub>Email Address isn't correct</sub>
-        <input type="text" class="_valorInput" data-verification-type="2" name="email" placeholder="email address">
-      </div>
-      <div>
-        <sub>Phone Number isn't correct</sub>
-        <input type="text" class="_valorInput" data-verification-type="3" name="phone" placeholder="phone number">
-      </div>
-      <div>
-        <sub>Your message is empty</sub>
-        <textarea data-verification-type="4" class="_valorTextarea" name="message" placeholder="your message"></textarea>
-      </div>
-      <br>&nbsp;
-      <button class="_btn _btnWhite right" type="submit" name="send">send message</button>
-      </form>
-        </div>
-    </div>
-</div>
-
-
-    </div>
-</div>
-    <script type="text/javascript">
-
-            var w=window,
-            d=document;
-            var navigationController=d.getElementById('navigationController'),
-            _allWrapper=d.getElementById('_valorWrapper');
-
-            var removeClass=function(el,className){
-                if (el.classList){
-                    el.classList.remove(className);
-                }else{
-                    el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
-                }
-            }
-
-            var removeGroupClass=function(c1,c2){
-                removeClass(c1,'_valorSlideLeft');
-                removeClass(c2,'_valorSlideRight');
-            }
-
-            var addGroupClass=function(c1,c2){
-                c1.className+=' _valorSlideLeft';
-                c2.className+=' _valorSlideRight'; 
-            }
-
-            var sendOut=function(parent){
-                var p=parent,
-                c1=document.querySelector('#'+p+' ._child1'),
-                c2=document.querySelector('#'+p+' ._child2');
-                removeGroupClass(c1,c2);
-                 addGroupClass(c1,c2);
-            }
-
-            navigationController.onclick=function(e){
-                var nLi=this.getElementsByTagName('li'),
-                el=e || window.event,
-                t=el.target || el.srcElement;
-                if(t.nodeType===3){
-                    t=t.parentNode();
-                }
-
-                var curr=document.querySelectorAll('#navigationController li.active')[0], 
-                currTarg=curr.getAttribute('data-target-div') || curr.dataset.targetDiv,
-                currDiv=d.getElementById(currTarg);
-                if(t.nodeName.toLowerCase()==='li'){
-                    var newTarg=t.getAttribute('data-target-div') || t.dataset.targetDiv,
-                    awc=document.querySelectorAll('#_allWrapper div.element')[0];
-
-                    if(currTarg===newTarg)return;
-
-                    for(var i=0,len=nLi.length; i<len; i++){
-                                nLi[i].className='';
-                    }
-                            t.className='active';
-                            var newTargDiv=d.getElementById(newTarg),
-                            newTargC1=document.querySelector('#'+newTarg+' ._child1'),
-                            newTargC2=document.querySelector('#'+newTarg+' ._child2');
-
-                            removeGroupClass(newTargC1,newTargC2);
-
-                            sendOut(currTarg);
-                            setTimeout(function(){
-                                currDiv.style.display='none';
-                                document.getElementById(newTarg).style.display='block';
-                            },1000);
-                        
-                    }
-                    
-            }
-
-        var Form=function(form){
-            var f=d.getElementById(form),
-            notification=d.getElementById('notification'),
-            t= t || {};
-            t.method=f.method==(!f.method)? "POST":f.method.toUpperCase();
-            t.action=f.action==(!f.action)? '' : f.action.toLowerCase();
-            t.elements=f.elements;
-            t.elementsCount=t.elements.length-1;
-            t.sumbitButton=f.send;
-            var process=function(e){
-                notification.className+=' fadeIn inlineBlock'; 
-                (w.innerText) ? notification.innerText=e : notification.innerHTML=e;
-            }
-            var trigger=function(){
-                f.onsubmit=function(e){
-                    var evt=e || window.event;
-                    (evt.preventDefault) ? evt.preventDefault() : evt.returnValue=false; 
-                    t.treated=t.action +'?nocache='+ Math.random().toString(36).substr(2, 50)+'?sentat='+Date.now(); 
-                    var ec=ec || [],
-                    sc=sc || [];
-                    for(var i=t.elementsCount; i--;){
-                        var el=t.elements[i],
-                        n=el.name, 
-                        v=el.value,
-                        dvt= el.getAttribute('data-verification-type') || el.dataset.verificationType,
-                        sb=el.parentNode.getElementsByTagName('sub')[0];
-                        if(dvt==1){
-                            (!/^[A-Za-z0-9 ]{3,60}$/.test(v)) ? (ec.push(n),sb.className='inlineBlock')  : (sc.push(n+'='+v),sb.className='displayNone');
-                        }
-                        else if(dvt==2){
-                            (!/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i.test(v)) ? (ec.push(n),sb.className='inlineBlock') : (sc.push(n+'='+v),sb.className='displayNone');
-                        }
-                        else if(dvt==3){
-                            (!/^(1\s|1|)?((\(\d{3}\))|\d{3})(\-|\s)?(\d{3})(\-|\s)?(\d{5})$/.test(v))? (ec.push(n),sb.className='inlineBlock')  : (sc.push(n+'='+v),sb.className='displayNone');
-                        }
-                        else if(dvt==4){
-                            (/^\s*$/g.test(v)) ? (ec.push(n),sb.className='inlineBlock') : (sc.push(n+'='+v),sb.className='displayNone');
-                        }
-                        else{
-                            return;
-                        }
-                    } 
-
-                    if(ec.length===0){
-                        var data=sc.join('&');
-                        var http=(w.ActiveXObject) ? new ActiveXObject('Microsoft.XMLHTTP') : (w.XMLHttpRequest && new XMLHttpRequest()) || null;
-                        http.open('POST',t.treated,true);
-                        http.setRequestHeader('x-requested-with','XMLHttpRequest');
-                        http.setRequestHeader('content-type','application/x-www-form-urlencoded');
-                        /*http.upload.onprogress = function (e) {
-                            if (e.lengthComputable) {
-                                t.sumbitButton.style.color='#fff';
-                                var r = Math.floor((e.loaded / e.total) * 170) + 'px';
-                                t.sumbitButton.style.boxShadow='inset '+r+' 0 0 green';  
-                            }
-                        }*/
-                        http.onreadystatechange=function(){
-                            this.readyState===4 && (this.status>=200 && this.status<300 && this.status!==304) && process(this.response); 
-                        }
-                        http.send(data);   
-                    }
-                }
-            } 
-            return{
-                trigger:trigger
-            }
-        }
-
-        var contactusform=new Form('contactus').trigger();
-
-
-
-
-
-    </script>
-
-
-
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-    </body>
-    </html>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Junniepat</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Junniepat</strong> from Twocraft</a>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="www.facebook.com/twocraft1" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Hi, I’m Patrick Igwe<br />
+											My Nick Name is Junniepat</h1>
+											<p>Ui/Ux Designer and web designer</p>
+										</header>
+										<p>Been designing for 5 years, I have experience in graphic design, urban planning, i love creativity and
+											i love my clients to trust i know what i'm doing.
+										</p>
+										<ul class="actions">
+											<li><a href="#works" class="button big">View jobs Below</a></li>
+										</ul>
+									</div>
+									<span class="image object">
+										<img src="images/DSC_0108.jpg" alt="Junniepat Picture" />
+									</span>
+								</section>
+
+							
+
+							<!-- Section -->
+								<section id="works">
+									<header class="major">
+										<h2>Ipsum sed dolor</h2>
+									</header>
+									<div class="posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<h3>Interdum aenean</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<h3>Nulla amet dolore</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+											<h3>Tempus ullamcorper</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<h3>Sed etiam facilis</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<h3>Feugiat lorem aenean</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+											<h3>Amet varius aliquam</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="generic.html">Generic</a></li>
+										<li><a href="elements.html">Elements</a></li>
+										<li>
+											<span class="opener">Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Etiam Dolore</a></li>
+										<li><a href="#">Adipiscing</a></li>
+										<li>
+											<span class="opener">Another Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Maximus Erat</a></li>
+										<li><a href="#">Sapien Mauris</a></li>
+										<li><a href="#">Amet Lacinia</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Ante interdum</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>drop a message</p>
+									<ul class="contact">
+										<li class="fa-envelope-o"><a href="#">patrickoigwe@gmail.com</a></li>
+										<li class="fa-phone">(234) 905 247 8312</li>
+										<li class="fa-home">1234 Somewhere Road #8254<br />
+										Nashville, TN 00000-0000</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
