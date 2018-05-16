@@ -1,0 +1,1005 @@
+<!doctype html>
+<html lang="en">
+    
+<!-- Mirrored from parall.ax/blog/view/3212/how-to-run-scalable-wordpress-on-aws-amazon-web-services-tutorial by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 May 2018 13:56:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><title>How to Run Scalable Wordpress on AWS (Amazon Web Services) Tutorial - Blog | Parallax</title><meta name="description" content="In this tutorial, we&#039;ll step through how to install and run Wordpress on Amazon Web Services in a way that means your data is safe, your site is fast and your hosting grows and shrinks in-line with how busy your website is." /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><!--
+
+Expose CMS: The HTML5 Content Management System by Parallax (http://parall.ax/)
+
+Hostname:           i-075b2372a839145bb 
+Generated at:       14:53:24 16th May 2018 
+Took before render: 0.104 seconds (total time in request header)
+Site name:          parallax-2016 
+
+--><script type="text/javascript">
+	var base = '../../../index.html'; var siteName = 'parallax-2016';
+</script>
+
+<!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<![endif]--><meta name="viewport" content="width=device-width, initial-scale=1"><meta property="ix:host" content="parallax-test-2.imgix.net">
+
+        <link rel="stylesheet" href="../../../parallax-2016/css/main-9c216dab98.min.css">
+
+        <noscript><link rel="stylesheet" href="../../../parallax-2016/css/noscript-05209e7642.min.css"></noscript><link rel="apple-touch-icon" sizes="180x180" href="../../../parallax-2016/favicon/apple-touch-icon-3aaac0af91.png">
+<link rel="icon" type="image/png" href="../../../parallax-2016/favicon/favicon-32x32-da2b802f26.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../../parallax-2016/favicon/favicon-16x16-2a2ca012b7.png" sizes="16x16">
+<link rel="manifest" href="../../../parallax-2016/favicon/manifest-54ed18fe26.json">
+<link rel="mask-icon" href="../../../parallax-2016/favicon/safari-pinned-tab-74027db3b1.svg" color="#5bbad5">
+<meta name="apple-mobile-web-app-title" content="Parallax">
+<meta name="application-name" content="Parallax">
+<meta name="theme-color" content="#8b5cdd"><link rel="canonical" href="how-to-run-scalable-wordpress-on-aws-amazon-web-services-tutorial.html">
+<meta property="fb:pages" content="147782594652">
+<meta property="og:site_name" content="Parallax"><meta property="og:title" content="How to Run Scalable Wordpress on AWS (Amazon Web Services) Tutorial - Parallax">
+<meta property="og:description" content="In this tutorial, we&#039;ll step through how to install and run Wordpress on Amazon Web Services in a way that means your data is safe, your site is fast and your hosting grows and shrinks in-line with how busy your website is."><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630"><meta property="og:image" content="https://parallax-test-2.imgix.net/uploads/crop_image/1200/630/20170120144528_1.png?w=1200&h=630&auto=compress&fm=jpg&fit=crop">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://parall.ax/blog/view/3212/how-to-run-scalable-wordpress-on-aws-amazon-web-services-tutorial">
+<meta property="fb:app_id" content="144982749040802">
+<meta name="p:domain_verify" content="e96203ffc86d825cb753495877cb38b1">        
+
+<script type='application/ld+json'> 
+{
+  "@context" : "http://www.schema.org",
+  "@type" : "LocalBusiness",
+  "name" : "Parallax",
+  "url" : "https://parall.ax",
+  "logo" : "http://parall.ax/parallax-2016/img/og_image3-cbab644a4a.png",
+  "image" : "http://parall.ax/parallax-2016/img/og_image3-cbab644a4a.png",
+  "description" : "Parallax is a digital agency in Leeds and London. We design and build websites and apps, write engaging content, make bespoke software, get friendly with search engines and turn our hands to all kinds of design, development and digital marketing.",
+  "sameAs" : [
+    "https://www.facebook.com/helloparallax",
+    "https://twitter.com/parallax",
+    "https://plus.google.com/+ParallAxUK",
+    "https://www.linkedin.com/company/621871",
+    "https://www.google.co.uk/maps/place/Parallax/@53.794864,-1.5377157,15z/data=!4m5!3m4!1s0x0:0x60f00217c2b1bdc7!8m2!3d53.794864!4d-1.5377157"
+  ],
+  "address" : {
+    "@type" : "PostalAddress",
+    "streetAddress" : "Parallax",
+    "addressLocality" : "Leeds",
+    "addressRegion" : "West Yorkshire",
+    "postalCode" : "LS2 7ES",
+    "addressCountry" : "United Kingdom"
+  },
+  "geo" : {
+    "@type" : "GeoCoordinates",
+    "latitude" : "53.794866",
+    "longitude" : "-1.5382732"
+  },
+  "hasMap" : "https://goo.gl/maps/oStEguoLujM2",
+  "vatID" : "GB101340584",
+  "email" : "mailto:info@parall.ax",
+  "legalName" : "Parallax Agency Ltd",
+  "openingHours" : "Mo, Tu, We, Th, Fr 08:00-20:00",
+  "telephone" : "+441133226477",
+  "priceRange": "£££££"
+}
+ </script>
+
+
+<meta property="twitter:card" content="summary">
+<meta property="twitter:site" content="@parallax">
+<meta property="twitter:title" content="How to Run Scalable Wordpress on AWS (Amazon Web Services) Tutorial - Parallax">
+<meta property="twitter:description" content="In this tutorial, we&#039;ll step through how to install and run Wordpress on Amazon Web Services in a way that means your data is safe, your site is fast and your hosting grows and shrinks in-line with how busy your website is.">
+<meta property="twitter:image" content="https://parallax-test-2.imgix.net/uploads/crop_image/1200/630/20170120144528_1.png?w=1200&h=630&auto=compress&fm=jpg&fit=crop">
+<meta property="twitter:url" content="https://parall.ax/blog/view/3212/how-to-run-scalable-wordpress-on-aws-amazon-web-services-tutorial"><style>.async-hide { opacity: 0 !important}</style>
+<script>
+    (function(a,s,y,n,c,h,i,d,e){
+        s.className+=' '+y;
+        h.start=1*new Date;
+        h.end=i=function(){
+            s.className=s.className.replace(RegExp(' ?'+y),'')
+        };
+        (a[n]=a[n]||[]).hide=h;
+        setTimeout(function(){
+            i();
+            h.end=null
+        },c);
+        h.timeout=c;
+    })(window,document.documentElement,'async-hide','dataLayer',4000, {'GTM-KGBSNR5':true});
+</script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42578255-1', 'auto');
+  ga('require', 'GTM-KGBSNR5');
+  // ga('send', 'pageview'); // Remove pageview call for GO
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N4JSFT');</script>
+<!-- End Google Tag Manager -->
+<script>!function(t){function e(n){if(i[n])return i[n].exports;var a=i[n]={exports:{},id:n,loaded:!1};return t[n].call(a.exports,a,a.exports,e),a.loaded=!0,a.exports}var i={};return e.m=t,e.c=i,e.p="",e(0)}([function(t,e,i){t.exports=i(1)},function(t,e){"use strict";!function(t,e){t.parallax={flickityLoaded:!1,ready:function(t){"loading"!==e.readyState?t():e.addEventListener?e.addEventListener("DOMContentLoaded",t):e.attachEvent("onreadystatechange",function(){"complete"===e.readyState&&t()})},windowWidth:function(){return t.innerWidth||e.documentElement.clientWidth||e.getElementsByTagName("body")[0].clientWidth},loadFlickity:function(){if(!this.flickityLoaded){var t=e.querySelector(".js-flick");t&&this.windowWidth()<700&&(this.flickityLoaded=!0,this.loadJS("../../../../cdnjs.cloudflare.com/ajax/libs/flickity/2.0.2/flickity.pkgd.min.js",function(){new Flickity(t,JSON.parse(t.getAttribute("data-options")))}))}},loadJS:function(t,i){var n=e.getElementsByTagName("script")[0],a=e.createElement("script");return a.src=t,a.async=!0,n.parentNode.insertBefore(a,n),i&&"function"==typeof i&&(a.onload=i),a},init:function(){var e=this;this.ready(function(){t.addEventListener("resize",e.loadFlickity.bind(e)),e.loadFlickity()})}},t.parallax.init()}(window,document)}]);
+            (function(p){
+                p.pageName = 'news_articles_view';
+                p.isAdmin = false;
+                p.prismUrl = '../../../parallax-2016/vendor/js/prism-231efd41d8.min.js';
+                p.jspdfScriptUrl = '../../../parallax-2016/js/jspdf-example-4f707e4ab3.min.js';
+                p.pUrl = '../../../parallax-2016/img/svg/p-92a6d51f97.svg';
+                p.heroImages = [
+                    ['/parallax-2016/img/hero-louis-f0add95782.jpg', 'left'],
+                    ['/parallax-2016/img/hero-jamie-bbf9483c3f.jpg', 'right'],
+                    ['/parallax-2016/img/hero-building-1a08082abe.jpg', 'bottom left']
+                ];
+            })(window.parallax);
+        </script>
+
+        <script src="../../../parallax-2016/js/main-fe0cd4ba4a.min.js" async defer></script>
+
+        <style>
+        .grid-lines {
+            position: fixed;
+            pointer-events: none;
+            z-index: 999999;
+            top: 0;
+            bottom: 0;
+            left: 10px;
+            right: 10px;
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+            background-size: 16.6666666% 100%;
+        }
+        .grid-lines.-hidden {
+            display: none;
+        }
+        @media (min-width: 950px) {
+            .grid-lines {
+                left: 80px;
+                right: 80px;
+            }
+        }
+        @media (min-width: 1200px) {
+            .grid-lines {
+                left: 160px;
+                right: 160px;
+            }
+        }
+        @media (min-width: 1800px) {
+            .grid-lines {
+                left: 240px;
+                right: 240px;
+            }
+        }
+        </style>
+    </head><body class="js-body landing body--news_articles_view body--white">
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4JSFT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+        <div class="grid-lines -hidden"></div>
+        <svg style="display:none;">
+            <symbol id="i-facebook" viewBox="0 0 800 800">
+                <path d="M445 643h-90V419h-75v-87h75v-64q0-55 32-86 30-29 80-29 28 0 67 3v78h-47q-42 0-42 38v60h86l-11 87h-75v224z"/>
+            </symbol>
+            <symbol id="i-twitter" viewBox="0 0 800 800">
+                <path d="M679 239s-21 34-55 57c7 156-107 329-314 329-103 0-169-50-169-50s81 17 163-45c-83-5-103-77-103-77s23 6 50-2c-93-23-89-110-89-110s23 14 50 14c-84-65-34-148-34-148s76 107 228 116c-22-121 117-177 188-101 37-6 71-27 71-27s-12 41-49 61c30-2 63-17 63-17z"/>
+            </symbol>
+            <symbol id="i-instagram" viewBox="0 0 800 800">
+                <path d="M150 400c0-119 0-166 42-208s88-42 208-42 166 0 208 42 42 89 42 208 0 166-42 208-88 42-208 42-166 0-208-42-42-89-42-208zm455 0c0-114 0-148-29-176-29-29-62-29-176-29s-148 0-176 29c-29 29-29 62-29 176s0 148 29 176c29 29 62 29 176 29s148 0 176-29c29-29 29-62 29-176zM400 272a128 128 0 1 1 0 256 128 128 0 0 1 0-256zm0 211c46 0 83-37 83-83s-37-83-83-83-83 37-83 83 37 83 83 83zm163-216c0 16-13 30-30 30-16 0-30-14-30-30 0-17 14-30 30-30 17 0 30 13 30 30z"/>
+            </symbol>
+            <symbol id="i-dribbble" viewBox="0 0 800 800">
+                <path d="M400 665c-146 0-265-119-265-265s119-265 265-265 265 119 265 265-119 265-265 265zm223-229s-69-22-140-9c30 81 43 161 43 161s82-49 97-152zM488 609s-15-90-48-172c-132 44-179 142-179 142s96 83 227 30zm-256-57c80-128 193-152 193-152s-12-27-19-39c-124 37-232 32-232 32s-8 87 58 159zm-54-198s102 2 210-28c-38-71-84-130-84-130-107 49-126 158-126 158zm169-174s50 65 85 134c84-31 118-83 118-83s-76-78-203-51zm102 167c6 11 20 44 20 44s64-11 157 7c0-85-51-141-51-141s-38 55-126 90z"/>
+            </symbol>
+        </svg><div id="body" class="expose-body">
+            <div class="loader-container">
+                <div class="loader">
+                    <canvas class="js-loader"></canvas>
+                </div>
+            </div>
+            <div class="bg-white"></div>
+            <div class="bg-primary"></div>
+            <div class="bg-dark"></div>
+            <div class="bg-nimbus"></div>
+            <div class="bg-cloud"></div>
+            <div class="bg-martinique"></div>
+            <div class="bg-shapes js-bg-shapes"></div>
+
+            <div class="site-section shapes js-shapes -hidden -invisible">
+                <div class="shapes__image js-shapes-image"></div>
+                <canvas class="shapes-canvas js-shapes-canvas"></canvas>
+            </div>
+
+            <div class="site-section shapes shapes--events js-shapes-events -hidden -invisible">
+                <div class="shapes__image js-shapes-image">
+                    <svg class="hero-shapes" viewbox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g class="hero-shape-group">
+        <defs>
+            <clippath id="hero-clip-path">
+                <rect class="hero-squiggle-mask" fill="none" height="16" width="82" x="1742" y="899.06"></rect>
+            </clippath>
+            <clippath id="hero-clip-path-2">
+                <rect class="hero-squiggle-mask" fill="none" height="16" width="82" x="393.28" y="24.92"></rect>
+            </clippath>
+        </defs>
+        <rect fill="#3b3355" height="1080" width="1920"></rect>
+        <g class="hero-shapes" data-svg-origin="960 540" opacity="0.5">
+            <ellipse class="hero-shape hero-disc" cx="1191.25" cy="959.91" data-svg-origin="1191 960" fill="#d1bef1" rx="19" ry="18.98"></ellipse>
+            <ellipse class="hero-shape hero-disc" cx="954.25" cy="339.91" data-svg-origin="954 340" fill="#d1bef1" rx="19" ry="18.98"></ellipse>
+            <ellipse class="hero-shape hero-disc" cx="1865.28" cy="768.92" data-svg-origin="1865 768" fill="#d1bef1" rx="9" ry="8.99"></ellipse>
+            <g class="hero-shape hero-squiggle-parent" data-svg-origin="1742 899">
+                <g clip-path="url(#hero-clip-path)">
+                    <path class="hero-squiggle" d="M1900.05,905.86c-1,1.19-1.54,1.76-2.66,1.76s-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09v3.74c1.13,0,1.66.57,2.66,1.76s2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76v-3.74C1902.66,902.76,1901.15,904.55,1900.05,905.86Z" fill="#d1bef1"></path>
+                </g>
+            </g>
+            <g class="hero-shape hero-squiggle-parent" data-svg-origin="393 25">
+                <g clip-path="url(#hero-clip-path-2)">
+                    <path class="hero-squiggle" d="M551.33,31.71c-1,1.19-1.54,1.76-2.66,1.76S547,32.9,546,31.71s-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76S367,32.9,366,31.71s-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09v3.74c1.13,0,1.66.57,2.66,1.76s2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76V28.62C553.94,28.62,552.43,30.41,551.33,31.71Z" fill="#d1bef1"></path>
+                </g>
+            </g>
+            <circle class="hero-shape hero-ring" cx="632.51" cy="734.88" fill="none" r="51.49" stroke="#8b5cdd" stroke-miterlimit="10" stroke-width="22"></circle>
+            <path class="hero-shape hero-arc" d="M249.91,987.64a59.2,59.2,0,0,1,45-109.51" fill="none" stroke="#d1bef1" stroke-miterlimit="10" stroke-width="23"></path>
+            <path class="hero-shape hero-arc" d="M109.31,721a21.08,21.08,0,0,1-16.25-38.91" fill="none" stroke="#d1bef1" stroke-miterlimit="10" stroke-width="12"></path>
+            <path class="hero-shape hero-arc" d="M1692.65,178.54A21.08,21.08,0,0,1,1719.55,211" fill="none" stroke="#d1bef1" stroke-miterlimit="10" stroke-width="12"></path>
+            <circle class="hero-shape hero-ring" cx="157.39" cy="579.44" fill="none" r="16.44" stroke="#8b5cdd" stroke-miterlimit="10" stroke-width="10"></circle>
+            <circle class="hero-shape hero-ring" cx="1723.19" cy="331.47" fill="none" r="16.44" stroke="#8b5cdd" stroke-miterlimit="10" stroke-width="10"></circle>
+            <line class="hero-shape hero-rect" fill="none" stroke="#8b5cdd" stroke-miterlimit="10" stroke-width="15" x1="1614.5" x2="1658.75" y1="1006.75" y2="1044"></line>
+            <line class="hero-shape hero-rect" fill="none" stroke="#8b5cdd" stroke-miterlimit="10" stroke-width="15" x1="632.51" x2="647.77" y1="22.92" y2="78.71"></line>
+        </g>
+    </g>
+</svg>
+
+                </div>
+            </div><header class="site-header js-site-header">
+    <a href="#main" class="caption sr-only skip-to-content js-no-hijack">Skip to content</a>
+    <a href="../../../index.html" class="site-logo js-site-logo"><svg viewBox="0 0 317.8 46.8" class="js-logo"><path d="M188.3 29V0h-5.9v29c0 9.6 7.8 17.3 17.3 17.3v-5.9c-6.3 0-11.4-5.1-11.4-11.4zm26.4 0V0h-5.9v29c0 9.6 7.8 17.3 17.3 17.3v-5.9c-6.3 0-11.4-5.1-11.4-11.4zM17.3.2C7.8.2 0 7.9 0 17.5v28.7h5.9c0-6.3 5.2-11.4 11.4-11.4 9.5 0 17.3-7.8 17.3-17.3C34.6 7.9 26.9.2 17.3.2zm0 28.6c-4.3 0-8.3 1.7-11.4 4.3V17.5c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.1 11.4 11.4 0 6.2-5.1 11.3-11.4 11.3zM61.4.2C51.8.2 44 8 44 17.5v29h6v-.2C50 40.1 55.1 35 61.4 35s11.4 5.1 11.4 11.4v.2h5.9v-29C78.7 8 70.9.2 61.4.2zm0 28.8C57 29 53 30.7 50 33.3V17.5c0-6.3 5.1-11.4 11.4-11.4s11.4 5.1 11.4 11.4v15.8c-3.1-2.6-7.1-4.3-11.4-4.3zM153.1.2c-9.5 0-17.3 7.8-17.3 17.3v29h5.9v-.2c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.1 11.4 11.4v.2h5.9v-29C170.4 8 162.6.2 153.1.2zm0 28.8c-4.4 0-8.3 1.6-11.4 4.3V17.5c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.1 11.4 11.4v15.8c-3.1-2.6-7.1-4.3-11.4-4.3zM254 .2c-9.5 0-17.3 7.8-17.3 17.3v29h5.9v-.2c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.1 11.4 11.4v.2h5.9v-29C271.4 8 263.6.2 254 .2zm0 28.8c-4.4 0-8.3 1.6-11.4 4.3V17.5c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.1 11.4 11.4v15.8c-3-2.6-7-4.3-11.4-4.3zm63.8-19.7V.6h-5.9v8.7c0 6.3-5.1 11.4-11.4 11.4-6.3 0-11.4-5.1-11.4-11.4V.6h-5.9v8.7c0 6 3 11.2 7.6 14.4-4.6 3.1-7.6 8.4-7.6 14.4v8.8h5.9V38c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.1 11.4 11.4v8.8h5.9V38c0-6-3-11.2-7.6-14.4 4.6-3.1 7.6-8.4 7.6-14.3zM117.2 32.2c4.6-3.2 7.6-8.5 7.6-14.5C124.8 8 117 .2 107.4.2 97.9.2 90.1 8 90.1 17.5v29h6c0-6.3 5.1-11.4 11.4-11.4h.2c6.2.1 11.2 5.1 11.2 11.4h5.9c0-5.9-3-11.2-7.6-14.3zm-21.1 1.4V17.5c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.2 11.4 11.6 0 6.3-5.1 11.5-11.4 11.5v.1c-4.4-.1-8.4 1.6-11.4 4.3z" fill="#FFF"/></svg></a>
+    <nav class="site-nav js-site-nav">
+        <a href="#site-nav" class="nav-toggle js-nav-toggle js-no-hijack"><span class="sr-only">Menu</span><span></span></a>
+        <ul class="site-nav__list js-site-nav-list">
+            <li class="site-nav__item">
+                <a href="../../../work.html" class="site-nav__link" data-path="/work"><span>Work</span></a>
+            </li><!--
+            --><li class="site-nav__item">
+                <a href="../../../expertise.html" class="site-nav__link" data-path="/expertise"><span>Expertise</span></a>
+            </li><!--
+            --><li class="site-nav__item">
+                <a href="../../../about.html" class="site-nav__link" data-path="/about"><span>About</span></a>
+            </li><!--
+            --><li class="site-nav__item">
+                <a href="../../../blog.html" class="site-nav__link -current" data-path="/blog"><span>Blog</span></a>
+            </li><!--
+            --><li class="site-nav__item">
+                <a href="../../../products.html" class="site-nav__link" data-path="/products"><span>Products</span></a>
+            </li><!--
+            --><li class="site-nav__item">
+                <a data-path="/careers" href="../../../careers.html" class="site-nav__link"><span>
+                    Careers<span class="site-nav__number">6</span></span></a>
+            </li><!--
+            --><li class="site-nav__item">
+                <a href="../../../hub/digital-events-leeds.html" class="site-nav__link" data-path="/hub/digital-events-leeds"><span>Events</span></a>
+            </li><!--
+            --><li class="site-nav__item -contact">
+                <a href="../../../contact.html" class="site-nav__link -contact -visible js-contact-open js-no-hijack"><span>Contact</span></a>
+            </li>
+            <li aria-hidden="true" class="site-nav__squiggle">
+                <div class="big-squiggle"><div></div></div>
+            </li>
+        </ul>
+    </nav><section class="split-modal split-modal--contact js-contact"><button type="button" class="font-secondary site-nav__link -close js-contact-close"><span>Close</span></button><div class="site-container split-modal-inner">
+    <div class="split-modal-col split-modal-col--left"><div class="trim">
+        <p class="font-tertiary color-primary delta">We’d love to hear from you! Send us a message using the form opposite, or <a href="mailto:info@parall.ax" class="textlink">email us.</a></p>
+
+        <div class="split-modal-info trim">
+            <div class="split-modal-info__col trim">
+                <p class="caption split-modal-info__heading">Leeds (HQ)</p>
+                <address>The Old Brewery,<br>Leeds, LS2 7ES</address>
+                <a href="tel:+441133226477">+44 (0) 113 322 6477</a>
+            </div><!--
+            --><div class="split-modal-info__col trim">
+                <p class="caption split-modal-info__heading">London</p>
+                <address>3rd Floor<br>6 Duke Street<br>Marylebone<br>London, W1U 3EN</address>
+                <a href="tel:+441133226477">+44 (0) 113 322 6477</a>
+            </div><!--
+            --><div class="split-modal-info__col trim">
+                <p class="caption split-modal-info__heading">Say hello</p>
+                <p class="m-b-0"><a href="mailto:info@parall.ax" class="textlink">info@parall.ax</a></p>
+            </div><!--
+            --><div class="split-modal-info__col trim">
+                <a href="https://parallax.typeform.com/to/CzyHou?from=website" class="btn">Send us a brief</a>
+            </div>
+        </div>
+    </div></div>
+    <div class="split-modal-col split-modal-col--right padding-ends-medium"><div><form action="https://parall.ax/contact" class="site-form site-form--light js-form" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div><div class="inputs js-inputs"><div class="input text"><label for="ContactName">Name*</label><input name="data[Contact][name]" type="text" id="ContactName" /></div><div class="input text"><label for="ContactEmail">Email address*</label><input name="data[Contact][email]" type="text" id="ContactEmail" /></div><div class="input text"><label for="ContactTelephone">Telephone</label><input name="data[Contact][telephone]" type="text" id="ContactTelephone" /></div><div class="input textarea"><label for="ContactMessage">Your message*</label><textarea name="data[Contact][message]" rows="1" cols="30" id="ContactMessage" ></textarea></div><div class="input piege-a-miel"><label for="ContactCompany">If you're human, leave this blank:</label><input name="data[Contact][company]" type="text" id="ContactCompany" /></div></div><div class="submit"><input class="btn -white js-send-btn" type="submit" value="Send." /></div></form></div></div>
+</div>
+<div class="big-squiggle"><div></div></div></section><a href="mailto:info@parall.ax" class="flip-btn flip-btn--auto js-site-email site-header__email"><span>info@parall.ax</span></a>
+
+    <ul class="header-social social-icons social-icons--v js-social-icons">
+        <li>
+            <a href="https://www.facebook.com/helloparallax" class="social-icon js-social-icon" target="_blank">
+                <svg class="social-icon__icon"><use xlink:href="#i-facebook" /></svg>
+                <svg viewBox="0 0 200 200" class="social-icon__ring js-ring"><circle cx="100" cy="100" r="90" /></svg>
+            </a>
+        </li><!--
+        --><li>
+            <a href="https://twitter.com/parallax" class="social-icon js-social-icon" target="_blank">
+                <svg class="social-icon__icon"><use xlink:href="#i-twitter" /></svg>
+                <svg viewBox="0 0 200 200" class="social-icon__ring js-ring"><circle cx="100" cy="100" r="90" /></svg>
+            </a>
+        </li><!--
+        --><li>
+            <a href="https://www.instagram.com/parall.ax/" class="social-icon js-social-icon" target="_blank">
+                <svg class="social-icon__icon"><use xlink:href="#i-instagram" /></svg>
+                <svg viewBox="0 0 200 200" class="social-icon__ring js-ring"><circle cx="100" cy="100" r="90" /></svg>
+            </a>
+        </li><!--
+        --><li>
+            <a href="https://dribbble.com/parallax" class="social-icon js-social-icon" target="_blank">
+                <svg class="social-icon__icon"><use xlink:href="#i-dribbble" /></svg>
+                <svg viewBox="0 0 200 200" class="social-icon__ring js-ring"><circle cx="100" cy="100" r="90" /></svg>
+            </a>
+        </li>
+    </ul>
+</header>
+<main class="site-main js-site-main" id="main"><article data-bg="white">
+    <div class="progress-bar progress-bar--horizontal js-progress-bar-container" aria-hidden="true">
+        <div class="js-progress-bar"></div>
+    </div>
+    <header class="site-section hero -light padding-ends-hero js-first-content">
+        <div class="site-container -max-width-small trim">
+            <div class="hero__pretitle caption -primary"><span>By Lawrence Dudley • <time datetime="2017-01-16T14:19:00">on 16/1/17</time></span></div>
+            <h1 class="hero__title bravo js-title">How to Run Scalable Wordpress on AWS (Amazon Web Services) Tutorial</h1>
+            <div class="site-section__squiggle">
+    <div class="site-section__squiggle-icon"></div>
+</div>
+        </div>
+    </header>
+    <section class="site-section news-view article js-article"><div class="line line--first js-line"></div><div class="article__element img--full -image">
+                <div class="site-container img--full">
+                    <div class="img-ratio-1370x900 full-width-image fade-up-image js-fade-image"><img ix-path="uploads/download/20170120144528_1.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120144528_1.png" alt=""></noscript></div>
+                </div>
+            </div><div class="article__elements js-article-elements"><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p><strong>Intro:</strong> Amongst other things, Parallax are an AWS Partner. This tutorial will get you up and running but if you need anything else in terms of support, help, security or consultancy come and say hello &#8211; we&#8217;re nice people.</p>
+
+	<p>So&#8230; the shared hosting box you&#8217;ve been using to run your Wordpress site isn&#8217;t cutting it anymore? Fear not, this is what happens when people actually want to visit your site. The usual sequence of events is that your site starts slowing down, you get database connection errors and everyone starts looking at the website in a sad, disappointed way while the rest of the business is revelling in this new-found Internet fame but struggling to comprehend why something so simple as keeping the website online isn&#8217;t happening.</p>
+
+	<p>In this tutorial, we&#8217;ll step through how to install and run <a href="https://wordpress.org/">Wordpress</a> on <a href="https://aws.amazon.com/">Amazon Web Services</a> in a way that means your data is safe, your site is fast and your hosting grows and shrinks in-line with how busy your website is, using Elastic Beanstalk for devops, Aurora for database and Elastic Filesystem for upload storage.</p>
+
+	<p>If you&#8217;re coming from a traditional VPS/shared hosting background, AWS can be a bit scary. It&#8217;s not, it&#8217;s just a little bit different and you have to do a bit more of the legwork yourself to get everything going the way you want it to.</p>
+
+	<p>Whenever we&#8217;re going to be using a Terminal in this tutorial, the text will be styled <code>like this</code>. Bear in mind that you will have to press enter/return after each bit of terminal input.</p>
+
+	<h1>Step 1: Get an AWS Account</h1>
+
+	<p>You&#8217;ll need to have an account with Amazon Web Services to get started. It&#8217;s easy enough to do, they do usually put a verification call through to you when you sign-up so this can take a little while to get going.</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120144557_2.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120144557_2.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>If you already have an AWS account, take a moment to give yourself a high-five. You&#8217;re winning! If not, go ahead and create an account.</p>
+
+	<h1>Step 2: The Source Code / Install Git</h1>
+
+	<p>You&#8217;ll want to have your source code in a folder on your computer, managed using Git. If you&#8217;re already using Git, that&#8217;s also awesome. If not, you&#8217;ll want to install it, either for Windows or Mac.</p>
+
+	<p>Git is like a versioning system for files. If you think about a paper form, like the (endless) ones that the bank make you fill out when you apply for a mortgage, Git would be a bit like a system that you use to store a form in each stage of it being filled out (if you&#8217;re like me, probably over the course of a few days; procrastination and paperwork go hand in hand).</p>
+
+	<p>The upside of Git is that when you inevitably make a mistake filling out said form, you can go back to a previous version really easily. It&#8217;s also the thing we&#8217;ll be using to store our code so that the other bits of Amazon Web Services we&#8217;ll be sending it to can make sense of any changes in it.</p>
+
+	<h3>Installing Git on Mac:</h3>
+
+	<p>1. Download the latest <a href="https://sourceforge.net/projects/git-osx-installer/files/latest/download?source=files">Git for Mac</a><br />
+2. Run through the installer as you would with anything else<br />
+3. Open a Terminal (Applications/Utilities/Terminal)</p>
+
+	<h3>Installing Git on Windows:</h3>
+
+	<p>1. Download the latest <a href="https://git-for-windows.github.io/">Git for Windows</a><br />
+2. Run through the installer as you would with anything else<br />
+3. Open a command prompt (type &#8220;CMD&#8221; in the start menu search bar)</p>
+
+	<h3>All Platforms: Configure your Git Identity:</h3>
+
+	<p>4. Type (or copy-paste): <br />
+<code>git --version</code><br />
+If you see something along the lines of &#8220;git version xxx&#8221; then you&#8217;re good &#8211; Git is in fact installed. If you see &#8220;command not found&#8221; then something&#8217;s wrong &#8211; try running the installer again.<br />
+5. Tell git who you are &#8211; this is so it can record your details against the changes you make in your code. Run the following, replacing my details with yours (otherwise you&#8217;ll be using git as me and that would be weird):<br />
+<code>git config --global user.name &quot;Lawrence Dudley&quot;</code><br />
+ <code>git config --global user.email &quot;lawrence@parall.ax&quot;</code><br />
+6. Celebrate &#8211; Git is now installed on your machine.</p>
+
+	<h3>Get your source code into Git:</h3>
+
+	<p>We&#8217;re going to use our new-found Git awesomeness to manage our code. It&#8217;s fairly straightforward, but there&#8217;s a few commands we need to run to make sure Git knows where our code is and how it should manage it.</p>
+
+	<p>I&#8217;m doing this on a Mac &#8211; the Windows commands should be identical other than things like changing directory which is &#8220;cd&#8221; on Mac and &#8220;dir&#8221; on a PC.</p>
+
+	<p>I&#8217;m going to be using a fresh copy of Wordpress that I&#8217;ve downloaded, unzipped and put on my desktop.</p>
+
+	<p>1. First, we&#8217;re going to change directory to our unzipped folder:<br />
+<code>cd ~/Desktop/wordpress</code><br />
+2. Then we&#8217;re going to initialise a Git repository in this folder:<br />
+<code>git init</code><br />
+You should see something like: &#8220;Initialized empty Git repository in /Users/lawrencedudley/Desktop/wordpress/.git/&#8221;<br />
+3. Next, we&#8217;re going to add all the files in here to Git:<br />
+<code>git add -A</code><br />
+4. And then we&#8217;re going to commit those. Committing in Git is a bit like putting a stick in the sand and saying &#8220;at this point in time, this is what everything looks like and we shall refer to it as this&#8221;. In this case, we&#8217;ll refer to it as &#8220;initial commit&#8221;:<br />
+<code>git commit -m &quot;initial commit&quot;</code><br />
+You could change whatever is between the two quotes to say something else &#8211; it&#8217;s not anything functional, just whatever you&#8217;d like to call it.<br />
+5. Check that your code&#8217;s all committed:<br />
+<code>git status</code><br />
+If you see &#8220;nothing to commit, working tree clean&#8221; then you&#8217;re all set to go!</p></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<h1>Step 3: Configure an Elastic Beanstalk Environment</h1>
+
+	<p>There&#8217;s a few different (many in fact) ways of using Amazon Web Services to control some servers. You could go straight down the EC2 route, which would be comparable to running your own VPS, minus any control panels that came with yours, or you could use one of the other management options out there to configure instances and make them run the stuff you want them to (specifically your Wordpress site).</p>
+
+	<p>We&#8217;re going to use Elastic Beanstalk in this example because it&#8217;s simple and extensible enough to do what we&#8217;re wanting to achieve and takes care of most of the complicated stuff behind the scenes for us.</p>
+
+	<h3>Install the Elastic Beanstalk command-line interface</h3>
+
+	<p>The &#8220;eb&#8221; command-line interface lets you push code into Elastic Beanstalk.</p>
+
+	<p>Amazon have a <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html?icmpid=docs_elasticbeanstalk_console">good guide on installing it</a>.</p>
+
+	<p>If you&#8217;re on a Mac, it should be enough to run:<br />
+<code>pip install --upgrade --user awsebcli</code></p>
+
+	<h3>Choose an AWS Region</h3>
+
+	<p>You&#8217;ll need to choose an AWS Region to deploy to. There&#8217;s quite a few:</p>
+
+	<p>us-east-1 : US East (N. Virginia)<br />
+us-west-1 : US West (N. California)<br />
+us-west-2 : US West (Oregon)<br />
+eu-west-1 : EU (Ireland)<br />
+eu-central-1 : EU (Frankfurt)<br />
+ap-south-1 : Asia Pacific (Mumbai)<br />
+ap-southeast-1 : Asia Pacific (Singapore)<br />
+ap-southeast-2 : Asia Pacific (Sydney)<br />
+ap-northeast-1 : Asia Pacific (Tokyo)<br />
+ap-northeast-2 : Asia Pacific (Seoul)<br />
+sa-east-1 : South America (Sao Paulo)<br />
+cn-north-1 : China (Beijing)<br />
+us-east-2 : US East (Ohio)<br />
+ca-central-1 : Canada (Central)<br />
+eu-west-2 : EU (London)</p>
+
+	<p>Typically you&#8217;ll want to choose a region that&#8217;s close to where your website visitors are. There is a small caveat however and that is that not all AWS services are available in all regions yet.</p>
+
+	<p>As the last part of this tutorial relies on using Elastic File System, a relatively new component of AWS, only the following regions have support for all of the services used:</p>
+
+	<p>us-east-1 : US East (N. Virginia)<br />
+us-east-2 : US East (Ohio)<br />
+us-west-2 : US West (Oregon)<br />
+eu-west-1 : EU (Ireland)</p>
+
+	<p>We&#8217;ve used London in this example extensively but please note that at the time of writing, there is no support there for EFS so if you&#8217;re in Europe like we are then Ireland is probably the way to go.</p>
+
+	<p>You can pick a region from the drop-down in the top right of most AWS Console screens.</p>
+
+	<h3>Set up a blank Elastic Beanstalk app</h3>
+
+	<p>You&#8217;ll be at the Console home when you log into Amazon Web Services. It will look a bit like this:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120144636_3.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120144636_3.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>The service you&#8217;re looking for is Elastic Beanstalk. It&#8217;s under Computer (follow the arrow on the above screenshot) or you can search for it.</p>
+
+	<p>Note: I&#8217;m using the new user interface that AWS have released for EB in these examples. You should receive a prompt to use the new UI. If you don&#8217;t, don&#8217;t panic &#8211; while everything may look slightly different it&#8217;s not miles away from what it used to be and it&#8217;s mostly in the same place, called the same things.</p>
+
+	<p>Once you open it up, you should see this:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120144650_4.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120144650_4.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Try to contain your excitement somewhat and don&#8217;t go straight in and hit the &#8220;launch now&#8221; button. We want to go through the slightly less-exciting wizard that appears when you click &#8220;Create New Application&#8221; in the top right. Again, follow the arrows.</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120144746_5.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120144746_5.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>I&#8217;ve descriptively called our application &#8220;wordpress&#8221;. You can go with whatever you want here though.</p>
+
+	<p>If you think you&#8217;ll be running more than one Wordpress install, maybe go with sitename-wordpress or something.</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120144846_6.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120144846_6.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>We have an application now, but no environments for it to run in. That&#8217;s OK, we can sort that now.</p>
+
+	<p>An application is more or less what it sounds like: It&#8217;s a set of code that will get deployed. An environment is a place (or server/set of servers) that this code will go onto to actually run.</p>
+
+	<p>Most advanced users will have a production and a qa environment. Some people will even have an environment for every different version of their application. We&#8217;re going to skip past some of the advanced stuff and just focus on getting things up and running.</p>
+
+	<p>Under &#8220;Actions&#8221;, you will find &#8220;Create environment&#8221;. Click it.</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120144918_7.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120144918_7.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>We&#8217;ll ignore worker environments for now &#8211; you want a web server environment:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120144931_8.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120144931_8.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Logic would dictate that you select PHP from the dropdown on this next screen and go ahead and click &#8220;Create environment&#8221;. Logic is wrong. Select PHP from the dropdown but don&#8217;t click this button.</p>
+
+	<p>Why? Wordpress is still a PHP5.6 beast at the moment (although this is set to change in 2017 sometime) and going with the default version of PHP is likely to break many many things.</p>
+
+	<p>We&#8217;re going to click &#8220;Configure more options&#8221; instead:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120144944_9.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120144944_9.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>It&#8217;s probably worth noting at this point that having the Application code as &#8220;Sample application&#8221; is fine right now too. We&#8217;ll worry about getting our actual code deployed into this environment after we&#8217;re done configuring everything.</p>
+
+	<p>Note that we&#8217;ve selected &#8220;High availability&#8221; instead of &#8220;Low cost&#8221;. That means that our Wordpress install will be on multiple servers, not just one and allow us to autoscale it.</p>
+
+	<p>After selecting High availability, click &#8220;Change platform configuration&#8221;:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120144954_10.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120144954_10.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>You want to choose PHP 5.6 in this dropdown. 7.0 won&#8217;t work currently but may well work in the future. As a bonus, you can actually change this around later without experiencing any downtime. That&#8217;s awesome.</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145003_11.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145003_11.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>You&#8217;ll want to open Network, as shown below, by clicking &#8220;Modify&#8221; underneath it:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145029_12.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145029_12.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Under VPC, choose your default VPC (there should just be one in the dropdown if this is a new account).</p>
+
+	<p>Visibility should be &#8220;Public&#8221;.</p>
+
+	<p>Tick all Load balancer subnets.</p>
+
+	<p>Tick &#8220;Public IP Address&#8221;.</p>
+
+	<p>Tick all Instance subnets.</p>
+
+	<p>Tick default for instance security group.</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145043_13.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145043_13.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>If you&#8217;re a bit click-happy like me, you will have noticed that there&#8217;s a Database option in the configuration screens.</p>
+
+	<p>Don&#8217;t touch this &#8211; as tempting as it is, it doesn&#8217;t currently support something called AWS Aurora. Put simply, Aurora is basically MySQL but more awesome and significantly faster.</p>
+
+	<p>Because we like both awesomeness and speed, we&#8217;re going to configure some of those bits ourselves later on.</p>
+
+	<p>One last, optional, step, is to give your Environment a name. This is a good thing to do because if you don&#8217;t, it&#8217;ll be called &#8220;Custom-env&#8221; which isn&#8217;t particularly snappy. We&#8217;re going to call ours &#8220;Production&#8221;.</p>
+
+	<p>You&#8217;ll find this setting in the first configuration box, titled Environment settings:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145051_14.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145051_14.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Once that&#8217;s saved, you can leave everything else as it is and go ahead and click the &#8220;Create environment&#8221; button down on the bottom-right.</p>
+
+	<p>AWS will go away and do your bidding for you now. It does take a while (maybe 5 minutes) to sort itself out so be patient. It might not look like it&#8217;s doing stuff but it is.</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145103_15.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145103_15.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<h3>What have we just done?!</h3>
+
+	<p>So, we clicked some buttons, AWS did some things. But what things?</p>
+
+	<p>What we&#8217;ve just asked Elastic Beanstalk to do for us is to create the following Environment:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170116164114_initial-arch.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170116164114_initial-arch.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p><em>A picture tells a thousand&#8230; errr&#8230; nodes?!</em></p>
+
+	<p>What we&#8217;ve done is we&#8217;ve set up a load balanced, scalable web server tier. What does this mean?</p>
+
+	<p>There&#8217;s a load balancer at the &#8220;front&#8221;. That&#8217;s the bit that user&#8217;s browsers speak to when they want a web page. That load balancer then picks one of the PHP5.6 Web Servers sat behind it and asks one of them for the web page that the user requested. Once it&#8217;s got it, it then passes that back to the user&#8217;s browser.</p>
+
+	<h3>Why is this good?</h3>
+
+	<p>1. The load balancer is redundant, i.e. it can have bits of it break and people will still be able to use it.<br />
+2. The web servers behind it are also redundant. If one goes down, then the load balancer stops sending traffic to it.<br />
+3. The web servers can be scaled transparently, i.e. you could have two web servers as in the diagram above, or you could have 50. Who knows, maybe Justin Bieber wrote a guest blog post for you and it went viral or something.</p>
+
+	<p>Less downtime, more speed.</p>
+
+	<h3>Accessing the environment</h3>
+
+	<p>If you head back to your application (click &#8220;wordpress&#8221;) and then into your environment (once it turns green, meaning it&#8217;s all ready for you), you&#8217;ll notice that there&#8217;s a URL in Elastic Beanstalk:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145113_16.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145113_16.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Clicking this link will show you the sample application we installed in this environment earlier (remember &#8211; our code isn&#8217;t in yet!):</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145122_17.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145122_17.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>The page will tell you which version of PHP your environment is running. If it says 7.0, terminate the environment and create a new one and make sure you choose 5.6. You can have as many environments per application as you like which is useful for testing things before going live with them.</p>
+
+	<h1>Step 4: Getting our code running</h1>
+
+	<p>So we have an environment. But we don&#8217;t really want a page with &#8220;Congratulations&#8221; plastered on it. We want Wordpress!</p>
+
+	<p>To get Wordpress running here instead, we&#8217;re going to get our code running inside this environment.</p>
+
+	<p>Go back to your terminal and cd back to your project folder which, if you&#8217;ll remember, for me was the wordpress folder on my desktop:<br />
+<code>cd ~/Desktop/wordpress</code></p>
+
+	<p>You&#8217;ll need to run:<br />
+<code>eb init</code></p>
+
+	<p>This will then ask you which region you&#8217;re running your application in. This will be the same as the region in the top right of all of your AWS Console screens. For us, it&#8217;s London, so we&#8217;re going to go with region 15.</p>
+
+	<h3>Access Keys</h3>
+
+	<p>If you&#8217;ve never used EB before, you will see the following:<br />
+<em>You have not yet set up your credentials or your credentials are incorrect</em><br />
+<em>You must provide your credentials.</em></p>
+
+	<p>This is because the EB tool needs to know which Amazon account you want to deploy to.</p>
+
+	<p>In the Amazon Console, open a tool called IAM:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145131_18.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145131_18.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Once you have this open, select Users -&gt; Add New User.</p>
+
+	<p>You&#8217;ll want to give this user a name &#8211; we&#8217;ve gone with &#8220;eb-desktop-deploy&#8221; and ticked &#8220;programmatic access&#8221;.</p>
+
+	<p>Click &#8220;Next: Permissions&#8221;</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145142_19.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145142_19.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>IAM is very powerful&#8230; and very complex. We&#8217;ve elected, for the sake of brevity, to go with attaching the PowerUserAccess policy in this instance. It&#8217;s not best practice (you should narrow down the permissions more than this, on a least-required basis) but it&#8217;s out of the scope of this tutorial to delve too deeply into how IAM works:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145152_20.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145152_20.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Click &#8220;Next: Review&#8221;, followed by &#8220;Create user&#8221;.</p>
+
+	<p>This will give you a screen with both your Access Key ID and Secret access key. You&#8217;ll want to copy these into the EB command-line tool we had open before.</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145202_21.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145202_21.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Once complete and entered into the EB command-line interface, you should be asked which application to use. If you only have one, your option 1 should be &#8220;wordpress&#8221; or whatever you called your application when setting it up in the console.</p>
+
+	<p>Ours is called &#8220;wordpress&#8221; and is option 1, so we&#8217;re going with 1:</p>
+
+	<p><em>Select an application to use</em><br />
+<em>1) wordpress</em><br />
+<em>2) [ Create new Application ]</em></p>
+
+	<p>Once you&#8217;ve entered this, you should be back at the command prompt. You now have the Elastic Beanstalk command-line interface configured in a way that it knows which application this folder is, ready to upload your code.</p>
+
+	<h3>Let&#8217;s deploy our code&#8230;.</h3>
+
+	<p>Ready? <code>eb deploy</code></p>
+
+	<p>You&#8217;ll have to wait a while as it does it&#8217;s thing, but it should come back to you telling you what it&#8217;s doing. It&#8217;s taking your code, packaging it as a zip file, sending it to the servers in your EB environment and putting the code where it needs to be.</p>
+
+	<p>If you now visit the URL for your environment in Elastic Beanstalk, you should see the first setup screen of Wordpress:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145211_22.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145211_22.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Because we don&#8217;t spell everything with a &#8220;Z&#8221; over here, we&#8217;re going with English (UK).</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145221_23.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145221_23.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Right. Problem time.</p>
+
+	<p>Remember how we said not to create a database? Well&#8230; we didn&#8217;t. So we don&#8217;t know the database name, username, password, well, anything really, as it doesn&#8217;t actually exist yet.</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145230_24.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145230_24.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Back to the AWS Console we go to create the database. The service we want here is called &#8220;RDS&#8221;, short for &#8220;Relational Database Service&#8221;:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145242_25.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145242_25.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>This time, the big blue button is, in fact, the one you want. Click &#8220;Get Started Now&#8221;.</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145250_26.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145250_26.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Select Aurora, then fill in the details necessary for the database. We&#8217;ve gone with a t2.medium instance size initially with multi-az deployment switched on.</p>
+
+	<p>This means there&#8217;s a master and a slave database node and they will failover to each other when necessary.</p>
+
+	<p>Be aware that the default size of database node, r3.large is quite expensive to run so if you do go with this option, make sure it&#8217;s actually what you&#8217;re wanting to do or you could end up with a fairly hefty bill.</p>
+
+	<p>Make sure you write down both the master username and password as you&#8217;ll need these shortly.</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145259_27.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145259_27.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Choose the default VPC Security Group (again, best practice would suggest otherwise but is beyond the scope of this tutorial), the rest can remain as it is by default.</p>
+
+	<p>Click &#8220;Launch DB Instance&#8221;.</p>
+
+	<p>If you now click &#8220;Finish&#8221; and then &#8220;Instances&#8221;, you&#8217;ll see your instances are now being created (it&#8217;s Multi-AZ remember, so there&#8217;s two of them, although there&#8217;s only one actual database).</p>
+
+	<p>Wait until the instances are created. This takes quite a while so you might want to get a coffee.</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145307_28.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145307_28.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>We did say it takes a while&#8230; This is what it looks like when you finally get there.</p>
+
+	<p>Click the little disclosure arrow on the top one, the one called &#8220;wordpress&#8221; not &#8220;wordpress-eu-west-2a&#8221;:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145316_29.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145316_29.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Copy-paste this and put it in the same place as you put the database username and password. You now have enough information to complete the Wordpress setup.</p>
+
+	<p>Before we get to that, we need to ensure that our web servers in our Elastic Beanstalk setup can speak to our database server.</p>
+
+	<p>To do so, open the &#8220;VPC&#8221; service in the AWS Console and select &#8220;Security Groups&#8221; on the left and select the one with a group name of &#8220;default&#8221;:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145326_30.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145326_30.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Open inbound rules, add a rule as type &#8220;MYSQL/Aurora&#8221; and select the source to be the same group id as your default rule.</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145337_31.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145337_31.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Hit save, then go back to your Wordpress installer page and input the database credentials and click &#8220;Submit&#8221;. </p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145344_32.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145344_32.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Note that you don&#8217;t need the :3306 on the end of the cluster endpoint you copy-pasted from RDS. Just the hostname is fine.</p>
+
+	<p>If everything is fine with your database settings, you should see the following:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145357_32.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145357_32.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Hmmm&#8230; &#8220;Sparky&#8221;. That&#8217;s what we call electricians in the North of England. Click &#8220;Run the install&#8221;.</p>
+
+	<p>You should end up with the last Wordpress setup screen:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145414_34.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145414_34.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Followed by (drumroll please) the Wordpress administration dashboard:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145429_35.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145429_35.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>This is what our architecture diagram looks like now. We have separated out the load balancer, web servers and now the master and slave database servers and the entire system has redundancy built into it:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170116184913_architecture-with-rds.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170116184913_architecture-with-rds.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<h1>Step 5: Storage Persistence</h1>
+
+	<h3>If you wait a little bit it&#8217;s all going to break</h3>
+
+	<p>Now you&#8217;re going to be feeling great about yourself, running around the office, everyone&#8217;s looking at you like you&#8217;re some kind of super-hero. At least until you try and scale your shiny new Wordpress install or reconfigure anything and it all comes horribly crashing down.</p>
+
+	<p>Why would it do that?</p>
+
+	<p>When we installed Wordpress, the installer wrote a file to disk called &#8220;wp-config.php&#8221;. It wrote it to the disk of the server that the site is currently running on. Currently as in right now.</p>
+
+	<p>If that server were to be replaced, that file would no longer be there, because it will only install the files that we pushed up to Elastic Beanstalk using <code>eb deploy</code>. And that would be bad.</p>
+
+	<p>The solution, then, is to commit our wp-config.php file to Elastic Beanstalk so that file is always there when we need it.</p>
+
+	<p>Committing passwords in config files in your source code is almost universally considered bad practice, so we&#8217;re going to use something called &#8220;Environment Variables&#8221; instead. They&#8217;re essentially placeholders for something that&#8217;s stored elsewhere.</p>
+
+	<p>Let&#8217;s have a look at the bits of our wp-config.php file relating to the database that were created by the installer:<br />
+<pre>
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define(&#39;DB_NAME&#39;, &#39;wordpress&#39;);
+/** MySQL database username */
+define(&#39;DB_USER&#39;, &#39;wordpress&#39;);
+/** MySQL database password */
+define(&#39;DB_PASSWORD&#39;, &#39;awesome_db_password&#39;);
+/** MySQL hostname */
+define(&#39;DB_HOST&#39;, &#39;wordpress.cluster-cltekbrfbilr.eu-west-2.rds.amazonaws.com&#39;);
+</pre></p>
+
+	<p>We&#8217;re going to set environment variables in Elastic Beanstalk for these so that the code doesn&#8217;t have to directly contain the details (and could actually be reusable across multiple Wordpress installs).</p>
+
+	<p>First, open the Elastic Beanstalk console:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145443_36.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145443_36.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Then open your environment and click &#8220;Configuration&#8221; on the left:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145450_37.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145450_37.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Open &#8220;Software Configuration&#8221; and scroll to the bottom:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145457_38.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145457_38.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>These Environment Variables/Properties will always exist in this environment. We&#8217;re going to add a few so that Wordpress always knows where to find the database:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145505_39.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145505_39.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Once you hit save and apply, you can now safely use these environment variables in your wp-config.php file.</p>
+
+	<p>What was:<br />
+<pre>
+/** The name of the database for WordPress */
+define(&#39;DB_NAME&#39;, &#39;wordpress&#39;);
+</pre><br />
+Can now be called up as:</p>
+
+<pre>
+/** The name of the database for WordPress */
+define(&#39;DB_NAME&#39;, getenv(&#39;DB_NAME&#39;));
+</pre>
+
+	<p>That&#8217;s PHP reading the value of the property from the environment variable/property that we set in Elastic Beanstalk.</p>
+
+	<p>To help with this (and because at this point you won&#8217;t actually have your generated wp-config.php file to hand), we&#8217;ve included a reference file that has been modified for you.</p>
+
+	<p>You can <a href="https://s3-eu-west-1.amazonaws.com/parallax-uploads/1143189798587d1bdfbcfa06.75293508.php">download it here</a> but please remember to change your secret keys from line 49 onwards using the instructions in the file otherwise your site may end up being quite easy to hack.</p>
+
+	<p>Once you&#8217;ve changed the secret keys, drop this file into your Wordpress folder locally and commit it. After dropping it into the folder, run:<br />
+<code>git add -A</code><br />
+<code>git commit -m &quot;added wp-config file&quot;</code><br />
+<code> eb deploy</code><br />
+Elastic Beanstalk will take a while to deploy your changes and once done, you&#8217;ll have a working wp-config.php file that will survive you rebooting, removing instances, scaling your setup etc.</p>
+
+	<h3>What about uploads?</h3>
+
+	<p>You may have put one and one together here. What else in Wordpress writes files to disk? Oh yeah, that&#8217;s right: The uploads.</p>
+
+	<p>Currently, you have a Wordpress site that will survive reboots. So far so good. And if you write a post or a page, it will still be there too as it&#8217;s saved in the database. But the uploads aren&#8217;t &#8211; they&#8217;re just saved locally on disk. We need to change that.</p>
+
+	<p>Fortunately, there&#8217;s an AWS Service that&#8217;s perfect for this job. It&#8217;s called Elastic Filesystem and is essentially a big (really big actually) shared drive. We&#8217;re going to attach this to our web servers so that when one web server gets a file uploaded to it, it&#8217;ll stay there and be accessible by other web servers too.</p>
+
+	<p>We need to add the final piece (for now) to our architecture to make it look like this:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170116192700_architecture-with-efs.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170116192700_architecture-with-efs.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Elastic File System (EFS) is an interesting product: It lets you mount a shared drive. So far so good. The bit that&#8217;s interesting about it is how you provision and set it up.</p>
+
+	<p>With EFS you&#8217;re only billed for your usage, don&#8217;t have to pre-provision an amount of storage space and can upload up to 8 exabytes per volume to it. That&#8217;s a lot of cat pictures.</p>
+
+	<p>In fact, you could store multiple photos of every cat that has ever lived, ever, on one EFS drive. You probably don&#8217;t need 8 exabytes but you do need somewhere for your Wordpress uploads to live, so we&#8217;re going to set up a volume. Open the AWS Console and find EFS:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145519_40.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145519_40.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Choose the default VPC as before and make sure all of the availability zones are ticked, then hit next step.</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145525_41.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145525_41.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>The defaults on both the next screens are fine, just click next:</p></div>
+                        </div></div><div class="article__element img--full -image-image"><div class="site-container article__columns">
+                            <div class="article__column -image -left img--full js-in-view fade-up">
+                                <div class="img--responsive"><img ix-path="uploads/download/20170116200623_Screen%20Shot%202017-01-16%20at%2020.05.38.png" ix-params='{"auto":"format%2Ccompress","w":665,"h":665}' sizes="(min-width: 700px) 43vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/665/665/20170116200623_Screen%20Shot%202017-01-16%20at%2020.05.38.png" alt=""></noscript></div>
+                            </div>
+                            <div class="article__column -image -right img--full js-in-view fade-up">
+                                <div class="img--responsive"><img ix-path="uploads/download/20170116200706_Screen%20Shot%202017-01-16%20at%2020.05.47.png" ix-params='{"auto":"format%2Ccompress","w":665,"h":665}' sizes="(min-width: 700px) 43vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/665/665/20170116200706_Screen%20Shot%202017-01-16%20at%2020.05.47.png" alt=""></noscript></div>
+                            </div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Wait until the life cycle state is ready. It&#8217;ll say creating for a while before finally deciding it&#8217;s finished. You want to consider taking up a hobby such as knitting &#8211; anything devops-y involves some waiting around time.</p>
+
+	<p>Next we&#8217;re going to mount the volumes in the right place, which means a bit of configuration for Elastic Beanstalk as it&#8217;s not a service that EB supports from the Console (yet).</p>
+
+	<p>Amazon have <a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ebextensions.html">documentation</a> on the feature, called .ebextensions that we&#8217;re going to be using. I&#8217;ve provided a file to copy and drop into your project below if this sounds scary, otherwise read on for a brief explanation:</p>
+
+	<p>.ebextensions are more or less comparable to Chef scripts (or Ansible, Puppet, the other one etc.) and are essentially scripts that are run at certain points in an instance&#8217;s lifecycle.</p>
+
+	<p>We&#8217;re interested, in this case, in installing the NFS-client to mount the EFS volume and then to actually mount the volume.</p>
+
+	<p>Once the volume lifecycle is in a &#8220;Available&#8221; state, note the DNS name that you&#8217;ve been provided with:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145535_42.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145535_42.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>We&#8217;re going to drop this into another Elastic Beanstalk Environment Variable, called &#8220;EFS_NAME&#8221;:</p></div>
+                        </div></div><div class="article__element img--full -image"><div class="site-container img--full js-in-view fade-up">
+                            <div class="img-ratio-1370x900 full-width-image"><img ix-path="uploads/download/20170120145542_43.png" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/1370/900/20170120145542_43.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<p>Next we&#8217;re going to create a folder called .ebextensions in our project root and put the following file into it, called &#8220;efs.config&#8221;:<br />
+<pre>
+packages:
+  yum:
+    nfs-utils: []
+    jq: []
+files:
+  &quot;/tmp/mount-efs.sh&quot; :
+    mode: &quot;000755&quot;
+    content: |
+      #!/usr/bin/env bash
+      mkdir -p /mnt/efs
+      EFS_NAME=$(/opt/elasticbeanstalk/bin/get-config environment | jq -r &#39;.EFS_NAME&#39;)
+      mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2 $EFS_NAME:/ /mnt/efs || true
+      mkdir -p /mnt/efs/uploads
+      chown webapp:webapp /mnt/efs/uploads
+commands:
+  01_mount:
+    command: &quot;/tmp/mount-efs.sh&quot;
+container_commands:
+  01-rm-wp-content-uploads:
+    command: rm -rf /var/app/ondeck/wp-content/uploads
+  02-symlink-uploads:
+    command: ln -snf /mnt/efs/uploads /var/app/ondeck/wp-content/uploads
+</pre></p>
+
+	<p>This file causes Elastic Beanstalk to mount the EFS volume on /mnt/efs, remove the wp-content/uploads folder (if it exists) and symlink it to /mnt/efs/uploads so it persists and is shared between instances.</p>
+
+	<p>One last time, run <code>eb deploy</code> and you&#8217;re good to go.</p></div>
+                        </div></div><div class="article__element img--full -textarea"><div class="site-container -textarea textarea trim js-in-view fade-up">
+                            <div class="max-width-sm">	<h1>In Conclusion</h1>
+
+	<p>You now have a working, scalable, fault-tolerant Wordpress install running in Amazon Web Services.</p>
+
+	<p>You can add and remove servers, manage your database capacity separately to your web server capacity and have a persistent store for your Wordpress uploads folder.</p>
+
+	<p>There&#8217;s a few other topics that are related that we can look at covering off in a follow-up including Route 53 so you can get the site running on your own domain and CloudFront CDN (aka how to make your Wordpress site insanely fast) and how to actually make the site scale itself up and down automatically. Let us know in the comments if you&#8217;d like us to post a follow-up article on these!</p></div>
+                        </div></div></div>
+<div class="site-container">
+            <div class="news-view__baseline"></div>
+        </div>
+        <div class="news-share padding-ends-small js-news-share">
+            <div class="site-container js-in-view">
+                <div class="news-share__items js-share-info" data-title="How+to+Run+Scalable+Wordpress+on+AWS+%28Amazon+Web+Services%29+Tutorial">
+                    <div class="news-share__item caption fade-up">Share this</div>
+                    <div class="news-share__item fade-up fade-up-2">
+                        <a href="https://twitter.com/intent/tweet?text=How+to+Run+Scalable+Wordpress+on+AWS+%28Amazon+Web+Services%29+Tutorial&amp;url=http%3A%2F%2Fparall.ax%2Fblog%2Fview%2F3212%2Fhow-to-run-scalable-wordpress-on-aws-amazon-web-services-tutorial&amp;via=parallax" target="_blank" class="btn -primary js-share -twitter">Twitter</a>
+                    </div>
+                    <div class="news-share__item fade-up fade-up-3">
+                        <a href="https://www.facebook.com/dialog/share?app_id=430600850435986&amp;href=http%3A%2F%2Fparall.ax%2Fblog%2Fview%2F3212%2Fhow-to-run-scalable-wordpress-on-aws-amazon-web-services-tutorial&amp;redirect_uri=http%3A%2F%2Fparall.ax%2Fblog%2Fview%2F3212%2Fhow-to-run-scalable-wordpress-on-aws-amazon-web-services-tutorial" target="_blank" class="btn -primary js-share -facebook">Facebook</a>
+                    </div>
+                    <div class="news-share__item fade-up fade-up-4">
+                        <a href="https://plus.google.com/share?url=http%3A%2F%2Fparall.ax%2Fblog%2Fview%2F3212%2Fhow-to-run-scalable-wordpress-on-aws-amazon-web-services-tutorial" target="_blank" class="btn -primary js-share -google">Google +</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="site-container">
+        <div class="max-width-sm">
+            <div class="disqus js-in-view fade-up"></div>
+        </div>
+    </div>
+</article><section class="site-section padding-ends-medium" data-bg="cloud">
+        <div class="site-container">
+            <div class="js-grid cf"><div class="grid-item js-grid-item js-in-view fade-up grid-item--w1 grid-item--white"><a class="grid__inner js-grid-inner" href="../3251/parallax-shortlisted-for-awards-across-the-board.html">
+                <div class="grid__content">
+                        <div class="grid__body js-grid-body">
+
+                            <h2 class="grid__heading -featured js-grid-truncate">Parallax Shortlisted for Awards Across the Board</h2>
+                            <p class="js-grid-truncate">Parallax Agency Ltd has been shortlisted as contenders for both the Digital SME of the Year, for...</p>
+                        </div><div class="grid__network">News</div></div>
+            </a>
+        </div><div class="grid-item js-grid-item js-in-view fade-up grid-item--w1 grid-item--nimbus"><a class="grid__inner js-grid-inner" href="../3250/why-custom-built-websites-give-you-more-control.html">
+                <div class="grid__content">
+                        <div class="grid__body js-grid-body">
+
+                            <h2 class="grid__heading js-grid-truncate">Why Custom-Built Websites Give You More Control</h2>
+                            <p class="js-grid-truncate">Learn more about why custom-built websites can help increase your business visibility online thr...</p>
+                        </div><div class="grid__network">Development</div></div>
+            </a>
+        </div><div class="grid-item js-grid-item js-in-view fade-up grid-item--w1 grid-item--primary"><a class="grid__inner js-grid-inner" href="../3249/parallax-launches-new-website-for-edenyale.html">
+                <div class="grid__content">
+                        <div class="grid__body js-grid-body">
+
+                            <h2 class="grid__heading -featured js-grid-truncate">Parallax Launches New Website for edenYale</h2>
+                            <p class="js-grid-truncate">We&#8217;ve launchd a new website for edenYale, a company that specialises in assisting start-ups, age...</p>
+                        </div><div class="grid__network">News</div></div>
+            </a>
+        </div></div>
+        </div>
+    </section></main><footer class="site-section site-footer js-site-footer padding-top-medium js-in-view" data-offset="100" data-bg="dark">
+    <div class="site-container">
+        <div class="footer-item -address trim fade-up">
+            <h6 class="footer-item__title caption">Leeds HQ</h6>
+            <address class="footer-item__address echo">
+                The Old Brewery<br>
+                Leeds, LS2 7ES
+            </address>
+        </div>
+        <div class="footer-item -address trim fade-up fade-up-2">
+            <h6 class="footer-item__title caption">London</h6>
+            <address class="footer-item__address echo">
+                3rd Floor, 6 Duke Street<br>
+                London, W1U 3EN
+            </address>
+        </div>
+        <div class="footer-item -email fade-up fade-up-3">
+            <a href="mailto:info@parall.ax" class="footer-item__email echo">info@parall.ax</a>
+        </div>
+        <div class="footer-item -subscribe fade-up fade-up-4"><form action="https://createsend.com/t/r/s/ktjujkt/" method="post" class="subscribe js-subscribe" accept-charset="utf-8">
+    <label for="footer-subscribe-email" class="caption">Enter email to subscribe...</label>
+    <input type="email" name="cm-ktjujkt-ktjujkt" id="footer-subscribe-email" class="caption js-subscribe-input" required>
+    <button type="submit"><div><span class="sr-only">Submit</span></div></button>
+</form>
+</div>
+        <div class="caption footer-item footer-legal fade-up fade-up-5">
+            <span class="footer-legal__item">&copy; Parallax Agency Ltd 2018</span><span class="footer-legal__bull"></span><a href="../../../pages/privacy.html" class="footer-legal__item">Privacy</a><span class="footer-legal__bull"></span><a href="../../../pages/terms.html" class="footer-legal__item">Terms</a><span class="footer-legal__bull"></span><a href="../../../hub/digital-events-leeds.html" class="footer-legal__item">Leeds Digital Events</a>        </div>
+        <div class="footer-item footer-serverless fade-up fade-up-6">
+            <a href="https://serverless.com/partners/" target="_blank">
+                <img src="../../../parallax-2016/img/svg/serverless-partner-logo-1be2a27825.svg" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="big-squiggle"><div></div></div>
+</footer>
+</div>
+
+        <div class="gumshoe-offset js-gumshoe-offset"></div>
+
+                <script src="../../../parallax-2016/vendor/js/imgix-48f405e816.min.js"></script>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a2d6172b61","applicationID":"20305294","transactionName":"MVYGYRFRChBZVkxfDAgcJVYXWQsNF1tdQRA5UhZBClMIBksaTl8GEQ==","queueTime":0,"applicationTime":183,"atts":"HREFF1lLGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from parall.ax/blog/view/3212/how-to-run-scalable-wordpress-on-aws-amazon-web-services-tutorial by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 May 2018 14:00:07 GMT -->
+</html>

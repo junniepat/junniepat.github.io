@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+    
+<!-- Mirrored from parall.ax/blog/view/2958/staying-ahead-of-the-curve-agency-tips-from-parallax by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 May 2018 14:06:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><title>Staying Ahead of the Curve - Agency Tips From Parallax</title><meta name="description" content="Being ahead of the curve as an agency is crucial. To foresee changes in the industry is an essential part of working in the digital industries." /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><!--
+
+Expose CMS: The HTML5 Content Management System by Parallax (http://parall.ax/)
+
+Hostname:           i-05ea69a2a737953e0 
+Generated at:       15:05:01 16th May 2018 
+Took before render: 0.076 seconds (total time in request header)
+Site name:          parallax-2016 
+
+--><script type="text/javascript">
+	var base = '../../../index.html'; var siteName = 'parallax-2016';
+</script>
+
+<!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<![endif]--><meta name="viewport" content="width=device-width, initial-scale=1"><meta property="ix:host" content="parallax-test-2.imgix.net">
+
+        <link rel="stylesheet" href="../../../parallax-2016/css/main-9c216dab98.min.css">
+
+        <noscript><link rel="stylesheet" href="../../../parallax-2016/css/noscript-05209e7642.min.css"></noscript><link rel="apple-touch-icon" sizes="180x180" href="../../../parallax-2016/favicon/apple-touch-icon-3aaac0af91.png">
+<link rel="icon" type="image/png" href="../../../parallax-2016/favicon/favicon-32x32-da2b802f26.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../../parallax-2016/favicon/favicon-16x16-2a2ca012b7.png" sizes="16x16">
+<link rel="manifest" href="../../../parallax-2016/favicon/manifest-54ed18fe26.json">
+<link rel="mask-icon" href="../../../parallax-2016/favicon/safari-pinned-tab-74027db3b1.svg" color="#5bbad5">
+<meta name="apple-mobile-web-app-title" content="Parallax">
+<meta name="application-name" content="Parallax">
+<meta name="theme-color" content="#8b5cdd"><link rel="canonical" href="staying-ahead-of-the-curve-agency-tips-from-parallax.html">
+<meta property="fb:pages" content="147782594652">
+<meta property="og:site_name" content="Parallax"><meta property="og:title" content="Staying Ahead of the Curve - Agency Tips From Parallax - Parallax">
+<meta property="og:description" content="Being ahead of the curve as an agency is crucial. To foresee changes in the industry is an essential part of working in the digital industries."><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630"><meta property="og:image" content="https://parallax-test-2.imgix.net/uploads/crop_image/1200/630/20131002141114_Screen%20Shot%202013-10-02%20at%2014.10.16.png?w=1200&h=630&auto=compress&fm=jpg&fit=crop">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://parall.ax/blog/view/2958/staying-ahead-of-the-curve-agency-tips-from-parallax">
+<meta property="fb:app_id" content="144982749040802">
+<meta name="p:domain_verify" content="e96203ffc86d825cb753495877cb38b1">        
+
+<script type='application/ld+json'> 
+{
+  "@context" : "http://www.schema.org",
+  "@type" : "LocalBusiness",
+  "name" : "Parallax",
+  "url" : "https://parall.ax",
+  "logo" : "http://parall.ax/parallax-2016/img/og_image3-cbab644a4a.png",
+  "image" : "http://parall.ax/parallax-2016/img/og_image3-cbab644a4a.png",
+  "description" : "Parallax is a digital agency in Leeds and London. We design and build websites and apps, write engaging content, make bespoke software, get friendly with search engines and turn our hands to all kinds of design, development and digital marketing.",
+  "sameAs" : [
+    "https://www.facebook.com/helloparallax",
+    "https://twitter.com/parallax",
+    "https://plus.google.com/+ParallAxUK",
+    "https://www.linkedin.com/company/621871",
+    "https://www.google.co.uk/maps/place/Parallax/@53.794864,-1.5377157,15z/data=!4m5!3m4!1s0x0:0x60f00217c2b1bdc7!8m2!3d53.794864!4d-1.5377157"
+  ],
+  "address" : {
+    "@type" : "PostalAddress",
+    "streetAddress" : "Parallax",
+    "addressLocality" : "Leeds",
+    "addressRegion" : "West Yorkshire",
+    "postalCode" : "LS2 7ES",
+    "addressCountry" : "United Kingdom"
+  },
+  "geo" : {
+    "@type" : "GeoCoordinates",
+    "latitude" : "53.794866",
+    "longitude" : "-1.5382732"
+  },
+  "hasMap" : "https://goo.gl/maps/oStEguoLujM2",
+  "vatID" : "GB101340584",
+  "email" : "mailto:info@parall.ax",
+  "legalName" : "Parallax Agency Ltd",
+  "openingHours" : "Mo, Tu, We, Th, Fr 08:00-20:00",
+  "telephone" : "+441133226477",
+  "priceRange": "£££££"
+}
+ </script>
+
+
+<meta property="twitter:card" content="summary">
+<meta property="twitter:site" content="@parallax">
+<meta property="twitter:title" content="Staying Ahead of the Curve - Agency Tips From Parallax - Parallax">
+<meta property="twitter:description" content="Being ahead of the curve as an agency is crucial. To foresee changes in the industry is an essential part of working in the digital industries.">
+<meta property="twitter:image" content="https://parallax-test-2.imgix.net/uploads/crop_image/1200/630/20131002141114_Screen%20Shot%202013-10-02%20at%2014.10.16.png?w=1200&h=630&auto=compress&fm=jpg&fit=crop">
+<meta property="twitter:url" content="https://parall.ax/blog/view/2958/staying-ahead-of-the-curve-agency-tips-from-parallax"><style>.async-hide { opacity: 0 !important}</style>
+<script>
+    (function(a,s,y,n,c,h,i,d,e){
+        s.className+=' '+y;
+        h.start=1*new Date;
+        h.end=i=function(){
+            s.className=s.className.replace(RegExp(' ?'+y),'')
+        };
+        (a[n]=a[n]||[]).hide=h;
+        setTimeout(function(){
+            i();
+            h.end=null
+        },c);
+        h.timeout=c;
+    })(window,document.documentElement,'async-hide','dataLayer',4000, {'GTM-KGBSNR5':true});
+</script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42578255-1', 'auto');
+  ga('require', 'GTM-KGBSNR5');
+  // ga('send', 'pageview'); // Remove pageview call for GO
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N4JSFT');</script>
+<!-- End Google Tag Manager -->
+<script>!function(t){function e(n){if(i[n])return i[n].exports;var a=i[n]={exports:{},id:n,loaded:!1};return t[n].call(a.exports,a,a.exports,e),a.loaded=!0,a.exports}var i={};return e.m=t,e.c=i,e.p="",e(0)}([function(t,e,i){t.exports=i(1)},function(t,e){"use strict";!function(t,e){t.parallax={flickityLoaded:!1,ready:function(t){"loading"!==e.readyState?t():e.addEventListener?e.addEventListener("DOMContentLoaded",t):e.attachEvent("onreadystatechange",function(){"complete"===e.readyState&&t()})},windowWidth:function(){return t.innerWidth||e.documentElement.clientWidth||e.getElementsByTagName("body")[0].clientWidth},loadFlickity:function(){if(!this.flickityLoaded){var t=e.querySelector(".js-flick");t&&this.windowWidth()<700&&(this.flickityLoaded=!0,this.loadJS("../../../../cdnjs.cloudflare.com/ajax/libs/flickity/2.0.2/flickity.pkgd.min.js",function(){new Flickity(t,JSON.parse(t.getAttribute("data-options")))}))}},loadJS:function(t,i){var n=e.getElementsByTagName("script")[0],a=e.createElement("script");return a.src=t,a.async=!0,n.parentNode.insertBefore(a,n),i&&"function"==typeof i&&(a.onload=i),a},init:function(){var e=this;this.ready(function(){t.addEventListener("resize",e.loadFlickity.bind(e)),e.loadFlickity()})}},t.parallax.init()}(window,document)}]);
+            (function(p){
+                p.pageName = 'news_articles_view';
+                p.isAdmin = false;
+                p.prismUrl = '../../../parallax-2016/vendor/js/prism-231efd41d8.min.js';
+                p.jspdfScriptUrl = '../../../parallax-2016/js/jspdf-example-4f707e4ab3.min.js';
+                p.pUrl = '../../../parallax-2016/img/svg/p-92a6d51f97.svg';
+                p.heroImages = [
+                    ['/parallax-2016/img/hero-louis-f0add95782.jpg', 'left'],
+                    ['/parallax-2016/img/hero-jamie-bbf9483c3f.jpg', 'right'],
+                    ['/parallax-2016/img/hero-building-1a08082abe.jpg', 'bottom left']
+                ];
+            })(window.parallax);
+        </script>
+
+        <script src="../../../parallax-2016/js/main-fe0cd4ba4a.min.js" async defer></script>
+
+        <style>
+        .grid-lines {
+            position: fixed;
+            pointer-events: none;
+            z-index: 999999;
+            top: 0;
+            bottom: 0;
+            left: 10px;
+            right: 10px;
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+            background-size: 16.6666666% 100%;
+        }
+        .grid-lines.-hidden {
+            display: none;
+        }
+        @media (min-width: 950px) {
+            .grid-lines {
+                left: 80px;
+                right: 80px;
+            }
+        }
+        @media (min-width: 1200px) {
+            .grid-lines {
+                left: 160px;
+                right: 160px;
+            }
+        }
+        @media (min-width: 1800px) {
+            .grid-lines {
+                left: 240px;
+                right: 240px;
+            }
+        }
+        </style>
+    </head><body class="js-body landing body--news_articles_view body--white">
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4JSFT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+        <div class="grid-lines -hidden"></div>
+        <svg style="display:none;">
+            <symbol id="i-facebook" viewBox="0 0 800 800">
+                <path d="M445 643h-90V419h-75v-87h75v-64q0-55 32-86 30-29 80-29 28 0 67 3v78h-47q-42 0-42 38v60h86l-11 87h-75v224z"/>
+            </symbol>
+            <symbol id="i-twitter" viewBox="0 0 800 800">
+                <path d="M679 239s-21 34-55 57c7 156-107 329-314 329-103 0-169-50-169-50s81 17 163-45c-83-5-103-77-103-77s23 6 50-2c-93-23-89-110-89-110s23 14 50 14c-84-65-34-148-34-148s76 107 228 116c-22-121 117-177 188-101 37-6 71-27 71-27s-12 41-49 61c30-2 63-17 63-17z"/>
+            </symbol>
+            <symbol id="i-instagram" viewBox="0 0 800 800">
+                <path d="M150 400c0-119 0-166 42-208s88-42 208-42 166 0 208 42 42 89 42 208 0 166-42 208-88 42-208 42-166 0-208-42-42-89-42-208zm455 0c0-114 0-148-29-176-29-29-62-29-176-29s-148 0-176 29c-29 29-29 62-29 176s0 148 29 176c29 29 62 29 176 29s148 0 176-29c29-29 29-62 29-176zM400 272a128 128 0 1 1 0 256 128 128 0 0 1 0-256zm0 211c46 0 83-37 83-83s-37-83-83-83-83 37-83 83 37 83 83 83zm163-216c0 16-13 30-30 30-16 0-30-14-30-30 0-17 14-30 30-30 17 0 30 13 30 30z"/>
+            </symbol>
+            <symbol id="i-dribbble" viewBox="0 0 800 800">
+                <path d="M400 665c-146 0-265-119-265-265s119-265 265-265 265 119 265 265-119 265-265 265zm223-229s-69-22-140-9c30 81 43 161 43 161s82-49 97-152zM488 609s-15-90-48-172c-132 44-179 142-179 142s96 83 227 30zm-256-57c80-128 193-152 193-152s-12-27-19-39c-124 37-232 32-232 32s-8 87 58 159zm-54-198s102 2 210-28c-38-71-84-130-84-130-107 49-126 158-126 158zm169-174s50 65 85 134c84-31 118-83 118-83s-76-78-203-51zm102 167c6 11 20 44 20 44s64-11 157 7c0-85-51-141-51-141s-38 55-126 90z"/>
+            </symbol>
+        </svg><div id="body" class="expose-body">
+            <div class="loader-container">
+                <div class="loader">
+                    <canvas class="js-loader"></canvas>
+                </div>
+            </div>
+            <div class="bg-white"></div>
+            <div class="bg-primary"></div>
+            <div class="bg-dark"></div>
+            <div class="bg-nimbus"></div>
+            <div class="bg-cloud"></div>
+            <div class="bg-martinique"></div>
+            <div class="bg-shapes js-bg-shapes"></div>
+
+            <div class="site-section shapes js-shapes -hidden -invisible">
+                <div class="shapes__image js-shapes-image"></div>
+                <canvas class="shapes-canvas js-shapes-canvas"></canvas>
+            </div>
+
+            <div class="site-section shapes shapes--events js-shapes-events -hidden -invisible">
+                <div class="shapes__image js-shapes-image">
+                    <svg class="hero-shapes" viewbox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g class="hero-shape-group">
+        <defs>
+            <clippath id="hero-clip-path">
+                <rect class="hero-squiggle-mask" fill="none" height="16" width="82" x="1742" y="899.06"></rect>
+            </clippath>
+            <clippath id="hero-clip-path-2">
+                <rect class="hero-squiggle-mask" fill="none" height="16" width="82" x="393.28" y="24.92"></rect>
+            </clippath>
+        </defs>
+        <rect fill="#3b3355" height="1080" width="1920"></rect>
+        <g class="hero-shapes" data-svg-origin="960 540" opacity="0.5">
+            <ellipse class="hero-shape hero-disc" cx="1191.25" cy="959.91" data-svg-origin="1191 960" fill="#d1bef1" rx="19" ry="18.98"></ellipse>
+            <ellipse class="hero-shape hero-disc" cx="954.25" cy="339.91" data-svg-origin="954 340" fill="#d1bef1" rx="19" ry="18.98"></ellipse>
+            <ellipse class="hero-shape hero-disc" cx="1865.28" cy="768.92" data-svg-origin="1865 768" fill="#d1bef1" rx="9" ry="8.99"></ellipse>
+            <g class="hero-shape hero-squiggle-parent" data-svg-origin="1742 899">
+                <g clip-path="url(#hero-clip-path)">
+                    <path class="hero-squiggle" d="M1900.05,905.86c-1,1.19-1.54,1.76-2.66,1.76s-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09v3.74c1.13,0,1.66.57,2.66,1.76s2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76v-3.74C1902.66,902.76,1901.15,904.55,1900.05,905.86Z" fill="#d1bef1"></path>
+                </g>
+            </g>
+            <g class="hero-shape hero-squiggle-parent" data-svg-origin="393 25">
+                <g clip-path="url(#hero-clip-path-2)">
+                    <path class="hero-squiggle" d="M551.33,31.71c-1,1.19-1.54,1.76-2.66,1.76S547,32.9,546,31.71s-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76S367,32.9,366,31.71s-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09v3.74c1.13,0,1.66.57,2.66,1.76s2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76V28.62C553.94,28.62,552.43,30.41,551.33,31.71Z" fill="#d1bef1"></path>
+                </g>
+            </g>
+            <circle class="hero-shape hero-ring" cx="632.51" cy="734.88" fill="none" r="51.49" stroke="#8b5cdd" stroke-miterlimit="10" stroke-width="22"></circle>
+            <path class="hero-shape hero-arc" d="M249.91,987.64a59.2,59.2,0,0,1,45-109.51" fill="none" stroke="#d1bef1" stroke-miterlimit="10" stroke-width="23"></path>
+            <path class="hero-shape hero-arc" d="M109.31,721a21.08,21.08,0,0,1-16.25-38.91" fill="none" stroke="#d1bef1" stroke-miterlimit="10" stroke-width="12"></path>
+            <path class="hero-shape hero-arc" d="M1692.65,178.54A21.08,21.08,0,0,1,1719.55,211" fill="none" stroke="#d1bef1" stroke-miterlimit="10" stroke-width="12"></path>
+            <circle class="hero-shape hero-ring" cx="157.39" cy="579.44" fill="none" r="16.44" stroke="#8b5cdd" stroke-miterlimit="10" stroke-width="10"></circle>
+            <circle class="hero-shape hero-ring" cx="1723.19" cy="331.47" fill="none" r="16.44" stroke="#8b5cdd" stroke-miterlimit="10" stroke-width="10"></circle>
+            <line class="hero-shape hero-rect" fill="none" stroke="#8b5cdd" stroke-miterlimit="10" stroke-width="15" x1="1614.5" x2="1658.75" y1="1006.75" y2="1044"></line>
+            <line class="hero-shape hero-rect" fill="none" stroke="#8b5cdd" stroke-miterlimit="10" stroke-width="15" x1="632.51" x2="647.77" y1="22.92" y2="78.71"></line>
+        </g>
+    </g>
+</svg>
+
+                </div>
+            </div><header class="site-header js-site-header">
+    <a href="#main" class="caption sr-only skip-to-content js-no-hijack">Skip to content</a>
+    <a href="../../../index.html" class="site-logo js-site-logo"><svg viewBox="0 0 317.8 46.8" class="js-logo"><path d="M188.3 29V0h-5.9v29c0 9.6 7.8 17.3 17.3 17.3v-5.9c-6.3 0-11.4-5.1-11.4-11.4zm26.4 0V0h-5.9v29c0 9.6 7.8 17.3 17.3 17.3v-5.9c-6.3 0-11.4-5.1-11.4-11.4zM17.3.2C7.8.2 0 7.9 0 17.5v28.7h5.9c0-6.3 5.2-11.4 11.4-11.4 9.5 0 17.3-7.8 17.3-17.3C34.6 7.9 26.9.2 17.3.2zm0 28.6c-4.3 0-8.3 1.7-11.4 4.3V17.5c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.1 11.4 11.4 0 6.2-5.1 11.3-11.4 11.3zM61.4.2C51.8.2 44 8 44 17.5v29h6v-.2C50 40.1 55.1 35 61.4 35s11.4 5.1 11.4 11.4v.2h5.9v-29C78.7 8 70.9.2 61.4.2zm0 28.8C57 29 53 30.7 50 33.3V17.5c0-6.3 5.1-11.4 11.4-11.4s11.4 5.1 11.4 11.4v15.8c-3.1-2.6-7.1-4.3-11.4-4.3zM153.1.2c-9.5 0-17.3 7.8-17.3 17.3v29h5.9v-.2c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.1 11.4 11.4v.2h5.9v-29C170.4 8 162.6.2 153.1.2zm0 28.8c-4.4 0-8.3 1.6-11.4 4.3V17.5c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.1 11.4 11.4v15.8c-3.1-2.6-7.1-4.3-11.4-4.3zM254 .2c-9.5 0-17.3 7.8-17.3 17.3v29h5.9v-.2c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.1 11.4 11.4v.2h5.9v-29C271.4 8 263.6.2 254 .2zm0 28.8c-4.4 0-8.3 1.6-11.4 4.3V17.5c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.1 11.4 11.4v15.8c-3-2.6-7-4.3-11.4-4.3zm63.8-19.7V.6h-5.9v8.7c0 6.3-5.1 11.4-11.4 11.4-6.3 0-11.4-5.1-11.4-11.4V.6h-5.9v8.7c0 6 3 11.2 7.6 14.4-4.6 3.1-7.6 8.4-7.6 14.4v8.8h5.9V38c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.1 11.4 11.4v8.8h5.9V38c0-6-3-11.2-7.6-14.4 4.6-3.1 7.6-8.4 7.6-14.3zM117.2 32.2c4.6-3.2 7.6-8.5 7.6-14.5C124.8 8 117 .2 107.4.2 97.9.2 90.1 8 90.1 17.5v29h6c0-6.3 5.1-11.4 11.4-11.4h.2c6.2.1 11.2 5.1 11.2 11.4h5.9c0-5.9-3-11.2-7.6-14.3zm-21.1 1.4V17.5c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.2 11.4 11.6 0 6.3-5.1 11.5-11.4 11.5v.1c-4.4-.1-8.4 1.6-11.4 4.3z" fill="#FFF"/></svg></a>
+    <nav class="site-nav js-site-nav">
+        <a href="#site-nav" class="nav-toggle js-nav-toggle js-no-hijack"><span class="sr-only">Menu</span><span></span></a>
+        <ul class="site-nav__list js-site-nav-list">
+            <li class="site-nav__item">
+                <a href="../../../work.html" class="site-nav__link" data-path="/work"><span>Work</span></a>
+            </li><!--
+            --><li class="site-nav__item">
+                <a href="../../../expertise.html" class="site-nav__link" data-path="/expertise"><span>Expertise</span></a>
+            </li><!--
+            --><li class="site-nav__item">
+                <a href="../../../about.html" class="site-nav__link" data-path="/about"><span>About</span></a>
+            </li><!--
+            --><li class="site-nav__item">
+                <a href="../../../blog.html" class="site-nav__link -current" data-path="/blog"><span>Blog</span></a>
+            </li><!--
+            --><li class="site-nav__item">
+                <a href="../../../products.html" class="site-nav__link" data-path="/products"><span>Products</span></a>
+            </li><!--
+            --><li class="site-nav__item">
+                <a data-path="/careers" href="../../../careers.html" class="site-nav__link"><span>
+                    Careers<span class="site-nav__number">6</span></span></a>
+            </li><!--
+            --><li class="site-nav__item">
+                <a href="../../../hub/digital-events-leeds.html" class="site-nav__link" data-path="/hub/digital-events-leeds"><span>Events</span></a>
+            </li><!--
+            --><li class="site-nav__item -contact">
+                <a href="../../../contact.html" class="site-nav__link -contact -visible js-contact-open js-no-hijack"><span>Contact</span></a>
+            </li>
+            <li aria-hidden="true" class="site-nav__squiggle">
+                <div class="big-squiggle"><div></div></div>
+            </li>
+        </ul>
+    </nav><section class="split-modal split-modal--contact js-contact"><button type="button" class="font-secondary site-nav__link -close js-contact-close"><span>Close</span></button><div class="site-container split-modal-inner">
+    <div class="split-modal-col split-modal-col--left"><div class="trim">
+        <p class="font-tertiary color-primary delta">We’d love to hear from you! Send us a message using the form opposite, or <a href="mailto:info@parall.ax" class="textlink">email us.</a></p>
+
+        <div class="split-modal-info trim">
+            <div class="split-modal-info__col trim">
+                <p class="caption split-modal-info__heading">Leeds (HQ)</p>
+                <address>The Old Brewery,<br>Leeds, LS2 7ES</address>
+                <a href="tel:+441133226477">+44 (0) 113 322 6477</a>
+            </div><!--
+            --><div class="split-modal-info__col trim">
+                <p class="caption split-modal-info__heading">London</p>
+                <address>3rd Floor<br>6 Duke Street<br>Marylebone<br>London, W1U 3EN</address>
+                <a href="tel:+441133226477">+44 (0) 113 322 6477</a>
+            </div><!--
+            --><div class="split-modal-info__col trim">
+                <p class="caption split-modal-info__heading">Say hello</p>
+                <p class="m-b-0"><a href="mailto:info@parall.ax" class="textlink">info@parall.ax</a></p>
+            </div><!--
+            --><div class="split-modal-info__col trim">
+                <a href="https://parallax.typeform.com/to/CzyHou?from=website" class="btn">Send us a brief</a>
+            </div>
+        </div>
+    </div></div>
+    <div class="split-modal-col split-modal-col--right padding-ends-medium"><div><form action="https://parall.ax/contact" class="site-form site-form--light js-form" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div><div class="inputs js-inputs"><div class="input text"><label for="ContactName">Name*</label><input name="data[Contact][name]" type="text" id="ContactName" /></div><div class="input text"><label for="ContactEmail">Email address*</label><input name="data[Contact][email]" type="text" id="ContactEmail" /></div><div class="input text"><label for="ContactTelephone">Telephone</label><input name="data[Contact][telephone]" type="text" id="ContactTelephone" /></div><div class="input textarea"><label for="ContactMessage">Your message*</label><textarea name="data[Contact][message]" rows="1" cols="30" id="ContactMessage" ></textarea></div><div class="input piege-a-miel"><label for="ContactCompany">If you're human, leave this blank:</label><input name="data[Contact][company]" type="text" id="ContactCompany" /></div></div><div class="submit"><input class="btn -white js-send-btn" type="submit" value="Send." /></div></form></div></div>
+</div>
+<div class="big-squiggle"><div></div></div></section><a href="mailto:info@parall.ax" class="flip-btn flip-btn--auto js-site-email site-header__email"><span>info@parall.ax</span></a>
+
+    <ul class="header-social social-icons social-icons--v js-social-icons">
+        <li>
+            <a href="https://www.facebook.com/helloparallax" class="social-icon js-social-icon" target="_blank">
+                <svg class="social-icon__icon"><use xlink:href="#i-facebook" /></svg>
+                <svg viewBox="0 0 200 200" class="social-icon__ring js-ring"><circle cx="100" cy="100" r="90" /></svg>
+            </a>
+        </li><!--
+        --><li>
+            <a href="https://twitter.com/parallax" class="social-icon js-social-icon" target="_blank">
+                <svg class="social-icon__icon"><use xlink:href="#i-twitter" /></svg>
+                <svg viewBox="0 0 200 200" class="social-icon__ring js-ring"><circle cx="100" cy="100" r="90" /></svg>
+            </a>
+        </li><!--
+        --><li>
+            <a href="https://www.instagram.com/parall.ax/" class="social-icon js-social-icon" target="_blank">
+                <svg class="social-icon__icon"><use xlink:href="#i-instagram" /></svg>
+                <svg viewBox="0 0 200 200" class="social-icon__ring js-ring"><circle cx="100" cy="100" r="90" /></svg>
+            </a>
+        </li><!--
+        --><li>
+            <a href="https://dribbble.com/parallax" class="social-icon js-social-icon" target="_blank">
+                <svg class="social-icon__icon"><use xlink:href="#i-dribbble" /></svg>
+                <svg viewBox="0 0 200 200" class="social-icon__ring js-ring"><circle cx="100" cy="100" r="90" /></svg>
+            </a>
+        </li>
+    </ul>
+</header>
+<main class="site-main js-site-main" id="main"><article data-bg="white">
+    <div class="progress-bar progress-bar--horizontal js-progress-bar-container" aria-hidden="true">
+        <div class="js-progress-bar"></div>
+    </div>
+    <header class="site-section hero -light padding-ends-hero js-first-content">
+        <div class="site-container -max-width-small trim">
+            <div class="hero__pretitle caption -primary"><span>By Alex Peters • <time datetime="2013-10-04T00:00:00">on 4/10/13</time></span></div>
+            <h1 class="hero__title bravo js-title">Staying Ahead of the Curve - Agency Tips From Parallax</h1>
+            <div class="site-section__squiggle">
+    <div class="site-section__squiggle-icon"></div>
+</div>
+        </div>
+    </header>
+    <section class="site-section news-view article js-article"><div class="line line--first js-line"></div><div class="article__element img--full -image">
+                <div class="site-container img--full">
+                    <div class="img-ratio-1370x900 full-width-image fade-up-image js-fade-image"><img ix-path="uploads/download/20131004152123_DSC_6244-Edit.jpg" ix-params='{"auto":"format%2Ccompress","w":1370,"h":900}' sizes="(min-width: 768px) 86vw, 100vw" alt="digital agency leeds"><noscript><img src="../../../uploads/crop_image/1370/900/20131004152123_DSC_6244-Edit.jpg" alt="digital agency leeds"></noscript></div>
+                </div>
+            </div><div class="article__element img--full -textarea">
+            <div class="site-container -textarea textarea">
+                <div class="max-width-sm">	<p><a name="top">Staying ahead of the curve to foresee changes in the industry is an essential part of working for a <a href="../../../index.html">digital agency</a>. Things move pretty fast in the digital world, blink and you’ll miss it.</a></p>
+
+	<p>Keeping an eye out for the trends that may be signalling a change on the horizon is a crucial part of our process and the management of the work that we do for our clients.</p>
+
+	<p>As an agency in one of the largest digital pockets of the UK, we thrive on being ahead of what is to come to ensure our work remains cutting edge. From design to development and from content marketing to project management, we keep our ears to the ground.</p>
+
+	<h2>Ahead Of The Curve </h2>
+
+	<p>There’s a global community online creating and developing concepts to better our use of digital and make the web a better place. Inhouse as an innovative agency, we like to contribute in our own way too. </p>
+
+	<p>We have monthly hack days when we take a day to work on different initiatives away from our day to day projects. We’ve contributed an open source tool <a href="../../../products/jspdf.html">jsPDF</a> as well as working on innovative industry changing <a href="../../../products/expose.html">products</a> and ideas to not only stay ahead of the curve, but to be part of it.</p>
+
+	<h2>Shaping The Curve</h2>
+
+	<p>As a <a href="../../../index.html">digital agency</a>, we aim to be leaders in the development and creative process of how users experience the web and how we can help others in the industry create better websites and better online experiences.</p>
+
+	<p>With new resources available, the web has become more and more about the user’s experience. Done correctly and well thought out, a more succinct experience will see higher conversion rates with more online sales and leads generated. We’re constantly trialling new software and new ideas to stay ahead of the game; contributing to the global online community at every opportunity is an important part of this. Our blog includes tutorials and insights into new ways of thinking and solving digital problems. </p>
+
+	<p>There are always problems and trends that emerge working in the digital sector so we took a cross section of our team to took a look ahead at what anyone involved in digital should keep an eye on.</p>
+
+	<h2>Curveballs </h2>
+
+	<p>Some of the team here at Parallax have put together a few ‘curveballs’ that we foresee for 2014 as a digital agency, alongside the pieces of software, web tools and trends that we think will emerge.</p>
+
+	<p>Jump to the section of your specialty or interest: </p>
+
+	<p><a href="#danny">Front End Development &#8211; Optimising website for Television</a><br />
+<a href="#jamie">Digital Design &#8211; Fresh Design</a><br />
+<a href="#robin">Content Strategy &#8211; Organising Campaigns</a><br />
+<a href="#dario"> Account Direction &#8211; Business Development</a><br />
+<a href="#alex">Digital Marketing &#8211; Google&#8217;s &#8216;Better Web&#8217;</a><br />
+<a href="#tom">Project Management &#8211; Scope Creep</a><br />
+<a href="#jack">Back End Development &#8211; MV* Frameworks</a></p>
+
+</div>
+            </div>
+        </div><div class="article__elements js-article-elements"><div class="article__element img--full -image-text"><div class="site-container article__columns">
+                            <div class="article__column -image -left js-in-view fade-up img--responsive"><img ix-path="uploads/download/20131003143902_page.png" ix-params='{"auto":"format%2Ccompress","w":665,"h":665}' sizes="(min-width: 700px) 43vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/665/665/20131003143902_page.png" alt=""></noscript></div>
+                            <div class="article__column -text -right textarea trim js-in-view fade-up">	<p><a name="danny"><h2>Curveball #1 &#8211; Optimising websites for Television</h2></a></p>
+
+	<h3>Danny Le Page, Front End Developer</h3>
+
+	<p>Back in 2010 <a href="http://www.princeton.edu/~mlovett/reference/A List Apart-Articles-Responsive Web Design.pdf">Ethan Marcotte</a>  introduced the term ‘responsive web design’ to the tech community. Since then, the concept of developing websites which adapt to an ever-growing number of device sizes has amassed significant media attention and unsurprisingly, a whole host of developers and designers who practice the responsive web design to enhance user experience in their work.</p>
+
+	<p>The approach is now arguably ingrained as part of the professional web environment and its usage is ever increasing; so where next?</p>
+
+	<p>Although the emergence of handheld devices has unquestionably been the instigator to responsive web designs’ success, the rise in Smart TVs means the viewing of web sites in a wholly different setting.</p>
+
+	<p>Optimising websites for TVs adds a certain amount of complexity to user interface design and in turn, the development process itself (aside from exploring different user peripheral capabilities aside!). Despite being initially similar to the desktop screen, there are a number of key differences that need to be considered between TVs and their smaller screen counterparts.</p>
+
+	<p>For example, the distance from user to device will naturally be much greater than anything that we have developed on the web before. This increases the need for a lot of components to be bigger &#8211; think fonts, icons, links, imagery, pretty much everything needs to be made larger to accommodate for the extra viewing distance. Colour contrast also need to be thought through as well as user-navigation, not forgetting textual inputs. In fact, a whole plethora of web components need to be reconsidered and redefined for TV.</p>
+
+	<h3>Recommendations: </h3>
+
+	<p>Despite being in its infancy, TV website design has already attracted style-guides from the likes of Google, Opera and the BBC to help aid the webTV development process. Samsung has a <a href="http://ux.stackexchange.com/questions/16734/how-to-adapt-your-website-for-tv-browsers">development guide</a> on how to interact with their APIs. It’s clear that the resources are out there to delved into and explored.</p>
+
+	<p>Whether the jump from desktop to TV however will be too large to encompass in one singular site is still up for debate, however when 3rd parties release libraries and APIs to hook into the difficulty of webTV, development will slowly begin to subside and may open the gap for such possibilities.</p>
+
+	<h3>How it will keep you ahead of the curve:</h3>
+
+	<p>Keeping up to date with style-guides and academic studies (heuristic evaluations etc.) will help developers and designers grow into webTV rather than playing catch-up on the other side.</p>
+
+	<p><a href="#top">Back to top</a></p></div>
+                        </div></div><div class="article__element img--full -text-image"><div class="site-container article__columns">
+                            <div class="article__column -text -left textarea trim js-in-view fade-up">	<p><a name="Jamie"><h2>Curveball #2 &#8211; Fresh Design</h2></a></p>
+
+	<h3>Jamie Webster, Digital Designer </h3>
+
+	<p>When working in an ever-changing industry, being at the top of your game is important so your design style reflects what’s current. Design can look dated very quickly so its important to stay at the forefront of your craft.</p>
+
+	<h3>Recommendations: </h3>
+
+	<p>Keep up-to date with design trends. What the ‘big brands’ are doing are not always best practises, often they’re not on the cutting edge of design. Visit web design galleries such as Awwwards and Web Design Served for inspiration. Don’t be afraid to try new techniques, try not to do the same thing on each project. Have an understanding of the technical workings behind what you do. Read and watch video tutorials. Make sure you’re using the most current version of whatever design software you use. </p>
+
+	<h3>How it will keep you ahead of the curve:</h3>
+
+	<p>Bettering yourself as a designer should be natural and will come with time. If you have the technical knowledge and refresh your design style to fit what’s happening in the digital world you’ll be able to adapt to any project easily. It will also keep your work interesting!</p>
+
+	<p><a href="#top">Back to top</a></p></div>
+                            <div class="article__column -image -right js-in-view fade-up img--responsive"><img ix-path="uploads/download/20131003144049_webster.png" ix-params='{"auto":"format%2Ccompress","w":665,"h":665}' sizes="(min-width: 700px) 43vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/665/665/20131003144049_webster.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -image-text"><div class="site-container article__columns">
+                            <div class="article__column -image -left js-in-view fade-up img--responsive"><img ix-path="uploads/download/20140929153829_picture-67.jpg" ix-params='{"auto":"format%2Ccompress","w":665,"h":665}' sizes="(min-width: 700px) 43vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/665/665/20140929153829_picture-67.jpg" alt=""></noscript></div>
+                            <div class="article__column -text -right textarea trim js-in-view fade-up">	<p><a name="robin"><h2>Curveball #3 &#8211; Organising Content</h2></a></p>
+
+	<h3>Robin Swire, Content Manager </h3>
+
+	<p>When running a content marketing campaign, it can often become incredibly overwhelming very quickly. </p>
+
+	<p>With multiple articles needing to be written for internal blogs and outreach, design work, and social media, things can easily be forgotten or fall behind schedule.</p>
+
+	<p>Not only that, gathering feedback from colleagues or clients, distribution channels, and tracking the results of each part of the campaign can become very confusing. Finding a straightforward way to manage the campaign is absolutely essential!</p>
+
+	<h3>Recommendations: </h3>
+
+	<p>Get yourself organised with a content calendar. Whether you choose to use some of the amazing pieces of software available to you online such as Divvy HQ and Relaborate, or whether you decide to stick with a trusty Excel spreadsheet, effectively planning every piece of your content will help to ensure that the whole campaign is a success.</p>
+
+	<h3>How it will keep you ahead of the curve:</h3>
+
+	<p>With a content calendar, you can plan out all of your content by date allowing you to effectively manage the campaign. Use it to write tentative titles for your content, assign who is responsible, when it needs to be delivered by, and where it is being distributed.</p>
+
+	<p>Keeping it organised like this is also a great way to plan for contingency. If a piece of content is running behind schedule, move it back a week and move another piece forward. If something unexpected pops up that you need to deliver immediately, no problem, just move some of your dates around and you’re still keeping track of everything.</p>
+
+	<p>Using a content calendar, you’ll turn your content marketing campaigns into slick, well oiled machines. Here at <a href="../../../index.html">Parallax</a>, we couldn’t live without them!</p>
+
+	<p><a href="#top">Back to top</a></p></div>
+                        </div></div><div class="article__element img--full -text-image"><div class="site-container article__columns">
+                            <div class="article__column -text -left textarea trim js-in-view fade-up">	<p><a name="dario"><h2>Curveball #4 &#8211; Business Development</h2></a></p>
+
+	<h3>Dario Grandich, Account Director</h3>
+
+	<p>Organisations don’t spend enough time planning or thinking about how to do things better. It’s so important to carefully plan a route to success. From establishing clear strategic goals and user research, to deciding on functionality and a marketing approach, it’s super important to get everything right from the start.</p>
+
+	<h3>Recommendations: </h3>
+
+	<p>There are so many products and tools that can help organisations do better online. I’ve chosen three that can really help organisations do better. </p>
+
+	<p>1) <strong>Facebook Pages</strong> &#8211; If you have one then it’s a great tool to learn about your audience demographic. The Facebook insights pages will tell you how old your audience is, their gender and where they&#8217;re located. Using these insights you can create personas which are important to plan effective campaigns and build better websites.</p>
+
+	<p>2) <strong>Google Analytics</strong> &#8211; If you have a website with years of analytics information then you’ve got a wealth of data at your disposal to help you improve. Look at usage behaviour from mobile devices, desktop resolutions and browser versions. See what content gets high engagement and the content that gets ignored. Look at creating some conversion goals for the key call to actions and track these over time. Do they change? If so try to establish why – did you do more marketing or did you alter your content? Constantly tweak and test to improve.</p>
+
+	<p>3) <strong>Stripe</strong> &#8211; You’re in business to make money so maybe it’s time to start taking payments online. <a href="https://stripe.com/gb">Stripe</a>, which only launched in the UK a few months ago offers an excellent way to collect revenue from your online channels. From one-off card transactions to recurring payments and quick refunds; it really does it all. Stripe’s fees are straightforward, the interface is easy to understand and integration is much friendlier than most payment processors as there’s no need to build PCI compliance into your website. We’ve used it on a few projects so far and it’s given our clients fantastic results and a healthy ROI.</p>
+
+	<h3>How it will keep you ahead of the curve:</h3>
+
+	<p>Lots of thinking combined with careful planning and research will lead to success. If you don’t have time to do that, then find an agency (like us) that will do the hard work for you.</p>
+
+	<p><a href="#top">Back to top</a></p></div>
+                            <div class="article__column -image -right js-in-view fade-up img--responsive"><img ix-path="uploads/download/20131003144232_grandich.png" ix-params='{"auto":"format%2Ccompress","w":665,"h":665}' sizes="(min-width: 700px) 43vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/665/665/20131003144232_grandich.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -image-text"><div class="site-container article__columns">
+                            <div class="article__column -image -left js-in-view fade-up img--responsive"><img ix-path="uploads/download/20131003143645_peters.png" ix-params='{"auto":"format%2Ccompress","w":665,"h":665}' sizes="(min-width: 700px) 43vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/665/665/20131003143645_peters.png" alt=""></noscript></div>
+                            <div class="article__column -text -right textarea trim js-in-view fade-up">	<p><a name="alex"><h2>Curveball #5 &#8211; Google&#8217;s &#8216;Better Web&#8217;</h2></a></p>
+
+	<h3>Alex Peters, Marketing Executive</h3>
+
+	<p>Staying fresh in the digital marketing world can be difficult. This is particularly pertinent with SEO, an ever changing industry. Keeping ideas on brand yet also interesting, and more importantly engaging enough to gain exposure online is going to become particularly interesting moving into 2014; especially as we see Google’s subtle algorithm updates become more and more frequent as they seek to perfect the search experience.</p>
+
+	<h3>Recommendations: </h3>
+
+	<p>Read, research, and keep learning. Find out how content is being created in different ways. What digital trends are there in terms of design and development? How can you apply these to your content marketing campaigns? Keep ahead with the design of the web &#8211; as compelling as your content may be, executing this in the best way possible is incredibly important.</p>
+
+	<p>After all, we are conscious of our web presence and what we share is a personal reflection of us. We want to share interesting and cool things with our friends and colleagues &#8211; we won’t share interesting content if it looks dull.</p>
+
+	<p>Working in SEO, I&#8217;m constantly finding fantastic blogs and none more so than those over at <a href="http://moz.com/blog">Moz</a> and Econsultancy who offer cutting edge advice as news breaks to the digital world. Of course you can also find out what&#8217;s going on in the search marketing world on our <a href="../../../blog.html">blog.</a></p>
+
+	<h3>How it will keep you ahead of the curve:</h3>
+
+	<p>Google is wanting a ‘better web’ &#8211; this is a place where good content gets rewarded. This gets results and also means that we will see more and more investment by businesses (big and small) in content creation, in order to gain exposure and increase domain authority to get the keyword rankings they crave. </p>
+
+	<p>Understanding this is important as it should be at the heart of your online marketing objectives. Outstanding content that provides value for people will lead to brand exposure and great keyword rankings. </p>
+
+	<p>The sooner large organisations realise, the sooner they will be able to keep ahead of the curve and see a long term return. Content creation, but specifically interactive content for SEO will become even more significant and popular in 2014. </p>
+
+	<p><a href="#top">Back to top</a></p></div>
+                        </div></div><div class="article__element img--full -text-image"><div class="site-container article__columns">
+                            <div class="article__column -text -left textarea trim js-in-view fade-up">	<p><a name="tom"><h2>Curveball #6 &#8211; Scope Creep </h2></a></p>
+
+	<h3>Tom Faller, Project Manager</h3>
+
+	<p>Clients sometimes request functionality that may not have been entirely thought through. They may have seen it used well elsewhere, but it might not be relevant in the context of their business. Staying on top of this and prioritising the correct functionality is key.</p>
+
+	<h3>Recommendations:</h3>
+
+	<p>T-shirt sizing is a great model for ensuring both the agency and client are happy. By classifying each desired feature&#8217;s size relative to other website features as Small, Medium, Large or Extra Large, it&#8217;s easy to keep control over the project. For example, something that may have a small impact to business value but have a large development cost is probably not considering initially.</p>
+
+	<h3>How it will keep you ahead of the curve:</h3>
+
+	<p>By listing pieces of functionality, attaching cost, time and importance values to them, you can make it clear to clients which pieces of functionality are ‘quick wins’ and which pieces of functionality can be dropped (either for a later build, or completely).</p>
+
+	<p><a href="#top">Back to top</a></p></div>
+                            <div class="article__column -image -right js-in-view fade-up img--responsive"><img ix-path="uploads/download/20131003143227_faller.png" ix-params='{"auto":"format%2Ccompress","w":665,"h":665}' sizes="(min-width: 700px) 43vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/665/665/20131003143227_faller.png" alt=""></noscript></div>
+                        </div></div><div class="article__element img--full -image-text"><div class="site-container article__columns">
+                            <div class="article__column -image -left js-in-view fade-up img--responsive"><img ix-path="uploads/download/20131003144547_roscoe.png" ix-params='{"auto":"format%2Ccompress","w":665,"h":665}' sizes="(min-width: 700px) 43vw, 100vw" alt=""><noscript><img src="../../../uploads/crop_image/665/665/20131003144547_roscoe.png" alt=""></noscript></div>
+                            <div class="article__column -text -right textarea trim js-in-view fade-up">	<p><a name="jack"><h2>Curveball #7 &#8211; JavaScript MV* Frameworks</h2></a></p>
+
+	<h3>Jack Roscoe, Back End Developer </h3>
+
+	<p>It’s incredibly rare that any monumental changes occur in the realms of back end development. We’re not likely to see anything come in that will top the adoption of MVC for example (although you never know), but small and gradual changes in the way we’re using back end technologies are happening all around us. Most notably, the recent shift in data processing from the back end to the front end.</p>
+
+	<p>JavaScript frameworks are becoming more powerful than ever, with free resources available such as Backbone, Knockout, Ember, Angular, amongst others. Using libraries like these, developers are trimming down their server side processes to only carry out basic CRUD commands, all the while feeding their data into their JavaScript framework often in JSON format allowing them to work with the data primarily on the front end.</p>
+
+	<p>The shift in data handling is only going to increase in popularity as the browsers become more powerful and the JavaScript frameworks continue to improve. Of course, it’s not a solution to fit every case (things rarely are) but for many people it’s an appealing option.</p>
+
+	<h3>Recommendations: </h3>
+
+	<p>If you’re new to the various JavaScript MV* frameworks available, your best bet is to just start playing around. There are some great free learning resources available for the most popular frameworks; Knockout, Backbone and Angular. Undertake a quick search and you should find what you’re looking for.</p>
+
+	<p><a href="http://todomvc.com/">TodoMVC</a> offers open source code for a simple ToDo application written in all of the major frameworks. It’s worth taking a look at a few source code examples here to see what the different frameworks are capable of.</p>
+
+	<p>One last thing is to keep an eye out for sites that use these frameworks. If you find one, take a look at their source code and see how they do it (this is one thing you wouldn&#8217;t be able to do with server side code). Try to find out how much of the processing takes place on the front end. How much of this work would ordinarily have been done server side?</p>
+
+	<h3>How it will keep you ahead of the curve:</h3>
+
+	<p>Naturally, it’s always a benefit to know what your peers and competitors are doing. On top of this, there are a number of direct benefits. For example, depending on your usual back end language(s) of choice, moving your MVC stack to the front end can make the debugging process easier thanks to inbuilt browser tools such as Chrome DevTools and Firebug. Other benefits can include easier to maintain code, and the fact that less focus on your back end language of choice makes it easier for other developers to get up to speed with and maintain your code regardless of their server side experience.</p>
+
+	<p><a href="#top">Back to top</a></p>
+
+	<p>We hope you find our recommendations for 2014 useful and that they will help you stay ahead of the curve! You can read more <a href="../../../blog.html">agency advice on our blog.</a></p>
+
+	<p>If you have any suggestions to add to our list, let us know on <a href="http://twitter.com/helloparallax">Twitter</a> or <a href="http://facebook.com/helloparallax">Facebook.</a></p></div>
+                        </div></div></div>
+<div class="site-container">
+            <div class="news-view__baseline"></div>
+        </div>
+        <div class="news-share padding-ends-small js-news-share">
+            <div class="site-container js-in-view">
+                <div class="news-share__items js-share-info" data-title="Staying+Ahead+of+the+Curve+-+Agency+Tips+From+Parallax">
+                    <div class="news-share__item caption fade-up">Share this</div>
+                    <div class="news-share__item fade-up fade-up-2">
+                        <a href="https://twitter.com/intent/tweet?text=Staying+Ahead+of+the+Curve+-+Agency+Tips+From+Parallax&amp;url=http%3A%2F%2Fparall.ax%2Fblog%2Fview%2F2958%2Fstaying-ahead-of-the-curve-agency-tips-from-parallax&amp;via=parallax" target="_blank" class="btn -primary js-share -twitter">Twitter</a>
+                    </div>
+                    <div class="news-share__item fade-up fade-up-3">
+                        <a href="https://www.facebook.com/dialog/share?app_id=430600850435986&amp;href=http%3A%2F%2Fparall.ax%2Fblog%2Fview%2F2958%2Fstaying-ahead-of-the-curve-agency-tips-from-parallax&amp;redirect_uri=http%3A%2F%2Fparall.ax%2Fblog%2Fview%2F2958%2Fstaying-ahead-of-the-curve-agency-tips-from-parallax" target="_blank" class="btn -primary js-share -facebook">Facebook</a>
+                    </div>
+                    <div class="news-share__item fade-up fade-up-4">
+                        <a href="https://plus.google.com/share?url=http%3A%2F%2Fparall.ax%2Fblog%2Fview%2F2958%2Fstaying-ahead-of-the-curve-agency-tips-from-parallax" target="_blank" class="btn -primary js-share -google">Google +</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="site-container">
+        <div class="max-width-sm">
+            <div class="disqus js-in-view fade-up"></div>
+        </div>
+    </div>
+</article><section class="site-section padding-ends-medium" data-bg="cloud">
+        <div class="site-container">
+            <div class="js-grid cf"><div class="grid-item js-grid-item js-in-view fade-up grid-item--w1 grid-item--white"><a class="grid__inner js-grid-inner" href="../3251/parallax-shortlisted-for-awards-across-the-board.html">
+                <div class="grid__content">
+                        <div class="grid__body js-grid-body">
+
+                            <h2 class="grid__heading -featured js-grid-truncate">Parallax Shortlisted for Awards Across the Board</h2>
+                            <p class="js-grid-truncate">Parallax Agency Ltd has been shortlisted as contenders for both the Digital SME of the Year, for...</p>
+                        </div><div class="grid__network">News</div></div>
+            </a>
+        </div><div class="grid-item js-grid-item js-in-view fade-up grid-item--w1 grid-item--nimbus"><a class="grid__inner js-grid-inner" href="../3250/why-custom-built-websites-give-you-more-control.html">
+                <div class="grid__content">
+                        <div class="grid__body js-grid-body">
+
+                            <h2 class="grid__heading js-grid-truncate">Why Custom-Built Websites Give You More Control</h2>
+                            <p class="js-grid-truncate">Learn more about why custom-built websites can help increase your business visibility online thr...</p>
+                        </div><div class="grid__network">Development</div></div>
+            </a>
+        </div><div class="grid-item js-grid-item js-in-view fade-up grid-item--w1 grid-item--primary"><a class="grid__inner js-grid-inner" href="../3249/parallax-launches-new-website-for-edenyale.html">
+                <div class="grid__content">
+                        <div class="grid__body js-grid-body">
+
+                            <h2 class="grid__heading -featured js-grid-truncate">Parallax Launches New Website for edenYale</h2>
+                            <p class="js-grid-truncate">We&#8217;ve launchd a new website for edenYale, a company that specialises in assisting start-ups, age...</p>
+                        </div><div class="grid__network">News</div></div>
+            </a>
+        </div></div>
+        </div>
+    </section></main><footer class="site-section site-footer js-site-footer padding-top-medium js-in-view" data-offset="100" data-bg="dark">
+    <div class="site-container">
+        <div class="footer-item -address trim fade-up">
+            <h6 class="footer-item__title caption">Leeds HQ</h6>
+            <address class="footer-item__address echo">
+                The Old Brewery<br>
+                Leeds, LS2 7ES
+            </address>
+        </div>
+        <div class="footer-item -address trim fade-up fade-up-2">
+            <h6 class="footer-item__title caption">London</h6>
+            <address class="footer-item__address echo">
+                3rd Floor, 6 Duke Street<br>
+                London, W1U 3EN
+            </address>
+        </div>
+        <div class="footer-item -email fade-up fade-up-3">
+            <a href="mailto:info@parall.ax" class="footer-item__email echo">info@parall.ax</a>
+        </div>
+        <div class="footer-item -subscribe fade-up fade-up-4"><form action="https://createsend.com/t/r/s/ktjujkt/" method="post" class="subscribe js-subscribe" accept-charset="utf-8">
+    <label for="footer-subscribe-email" class="caption">Enter email to subscribe...</label>
+    <input type="email" name="cm-ktjujkt-ktjujkt" id="footer-subscribe-email" class="caption js-subscribe-input" required>
+    <button type="submit"><div><span class="sr-only">Submit</span></div></button>
+</form>
+</div>
+        <div class="caption footer-item footer-legal fade-up fade-up-5">
+            <span class="footer-legal__item">&copy; Parallax Agency Ltd 2018</span><span class="footer-legal__bull"></span><a href="../../../pages/privacy.html" class="footer-legal__item">Privacy</a><span class="footer-legal__bull"></span><a href="../../../pages/terms.html" class="footer-legal__item">Terms</a><span class="footer-legal__bull"></span><a href="../../../hub/digital-events-leeds.html" class="footer-legal__item">Leeds Digital Events</a>        </div>
+        <div class="footer-item footer-serverless fade-up fade-up-6">
+            <a href="https://serverless.com/partners/" target="_blank">
+                <img src="../../../parallax-2016/img/svg/serverless-partner-logo-1be2a27825.svg" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="big-squiggle"><div></div></div>
+</footer>
+</div>
+
+        <div class="gumshoe-offset js-gumshoe-offset"></div>
+
+                <script src="../../../parallax-2016/vendor/js/imgix-48f405e816.min.js"></script>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a2d6172b61","applicationID":"20305294","transactionName":"MVYGYRFRChBZVkxfDAgcJVYXWQsNF1tdQRA5UhZBClMIBksaTl8GEQ==","queueTime":0,"applicationTime":111,"atts":"HREFF1lLGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from parall.ax/blog/view/2958/staying-ahead-of-the-curve-agency-tips-from-parallax by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 May 2018 14:07:02 GMT -->
+</html>

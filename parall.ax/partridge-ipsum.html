@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from parall.ax/partridge-ipsum by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 May 2018 13:49:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <title>Partridge Ipsum - We Need to Talk about Alan's Placeholder Text Generator</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="chrome=1" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+        <script type="text/javascript">
+            var base = 'expose/index.html';
+            var siteName = 'partridge-ipsum';
+        </script>
+        <link rel="shortcut icon" href="parallax-2016/projects/partridge-ipsum/favicon0942.ico?1526478136" />
+        <!--[if lt IE 9]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="parallax-2016/projects/partridge-ipsum/css/main.css">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta property="og:title" content="Partridge Ipsum: We Need to Talk about Alan's Placeholder Text Generator" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="/parallax-2016/projects/partridge-ipsum/images/social_image3.png" />
+        <!-- 200x200 Image for Facebook -->
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:type" content="website" />
+        <!--<meta property="og:url" content="http://parall.ax/partridge-ipsum" />-->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:site" content="@parallax">
+        <meta property="twitter:creator" content="@parallax">
+        <meta property="twitter:title" content="Partridge Ipsum: We Need to Talk about Alan's Placeholder Text Generator" />
+        <meta property="twitter:description" content="The proof is in the pudding, and the pudding, in this case, is a football... Boof! Eat my goal!! The goalie has got football pie all over his shirt!" />
+        <meta property="twitter:image" content="/parallax-2016/projects/partridge-ipsum/images/social_image3.png" />
+        <meta property="twitter:url" content="http://parall.ax/partridge-ipsum" />
+        <script src="../apis.google.com/js/platform.js" async defer></script>
+        <script>
+            var jsonQuotes = ["Right, I'll tell you an anecdote. In 1974 I was catching the London train from Crewe station. It was very crowded; I found myself in a last-minute rush for the one remaining seat beside a tall, good-looking man with collar-length hair, it was the seventi","Ok, If you\u2019ve just joined us, we\u2019re talking about who is the best Lord. Lord of the Rings, of the Dance or of the Flies, that\u2019s tonight\u2019s hot topic. Ok, the votes are closed and clearly the rings and the flies have been roundly trounced by the quick feet of blouse wearing tycoon Michael Flatly. Flatly my dear, I don\u2019t riverdance.","I think the Irish are going through a major image change. I mean, the old image of Leprechauns, shamrock, Guinness, horses running through council estates, toothless simpletons, people with eyebrows on their cheeks, badly tarmacced drives \u2013 in this country, men in platform shoes being arrested for bombings, lots of rocks, and Beamish. I think people are saying \"yes, there\u2019s more to Ireland than this\". A good slogan for the tourist board \u2013 \"Dere\u2019s more to Oireland dan dis.\"","Minor criticism. I like to keep a bit more distance between the egg and the beans. I may want to mix them but that\u2019s my decision. Use the sausage as a breakwater....but that\u2019s nitpicking, on the whole a very good effort...Seven on ten. Let\u2019s make love.","The temperature inside this apple pie is over one thousand degrees. If I squeeze it, a jet of molten bramley apple will squirt out. Could go your way; could go mine. Either way, one of us is going down.","The proof is in the pudding, and the pudding, in this case, is a football... Boof! Eat my goal!! The goalie has got football pie all over his shirt!","... and that was Big Yellow Taxi by Joni Mitchell, a song in which Joni complains that they paved paradise to put up a parking lot. A measure which actually would have alleviated traffic congestion on the outskirts of paradise, something which Joni singularly fails to point out - perhaps because it doesn\u2019t quite fit in with her blinkered view of the world. Nevertheless, nice song.","Swallow is a detective who tackles vandalism. Bit of a maverick, not afraid to break the law if he thinks it\u2019s necessary. He\u2019s not a criminal, but he will, perhaps, travel 80mph on the motorway if he, for example, he wants to get somewhere quickly\u2026","All this wine nonsense! You get all these wine people, don't you? Wine this, wine that. Let's have a bit of red, let's have a bit of white. Ooh, that's a snazzy bouquet. Oh, this smells of, I don't know, basil. Sometimes you just want to say, sod all this wine, just give me a pint of, mineral water.","I know lying is wrong, but if the elephant man came in now in a blouse with some make up on, and said \"how do I look?\" Would you say \u2014 bearing in mind he's depressed and has respiratory problems \u2014 would you say \"go and take that blusher off you mis-shapen headed elephant tranny\"? No. You'd say \"You look nice... John\"","Do you know what this bathroom says to me? Aqua. Which is French for water. It's like being inside an enormous Fox's Glacier Mint. Which, again, to me is a bonus.","We managed to rectify it, though, because it now says, by adapting it, \"Cook\" where it once said \"Cock\", and it says \"Pass\" now where it once said \"Piss\", so it's slightly less rude.","And, can I have the same, please? But with different shaped pasta. What do you call those pasta in bows? Like a bow-tie, but miniature? Like an action man bow-tie.And, can I have the same, please? But with different shaped pasta. What do you call those pasta in bows? Like a bow-tie, but miniature? Like an action man bow-tie.","On making a documentary for canal boats: \u2018This chemical toilet is a Saniflow 33, now this little babe can cope with anything, and I mean anything. Earlier on I put in a pound of mashed up Dundee cake, let's take a look...not a trace! Peace of mind I'm sure, especially if you have elderly relatives on board.\u2019","Quick tip for yourself: if you're ever doing an after-dinner speech, you say \"My Lords, Ladies and Gentlemen, sorry I'm late, I just popped to the toilet. And while I was there, I saw some graffiti and it said \"I used to be indecisive, but now I'm not so sure\"\". Straight away you've got them by the jaffas.","Oooh scary Irish men. Would you like to recruit me? I like your berets. They're worn by Saddam Hussain, Frank Spencer, the French.","Sunday Bloody Sunday. What a great song. It really encapsulates the frustration of a Sunday, doesn't it? You wake up in the morning, you've got to read all the Sunday papers, the kids are running round, you've got to mow the lawn, wash the car, and you just think 'Sunday, bloody Sunday!"];
+        </script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-42578255-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </head>
+    <body class="home index">
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "../connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <div id="body">
+            <main class="site-main">
+                <header class="site-header">
+                    <div class="social-buttons social-buttons--top">
+                        <div class="social-buttons__platform social-buttons__facebook">
+                            <div class="fb-like" data-href="http://parall.ax/partridge-ipsum" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
+                        </div>
+                        <div class="social-buttons__platform social-buttons__twitter">
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-via="parallax" data-size="medium" data-count="vertical">Tweet</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                        </div>
+                    </div>
+                    <img src="parallax-2016/projects/partridge-ipsum/images/car.svg" class="car" width="200" height="90" />
+                    <h1 class="h1">Partridge<br>Ipsum</h1>
+                    <p>I'm not writing my own content, I'm not writing my own content, I'm not writing my own content. Lynn, I'll just speak over you.</p>
+                </header>
+                <div class="controls">
+                    <div class="controls__paras">
+                        <label for="paragraphs" class="paragraphs-label">Paragraphs:</label>
+                        <input class="paragraphs js-paragraphs" type="number" min="1" value="1" />
+                        <a href="javascript:;" class="btn btn--increment btn--increment-up"><span class="rotate-inner">&gt;</span></a>
+                        <a href="javascript:;" class="btn btn--increment btn--increment-down"><span class="rotate-inner">&lt;</span></a>
+                    </div>
+                    <div class="controls__generate">
+                        <button class="btn btn--large btn--dan">Dan</button>
+                        <button class="btn btn--large btn--generate">Generate</button>
+                    </div>
+                </div>
+                <div class="output">
+                    <textarea class="output__field"></textarea>
+                    <button class="btn btn--large btn--copy js-btn-copy" data-clipboard-text="Copy Me!" title="Click to copy me.">Copy Text</button>
+                </div>
+                <footer class="site-footer">
+                    <div class="social-buttons social-buttons--bottom">
+                        <div class="social-buttons__platform social-buttons__facebook">
+                            <div class="fb-like" data-href="http://parall.ax/partridge-ipsum" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
+                        </div>
+                        <div class="social-buttons__platform social-buttons__twitter">
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-via="parallax" data-size="medium" data-count="vertical">Tweet</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                        </div>
+                    </div>
+                    <span style="line-height: 26px;">Developed by:</span>
+                    <a href="index.html" target="_blank" class="parallax-link">
+                        <span class="icon-parallax">Parallax</span>
+                    </a>
+                </footer>
+            </main>
+        </div>
+        <script type="text/javascript" src="js/jquery-1.7.2.min0942.js?1526478136"></script>
+        <script type="text/javascript" src="js/error0942.js?1526478136"></script>
+        <script type="text/javascript" src="parallax-2016/projects/partridge-ipsum/js/ZeroClipboard.min.js"></script>
+        <script type="text/javascript">
+            var page_name = 'home';
+            var isAdmin = false;
+        </script>
+        <script type="text/javascript" src="parallax-2016/projects/partridge-ipsum/js/main.min.js"></script>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a2d6172b61","applicationID":"20305294","transactionName":"MVYGYRFRChBZVkxfDAgcJVYXWQsNF0VKWQkDUBBGTEAFEUxHUVIEA2wNRRBFCQ==","queueTime":0,"applicationTime":88,"atts":"HREFF1lLGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from parall.ax/partridge-ipsum by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 May 2018 13:49:29 GMT -->
+</html>

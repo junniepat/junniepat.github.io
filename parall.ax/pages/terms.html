@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+    
+<!-- Mirrored from parall.ax/pages/terms by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 May 2018 13:42:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><title>Terms & Conditions | Parallax</title><meta name="description" content="PARALLAX AGENCY LTD TERMS AND CONDITIONS OF SERVICE" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><!--
+
+Expose CMS: The HTML5 Content Management System by Parallax (http://parall.ax/)
+
+Hostname:           i-075b2372a839145bb 
+Generated at:       14:36:38 16th May 2018 
+Took before render: 0.085 seconds (total time in request header)
+Site name:          parallax-2016 
+
+--><script type="text/javascript">
+	var base = '../index.html'; var siteName = 'parallax-2016';
+</script>
+
+<!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<![endif]--><meta name="viewport" content="width=device-width, initial-scale=1"><meta property="ix:host" content="parallax-test-2.imgix.net">
+
+        <link rel="stylesheet" href="../parallax-2016/css/main-9c216dab98.min.css">
+
+        <noscript><link rel="stylesheet" href="../parallax-2016/css/noscript-05209e7642.min.css"></noscript><link rel="apple-touch-icon" sizes="180x180" href="../parallax-2016/favicon/apple-touch-icon-3aaac0af91.png">
+<link rel="icon" type="image/png" href="../parallax-2016/favicon/favicon-32x32-da2b802f26.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../parallax-2016/favicon/favicon-16x16-2a2ca012b7.png" sizes="16x16">
+<link rel="manifest" href="../parallax-2016/favicon/manifest-54ed18fe26.json">
+<link rel="mask-icon" href="../parallax-2016/favicon/safari-pinned-tab-74027db3b1.svg" color="#5bbad5">
+<meta name="apple-mobile-web-app-title" content="Parallax">
+<meta name="application-name" content="Parallax">
+<meta name="theme-color" content="#8b5cdd"><link rel="canonical" href="terms.html">
+<meta property="fb:pages" content="147782594652">
+<meta property="og:site_name" content="Parallax"><meta property="og:title" content="Terms & Conditions | Parallax">
+<meta property="og:description" content="PARALLAX AGENCY LTD TERMS AND CONDITIONS OF SERVICE"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630"><meta property="og:image" content="http://parall.ax/parallax-2016/img/og_image2-3e96e3e62a.png">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://parall.ax/pages/terms">
+<meta property="fb:app_id" content="144982749040802">
+<meta name="p:domain_verify" content="e96203ffc86d825cb753495877cb38b1">        
+
+<script type='application/ld+json'> 
+{
+  "@context" : "http://www.schema.org",
+  "@type" : "LocalBusiness",
+  "name" : "Parallax",
+  "url" : "https://parall.ax",
+  "logo" : "http://parall.ax/parallax-2016/img/og_image3-cbab644a4a.png",
+  "image" : "http://parall.ax/parallax-2016/img/og_image3-cbab644a4a.png",
+  "description" : "Parallax is a digital agency in Leeds and London. We design and build websites and apps, write engaging content, make bespoke software, get friendly with search engines and turn our hands to all kinds of design, development and digital marketing.",
+  "sameAs" : [
+    "https://www.facebook.com/helloparallax",
+    "https://twitter.com/parallax",
+    "https://plus.google.com/+ParallAxUK",
+    "https://www.linkedin.com/company/621871",
+    "https://www.google.co.uk/maps/place/Parallax/@53.794864,-1.5377157,15z/data=!4m5!3m4!1s0x0:0x60f00217c2b1bdc7!8m2!3d53.794864!4d-1.5377157"
+  ],
+  "address" : {
+    "@type" : "PostalAddress",
+    "streetAddress" : "Parallax",
+    "addressLocality" : "Leeds",
+    "addressRegion" : "West Yorkshire",
+    "postalCode" : "LS2 7ES",
+    "addressCountry" : "United Kingdom"
+  },
+  "geo" : {
+    "@type" : "GeoCoordinates",
+    "latitude" : "53.794866",
+    "longitude" : "-1.5382732"
+  },
+  "hasMap" : "https://goo.gl/maps/oStEguoLujM2",
+  "vatID" : "GB101340584",
+  "email" : "mailto:info@parall.ax",
+  "legalName" : "Parallax Agency Ltd",
+  "openingHours" : "Mo, Tu, We, Th, Fr 08:00-20:00",
+  "telephone" : "+441133226477",
+  "priceRange": "£££££"
+}
+ </script>
+
+
+<meta property="twitter:card" content="summary">
+<meta property="twitter:site" content="@parallax">
+<meta property="twitter:title" content="Terms & Conditions | Parallax">
+<meta property="twitter:description" content="PARALLAX AGENCY LTD TERMS AND CONDITIONS OF SERVICE">
+<meta property="twitter:image" content="http://parall.ax/parallax-2016/img/og_image2-3e96e3e62a.png">
+<meta property="twitter:url" content="https://parall.ax/pages/terms"><style>.async-hide { opacity: 0 !important}</style>
+<script>
+    (function(a,s,y,n,c,h,i,d,e){
+        s.className+=' '+y;
+        h.start=1*new Date;
+        h.end=i=function(){
+            s.className=s.className.replace(RegExp(' ?'+y),'')
+        };
+        (a[n]=a[n]||[]).hide=h;
+        setTimeout(function(){
+            i();
+            h.end=null
+        },c);
+        h.timeout=c;
+    })(window,document.documentElement,'async-hide','dataLayer',4000, {'GTM-KGBSNR5':true});
+</script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42578255-1', 'auto');
+  ga('require', 'GTM-KGBSNR5');
+  // ga('send', 'pageview'); // Remove pageview call for GO
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N4JSFT');</script>
+<!-- End Google Tag Manager -->
+<script>!function(t){function e(n){if(i[n])return i[n].exports;var a=i[n]={exports:{},id:n,loaded:!1};return t[n].call(a.exports,a,a.exports,e),a.loaded=!0,a.exports}var i={};return e.m=t,e.c=i,e.p="",e(0)}([function(t,e,i){t.exports=i(1)},function(t,e){"use strict";!function(t,e){t.parallax={flickityLoaded:!1,ready:function(t){"loading"!==e.readyState?t():e.addEventListener?e.addEventListener("DOMContentLoaded",t):e.attachEvent("onreadystatechange",function(){"complete"===e.readyState&&t()})},windowWidth:function(){return t.innerWidth||e.documentElement.clientWidth||e.getElementsByTagName("body")[0].clientWidth},loadFlickity:function(){if(!this.flickityLoaded){var t=e.querySelector(".js-flick");t&&this.windowWidth()<700&&(this.flickityLoaded=!0,this.loadJS("../../cdnjs.cloudflare.com/ajax/libs/flickity/2.0.2/flickity.pkgd.min.js",function(){new Flickity(t,JSON.parse(t.getAttribute("data-options")))}))}},loadJS:function(t,i){var n=e.getElementsByTagName("script")[0],a=e.createElement("script");return a.src=t,a.async=!0,n.parentNode.insertBefore(a,n),i&&"function"==typeof i&&(a.onload=i),a},init:function(){var e=this;this.ready(function(){t.addEventListener("resize",e.loadFlickity.bind(e)),e.loadFlickity()})}},t.parallax.init()}(window,document)}]);
+            (function(p){
+                p.pageName = 'terms';
+                p.isAdmin = false;
+                p.prismUrl = '../parallax-2016/vendor/js/prism-231efd41d8.min.js';
+                p.jspdfScriptUrl = '../parallax-2016/js/jspdf-example-4f707e4ab3.min.js';
+                p.pUrl = '../parallax-2016/img/svg/p-92a6d51f97.svg';
+                p.heroImages = [
+                    ['/parallax-2016/img/hero-louis-f0add95782.jpg', 'left'],
+                    ['/parallax-2016/img/hero-jamie-bbf9483c3f.jpg', 'right'],
+                    ['/parallax-2016/img/hero-building-1a08082abe.jpg', 'bottom left']
+                ];
+            })(window.parallax);
+        </script>
+
+        <script src="../parallax-2016/js/main-fe0cd4ba4a.min.js" async defer></script>
+
+        <style>
+        .grid-lines {
+            position: fixed;
+            pointer-events: none;
+            z-index: 999999;
+            top: 0;
+            bottom: 0;
+            left: 10px;
+            right: 10px;
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+            background-size: 16.6666666% 100%;
+        }
+        .grid-lines.-hidden {
+            display: none;
+        }
+        @media (min-width: 950px) {
+            .grid-lines {
+                left: 80px;
+                right: 80px;
+            }
+        }
+        @media (min-width: 1200px) {
+            .grid-lines {
+                left: 160px;
+                right: 160px;
+            }
+        }
+        @media (min-width: 1800px) {
+            .grid-lines {
+                left: 240px;
+                right: 240px;
+            }
+        }
+        </style>
+    </head><body class="js-body landing body--terms">
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4JSFT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+        <div class="grid-lines -hidden"></div>
+        <svg style="display:none;">
+            <symbol id="i-facebook" viewBox="0 0 800 800">
+                <path d="M445 643h-90V419h-75v-87h75v-64q0-55 32-86 30-29 80-29 28 0 67 3v78h-47q-42 0-42 38v60h86l-11 87h-75v224z"/>
+            </symbol>
+            <symbol id="i-twitter" viewBox="0 0 800 800">
+                <path d="M679 239s-21 34-55 57c7 156-107 329-314 329-103 0-169-50-169-50s81 17 163-45c-83-5-103-77-103-77s23 6 50-2c-93-23-89-110-89-110s23 14 50 14c-84-65-34-148-34-148s76 107 228 116c-22-121 117-177 188-101 37-6 71-27 71-27s-12 41-49 61c30-2 63-17 63-17z"/>
+            </symbol>
+            <symbol id="i-instagram" viewBox="0 0 800 800">
+                <path d="M150 400c0-119 0-166 42-208s88-42 208-42 166 0 208 42 42 89 42 208 0 166-42 208-88 42-208 42-166 0-208-42-42-89-42-208zm455 0c0-114 0-148-29-176-29-29-62-29-176-29s-148 0-176 29c-29 29-29 62-29 176s0 148 29 176c29 29 62 29 176 29s148 0 176-29c29-29 29-62 29-176zM400 272a128 128 0 1 1 0 256 128 128 0 0 1 0-256zm0 211c46 0 83-37 83-83s-37-83-83-83-83 37-83 83 37 83 83 83zm163-216c0 16-13 30-30 30-16 0-30-14-30-30 0-17 14-30 30-30 17 0 30 13 30 30z"/>
+            </symbol>
+            <symbol id="i-dribbble" viewBox="0 0 800 800">
+                <path d="M400 665c-146 0-265-119-265-265s119-265 265-265 265 119 265 265-119 265-265 265zm223-229s-69-22-140-9c30 81 43 161 43 161s82-49 97-152zM488 609s-15-90-48-172c-132 44-179 142-179 142s96 83 227 30zm-256-57c80-128 193-152 193-152s-12-27-19-39c-124 37-232 32-232 32s-8 87 58 159zm-54-198s102 2 210-28c-38-71-84-130-84-130-107 49-126 158-126 158zm169-174s50 65 85 134c84-31 118-83 118-83s-76-78-203-51zm102 167c6 11 20 44 20 44s64-11 157 7c0-85-51-141-51-141s-38 55-126 90z"/>
+            </symbol>
+        </svg><div id="body" class="expose-body">
+            <div class="loader-container">
+                <div class="loader">
+                    <canvas class="js-loader"></canvas>
+                </div>
+            </div>
+            <div class="bg-white"></div>
+            <div class="bg-primary"></div>
+            <div class="bg-dark"></div>
+            <div class="bg-nimbus"></div>
+            <div class="bg-cloud"></div>
+            <div class="bg-martinique"></div>
+            <div class="bg-shapes js-bg-shapes"></div>
+
+            <div class="site-section shapes js-shapes -hidden -invisible">
+                <div class="shapes__image js-shapes-image"></div>
+                <canvas class="shapes-canvas js-shapes-canvas"></canvas>
+            </div>
+
+            <div class="site-section shapes shapes--events js-shapes-events -hidden -invisible">
+                <div class="shapes__image js-shapes-image">
+                    <svg class="hero-shapes" viewbox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g class="hero-shape-group">
+        <defs>
+            <clippath id="hero-clip-path">
+                <rect class="hero-squiggle-mask" fill="none" height="16" width="82" x="1742" y="899.06"></rect>
+            </clippath>
+            <clippath id="hero-clip-path-2">
+                <rect class="hero-squiggle-mask" fill="none" height="16" width="82" x="393.28" y="24.92"></rect>
+            </clippath>
+        </defs>
+        <rect fill="#3b3355" height="1080" width="1920"></rect>
+        <g class="hero-shapes" data-svg-origin="960 540" opacity="0.5">
+            <ellipse class="hero-shape hero-disc" cx="1191.25" cy="959.91" data-svg-origin="1191 960" fill="#d1bef1" rx="19" ry="18.98"></ellipse>
+            <ellipse class="hero-shape hero-disc" cx="954.25" cy="339.91" data-svg-origin="954 340" fill="#d1bef1" rx="19" ry="18.98"></ellipse>
+            <ellipse class="hero-shape hero-disc" cx="1865.28" cy="768.92" data-svg-origin="1865 768" fill="#d1bef1" rx="9" ry="8.99"></ellipse>
+            <g class="hero-shape hero-squiggle-parent" data-svg-origin="1742 899">
+                <g clip-path="url(#hero-clip-path)">
+                    <path class="hero-squiggle" d="M1900.05,905.86c-1,1.19-1.54,1.76-2.66,1.76s-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09v3.74c1.13,0,1.66.57,2.66,1.76s2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76v-3.74C1902.66,902.76,1901.15,904.55,1900.05,905.86Z" fill="#d1bef1"></path>
+                </g>
+            </g>
+            <g class="hero-shape hero-squiggle-parent" data-svg-origin="393 25">
+                <g clip-path="url(#hero-clip-path-2)">
+                    <path class="hero-squiggle" d="M551.33,31.71c-1,1.19-1.54,1.76-2.66,1.76S547,32.9,546,31.71s-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76S367,32.9,366,31.71s-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09-4.42,1.79-5.52,3.09-1.54,1.76-2.66,1.76-1.66-.57-2.66-1.76-2.61-3.09-5.52-3.09v3.74c1.13,0,1.66.57,2.66,1.76s2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76,1.66.57,2.66,1.76,2.61,3.09,5.52,3.09,4.42-1.79,5.52-3.09,1.54-1.76,2.66-1.76V28.62C553.94,28.62,552.43,30.41,551.33,31.71Z" fill="#d1bef1"></path>
+                </g>
+            </g>
+            <circle class="hero-shape hero-ring" cx="632.51" cy="734.88" fill="none" r="51.49" stroke="#8b5cdd" stroke-miterlimit="10" stroke-width="22"></circle>
+            <path class="hero-shape hero-arc" d="M249.91,987.64a59.2,59.2,0,0,1,45-109.51" fill="none" stroke="#d1bef1" stroke-miterlimit="10" stroke-width="23"></path>
+            <path class="hero-shape hero-arc" d="M109.31,721a21.08,21.08,0,0,1-16.25-38.91" fill="none" stroke="#d1bef1" stroke-miterlimit="10" stroke-width="12"></path>
+            <path class="hero-shape hero-arc" d="M1692.65,178.54A21.08,21.08,0,0,1,1719.55,211" fill="none" stroke="#d1bef1" stroke-miterlimit="10" stroke-width="12"></path>
+            <circle class="hero-shape hero-ring" cx="157.39" cy="579.44" fill="none" r="16.44" stroke="#8b5cdd" stroke-miterlimit="10" stroke-width="10"></circle>
+            <circle class="hero-shape hero-ring" cx="1723.19" cy="331.47" fill="none" r="16.44" stroke="#8b5cdd" stroke-miterlimit="10" stroke-width="10"></circle>
+            <line class="hero-shape hero-rect" fill="none" stroke="#8b5cdd" stroke-miterlimit="10" stroke-width="15" x1="1614.5" x2="1658.75" y1="1006.75" y2="1044"></line>
+            <line class="hero-shape hero-rect" fill="none" stroke="#8b5cdd" stroke-miterlimit="10" stroke-width="15" x1="632.51" x2="647.77" y1="22.92" y2="78.71"></line>
+        </g>
+    </g>
+</svg>
+
+                </div>
+            </div><header class="site-header js-site-header">
+    <a href="#main" class="caption sr-only skip-to-content js-no-hijack">Skip to content</a>
+    <a href="../index.html" class="site-logo js-site-logo"><svg viewBox="0 0 317.8 46.8" class="js-logo"><path d="M188.3 29V0h-5.9v29c0 9.6 7.8 17.3 17.3 17.3v-5.9c-6.3 0-11.4-5.1-11.4-11.4zm26.4 0V0h-5.9v29c0 9.6 7.8 17.3 17.3 17.3v-5.9c-6.3 0-11.4-5.1-11.4-11.4zM17.3.2C7.8.2 0 7.9 0 17.5v28.7h5.9c0-6.3 5.2-11.4 11.4-11.4 9.5 0 17.3-7.8 17.3-17.3C34.6 7.9 26.9.2 17.3.2zm0 28.6c-4.3 0-8.3 1.7-11.4 4.3V17.5c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.1 11.4 11.4 0 6.2-5.1 11.3-11.4 11.3zM61.4.2C51.8.2 44 8 44 17.5v29h6v-.2C50 40.1 55.1 35 61.4 35s11.4 5.1 11.4 11.4v.2h5.9v-29C78.7 8 70.9.2 61.4.2zm0 28.8C57 29 53 30.7 50 33.3V17.5c0-6.3 5.1-11.4 11.4-11.4s11.4 5.1 11.4 11.4v15.8c-3.1-2.6-7.1-4.3-11.4-4.3zM153.1.2c-9.5 0-17.3 7.8-17.3 17.3v29h5.9v-.2c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.1 11.4 11.4v.2h5.9v-29C170.4 8 162.6.2 153.1.2zm0 28.8c-4.4 0-8.3 1.6-11.4 4.3V17.5c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.1 11.4 11.4v15.8c-3.1-2.6-7.1-4.3-11.4-4.3zM254 .2c-9.5 0-17.3 7.8-17.3 17.3v29h5.9v-.2c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.1 11.4 11.4v.2h5.9v-29C271.4 8 263.6.2 254 .2zm0 28.8c-4.4 0-8.3 1.6-11.4 4.3V17.5c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.1 11.4 11.4v15.8c-3-2.6-7-4.3-11.4-4.3zm63.8-19.7V.6h-5.9v8.7c0 6.3-5.1 11.4-11.4 11.4-6.3 0-11.4-5.1-11.4-11.4V.6h-5.9v8.7c0 6 3 11.2 7.6 14.4-4.6 3.1-7.6 8.4-7.6 14.4v8.8h5.9V38c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.1 11.4 11.4v8.8h5.9V38c0-6-3-11.2-7.6-14.4 4.6-3.1 7.6-8.4 7.6-14.3zM117.2 32.2c4.6-3.2 7.6-8.5 7.6-14.5C124.8 8 117 .2 107.4.2 97.9.2 90.1 8 90.1 17.5v29h6c0-6.3 5.1-11.4 11.4-11.4h.2c6.2.1 11.2 5.1 11.2 11.4h5.9c0-5.9-3-11.2-7.6-14.3zm-21.1 1.4V17.5c0-6.3 5.1-11.4 11.4-11.4 6.3 0 11.4 5.2 11.4 11.6 0 6.3-5.1 11.5-11.4 11.5v.1c-4.4-.1-8.4 1.6-11.4 4.3z" fill="#FFF"/></svg></a>
+    <nav class="site-nav js-site-nav">
+        <a href="#site-nav" class="nav-toggle js-nav-toggle js-no-hijack"><span class="sr-only">Menu</span><span></span></a>
+        <ul class="site-nav__list js-site-nav-list">
+            <li class="site-nav__item">
+                <a href="../work.html" class="site-nav__link" data-path="/work"><span>Work</span></a>
+            </li><!--
+            --><li class="site-nav__item">
+                <a href="../expertise.html" class="site-nav__link" data-path="/expertise"><span>Expertise</span></a>
+            </li><!--
+            --><li class="site-nav__item">
+                <a href="../about.html" class="site-nav__link" data-path="/about"><span>About</span></a>
+            </li><!--
+            --><li class="site-nav__item">
+                <a href="../blog.html" class="site-nav__link" data-path="/blog"><span>Blog</span></a>
+            </li><!--
+            --><li class="site-nav__item">
+                <a href="../products.html" class="site-nav__link" data-path="/products"><span>Products</span></a>
+            </li><!--
+            --><li class="site-nav__item">
+                <a data-path="/careers" href="../careers.html" class="site-nav__link"><span>
+                    Careers<span class="site-nav__number">6</span></span></a>
+            </li><!--
+            --><li class="site-nav__item">
+                <a href="../hub/digital-events-leeds.html" class="site-nav__link" data-path="/hub/digital-events-leeds"><span>Events</span></a>
+            </li><!--
+            --><li class="site-nav__item -contact">
+                <a href="../contact.html" class="site-nav__link -contact -visible js-contact-open js-no-hijack"><span>Contact</span></a>
+            </li>
+            <li aria-hidden="true" class="site-nav__squiggle">
+                <div class="big-squiggle"><div></div></div>
+            </li>
+        </ul>
+    </nav><section class="split-modal split-modal--contact js-contact"><button type="button" class="font-secondary site-nav__link -close js-contact-close"><span>Close</span></button><div class="site-container split-modal-inner">
+    <div class="split-modal-col split-modal-col--left"><div class="trim">
+        <p class="font-tertiary color-primary delta">We’d love to hear from you! Send us a message using the form opposite, or <a href="mailto:info@parall.ax" class="textlink">email us.</a></p>
+
+        <div class="split-modal-info trim">
+            <div class="split-modal-info__col trim">
+                <p class="caption split-modal-info__heading">Leeds (HQ)</p>
+                <address>The Old Brewery,<br>Leeds, LS2 7ES</address>
+                <a href="tel:+441133226477">+44 (0) 113 322 6477</a>
+            </div><!--
+            --><div class="split-modal-info__col trim">
+                <p class="caption split-modal-info__heading">London</p>
+                <address>3rd Floor<br>6 Duke Street<br>Marylebone<br>London, W1U 3EN</address>
+                <a href="tel:+441133226477">+44 (0) 113 322 6477</a>
+            </div><!--
+            --><div class="split-modal-info__col trim">
+                <p class="caption split-modal-info__heading">Say hello</p>
+                <p class="m-b-0"><a href="mailto:info@parall.ax" class="textlink">info@parall.ax</a></p>
+            </div><!--
+            --><div class="split-modal-info__col trim">
+                <a href="https://parallax.typeform.com/to/CzyHou?from=website" class="btn">Send us a brief</a>
+            </div>
+        </div>
+    </div></div>
+    <div class="split-modal-col split-modal-col--right padding-ends-medium"><div><form action="https://parall.ax/contact" class="site-form site-form--light js-form" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div><div class="inputs js-inputs"><div class="input text"><label for="ContactName">Name*</label><input name="data[Contact][name]" type="text" id="ContactName" /></div><div class="input text"><label for="ContactEmail">Email address*</label><input name="data[Contact][email]" type="text" id="ContactEmail" /></div><div class="input text"><label for="ContactTelephone">Telephone</label><input name="data[Contact][telephone]" type="text" id="ContactTelephone" /></div><div class="input textarea"><label for="ContactMessage">Your message*</label><textarea name="data[Contact][message]" rows="1" cols="30" id="ContactMessage" ></textarea></div><div class="input piege-a-miel"><label for="ContactCompany">If you're human, leave this blank:</label><input name="data[Contact][company]" type="text" id="ContactCompany" /></div></div><div class="submit"><input class="btn -white js-send-btn" type="submit" value="Send." /></div></form></div></div>
+</div>
+<div class="big-squiggle"><div></div></div></section><a href="mailto:info@parall.ax" class="flip-btn flip-btn--auto js-site-email site-header__email"><span>info@parall.ax</span></a>
+
+    <ul class="header-social social-icons social-icons--v js-social-icons">
+        <li>
+            <a href="https://www.facebook.com/helloparallax" class="social-icon js-social-icon" target="_blank">
+                <svg class="social-icon__icon"><use xlink:href="#i-facebook" /></svg>
+                <svg viewBox="0 0 200 200" class="social-icon__ring js-ring"><circle cx="100" cy="100" r="90" /></svg>
+            </a>
+        </li><!--
+        --><li>
+            <a href="https://twitter.com/parallax" class="social-icon js-social-icon" target="_blank">
+                <svg class="social-icon__icon"><use xlink:href="#i-twitter" /></svg>
+                <svg viewBox="0 0 200 200" class="social-icon__ring js-ring"><circle cx="100" cy="100" r="90" /></svg>
+            </a>
+        </li><!--
+        --><li>
+            <a href="https://www.instagram.com/parall.ax/" class="social-icon js-social-icon" target="_blank">
+                <svg class="social-icon__icon"><use xlink:href="#i-instagram" /></svg>
+                <svg viewBox="0 0 200 200" class="social-icon__ring js-ring"><circle cx="100" cy="100" r="90" /></svg>
+            </a>
+        </li><!--
+        --><li>
+            <a href="https://dribbble.com/parallax" class="social-icon js-social-icon" target="_blank">
+                <svg class="social-icon__icon"><use xlink:href="#i-dribbble" /></svg>
+                <svg viewBox="0 0 200 200" class="social-icon__ring js-ring"><circle cx="100" cy="100" r="90" /></svg>
+            </a>
+        </li>
+    </ul>
+</header>
+<main class="site-main js-site-main" id="main"><section class="site-section hero js-hero padding-ends-hero" data-bg="shapes">
+    <div class="site-container -max-width-small trim"><h1 class="hero__title bravo js-title">Terms and Conditions</h1></div>
+    <div class="site-section__squiggle">
+    <div class="site-section__squiggle-icon"></div>
+</div>
+</section>
+<section class="site-section site-container" data-bg="white">
+    <div class="max-width-sm textarea">	<h4>PARALLAX AGENCY LTD TERMS AND CONDITIONS OF SERVICE </h4>
+
+	<p>1.  Definitions and Interpretation<br />
+1.1 In these Terms and Conditions, unless the context otherwise requires, the following expressions have the following meanings:</p>
+
+	<p><strong>Business Day</strong> means a day (excluding Saturdays) on which banks generally are open for the transaction of normal banking business;<br />
+<strong>Client</strong> means any individual or company which places an order with the Company;<br />
+<strong>Conditions</strong> means these terms and conditions as amended from time to time in accordance with clause 16.3;<br />
+<strong>Content Management System  or CMS</strong> the system written by the Company and used in providing the Services;<br />
+<strong>Code</strong> means the source code and object code used by the Company in providing the Project Services;<br />
+<strong>Commencement Date</strong> means the date on which the Company issues confirmation of the Order to the Client in accordance with clause 2.2;<br />
+<strong>Company</strong> means Parallax Agency Ltd incorporated and registered in England and Wales with company number 07430032 having its registered office at c/o Parallax Agency Ltd, The Old Brewery, High Court, Leeds, LS2 7ES;<br />
+<strong>Confidential Information</strong> means all confidential information disclosed to any person by the other party concerning the business or affairs of the other party including information relating to a party’s operations, processes, plans, product information, know-how, designs, trade secrets, market opportunities and customers;<br />
+<strong>Database</strong> means the application that allows for the storage and retrieval of data in relation to the Project;<br />
+<strong>Initial Term</strong> the minimum term of this Agreement as specified in the Project Proposal;<br />
+<strong>Intellectual Property Rights</strong> means all patents, rights to inventions, utility models, copyright and related rights, trade marks, service marks, trade, business and domain names, rights in trade dress or get-up, rights in goodwill or to sue for passing off, unfair competition rights, rights in designs, rights in computer software, database rights, topography rights, moral rights, rights in confidential information (including know-how and trade secrets) and any other intellectual property rights, in each case whether registered or unregistered and including all applications for and renewals or extensions of such rights, and all similar or equivalent rights or forms of protection in any part of the world; <br />
+<strong>Launch</strong> means the “go-live” date of the service to be provided in accordance with the Project Proposal;<br />
+<strong>Order</strong> means the Client’s purchase order form or the Client’s written acceptance of the Company’s Project Proposal;<br />
+<strong>Post-Launch Services</strong> means the services to be provided following the Launch;<br />
+<strong>Project</strong> means the project to delivery the Services to the Client;<br />
+Project Proposal	means the proposal submitted to the Client by the Company detailing the work that it intends to complete, which shall include the Project Quotation;<br />
+<strong>Project Quotation</strong> means the quotation provided by the Company to the Client detailing the fees payable by the Client in respect of the work detailed in the Project Proposal (as may be varied and agreed in writing during the provision of the Project);<br />
+<strong>Project Services</strong> means the services to be provided by the Company to the Client as set out in the agreed Project Proposal;<br />
+<strong>Services</strong> means the Project Services and the Post-Launch Services;<br />
+<strong>Support and Maintenance Retainer</strong> means the agreement between the parties that the Company will provide the Support and Maintenance Services on an ongoing basis for a monthly fee;<br />
+<strong>Support and Maintenance Services</strong> means the provision of ongoing support including issue resolution and maintenance as detailed in the Project Proposal or separate retainer proposal (as appropriate); and<br />
+<strong>Term</strong> has the meaning given to it in clause 3 of this Agreement. </p>
+
+	<p>2. Basis of Contract<br />
+2.1  Any Order by the Client constitutes an offer by the Client to purchase the Services in accordance with these Conditions.<br />
+2.2 The Order shall only be deemed to be accepted when the Company issues written acceptance of the Order at which point and on which date the Contract shall come in to existence. <br />
+2.3  These Conditions shall apply to the provision of the Services by the Company to the Client.<br />
+2.4  In the event of conflict between these Conditions and any other terms and conditions of the Client, the former shall prevail unless otherwise expressly agreed in writing by the Company.<br />
+2.5  For the avoidance of doubt, the Project Proposal shall not constitute an offer and shall be valid for a period of 20 (twenty) Business Days from its date of issue. <br />
+2.6  Following acceptance of an Order by the Company, the Client shall be entitled to cancel the Order within 24 (twenty four) hours of receipt of that acceptance without incurring cancellation charges. After such time has expired cancellation charges may apply.</p>
+
+	<p>3. Term<br />
+3.1 The Term of this Agreement shall be the Initial Term along with any subsequent months on a rolling month to month basis until it is terminated in accordance with clause 15. </p>
+
+	<p>4. Project Services<br />
+4.1 The Company shall provide the Services to the Client as agreed in the Project Proposal, subject to receipt of the payments detailed in the Project Quotation in accordance with the specified timescales.<br />
+4.2 The Company shall use all reasonable endeavours to complete its obligations within the agreed timescales provided in the Project Proposal.<br />
+4.3 Where the scope of the project changes, the Company will either provide documentation detailing the changes and the Company’s acceptance of those changes or it will issue a new Project Proposal, if appropriate.<br />
+4.4 The Company reserves the right to withdraw any product or service at any time. In the event of a withdrawal under this clause 4.4, the Company will make all reasonable attempts to offer the Client other suitable products and services, either from the Company itself or another organisation.</p>
+
+	<p>5. Acceptance Tests<br />
+5.1 On conclusion of the Project Services, the Client shall be required to confirm its acceptance of the output from the Project Proposal. <br />
+5.2 The Company shall perform the acceptance tests agreed in the Project Proposal and provide the results of such acceptance tests to the Client. The Client shall respond within 3 (three) Business Days to confirm its acceptance, or otherwise, of the acceptance tests and if no response is provided the Client shall be deemed to have accepted the outcome of the acceptance tests and the outcome and deliverables of the Project Proposal. <br />
+5.3 If any acceptance test is failed, the Company shall review this with the Client. If requested by the Client, acting reasonably, the Supplier shall address the defect and repeat the acceptance test in which case clause 5.2 shall apply. <br />
+5.4 Once accepted, the output and deliverables of the Project Services shall be available for Launch and any remedy of the Client shall be limited to the further provisions of this Agreement. </p>
+
+	<p>6. Launch Warranty<br />
+6.1 For a period of 30 (thirty) days following the Launch the Company shall, subject to clause 6.2, use reasonable endeavours to resolve, without additional charge, any defects in the software occurring as a result of errors in the Code (the “Launch Warranty”). The Launch Warranty shall not apply in respect of functionality outside of the scope of the Project Proposal.  Following expiry of the Launch Warranty, any work to repair such defects shall be chargeable at the rates contained in the Project Proposal. <br />
+6.2 It is acknowledged that while third party software is used, the Company is constrained by the preparedness of the third party software owner to rectify errors and provide updates of the applicable third party software. The Company will use reasonable endeavours to resolve any errors in third party software and any such work will be chargeable at the rates contained in the Project Proposal. For the avoidance of doubt, the Company shall not be liable as a result of its failure to resolve any bugs contained in third party software. </p>
+
+	<p>7. Post-Launch Services<br />
+7.1 Requests for Post-Launch Services including but not limited to updates and modifications shall be raised by the Client via email. <br />
+7.2 The Company will use reasonable endeavours to respond to such request within in 2 (two) Business Days and will provide a quotation for the work required. The timescales for the required Post-Launch Services will then be agreed between the parties. <br />
+7.3 In the event of an emergency, the Company will use reasonable endeavours to resolve any urgent enquiries as soon as possible. <br />
+7.4 If the timescales offered by the Company in accordance with clause 7.2 do not meet the requirements of the Client, a formal meeting will be organised to discuss the matter and for timescales acceptable to both parties to be agreed.<br />
+7.5 The Company may at its discretion supply updates from time to time to maintain the quality of service provided. If the update required is material, the Company shall notify the Customer in writing that the update has been or will be made. </p>
+
+	<p>8. Support and Maintenance Retainer<br />
+8.1 Where the Client opts in to the Support and Maintenance Retainer, the Company shall provide the Support and Maintenance Services detailed in either the Project Proposal or separate retainer proposal (as appropriate) to the Client. <br />
+8.2 The Client shall pay to the Company the monthly fees detailed in either the Project Proposal or separate retainer proposal (as appropriate). <br />
+8.3 The charges for the Support and Maintenance Retainer will be based on an estimate of the number of hours of service required. <br />
+8.4 At the end of each year of support, the Company reserves the right to conduct a reconciliation of the number of hours used against the number of hours charged for and to issue an updated quote for the following year. <br />
+8.5 Either party may terminate the Support and Maintenance Retainer by giving 30 (thirty) days notice in writing to the other party. </p>
+
+	<p>9. Client Obligations <br />
+9.1 The Client shall:<br />
+9.1.1 ensure that the terms of the Project Proposal are accurate and any information provided by the Client is complete and accurate;<br />
+9.1.2 provide all the materials and resources required by the Company in order to supply the Services according to the deadlines in the Project Proposal; and<br />
+9.1.3 ensure that the information provided for inclusion on the website or application does not infringe any third party Intellectual Property rights.</p>
+
+	<p>10. Payment<br />
+10.1 The Company shall invoice the Client in respect of all sums payable in accordance with the Project Proposal. <br />
+10.2 Where the Project Proposal contains staged payments the Company shall raise individual invoices to be issued in respect of each payment. <br />
+10.3 All payments shall be made by the Client within 14 (fourteen) days of the date of the relevant invoice, in pounds sterling (GBP), and by cheque or bank transfer unless otherwise agreed in the project proposal. Payments in other currencies must be agreed in writing prior to placing an Order. <br />
+10.4 The Company will invoice the Client in relation to any Support and Maintenance Services on a monthly basis. <br />
+10.5 The Company reserves the right to withdraw or suspend any services offered if payment is not received within 14 (fourteen) days of the date on which that payment was due in accordance with clause 10.3 and the Company shall not be liable for any losses incurred by the Client as a result of such withdrawal or suspension. <br />
+10.6 If the Project is delayed due to an act and/or omission of the Client such that it exceeds its deadline for completion by 4 (four) weeks or more, the Company shall be entitled to immediately invoice the Client in respect of all sums due to be invoiced upon completion in accordance with the Project Proposal.</p>
+
+	<p>11. Intellectual Property<br />
+11.1 The Intellectual Property Rights in any Code produced in the course of the Project shall be owned by the Company. <br />
+11.2 The Intellectual Property Rights in the CMS (“Expose CMS”) are owned by the Company and the Company hereby grants a non-exclusive licence of Expose CMS to the Client as part of the agreed hosting charge contained in the Project Proposal for the Term. <br />
+11.3 The Company hereby grants to the Client a royalty-free exclusive licence in respect of the Code written specifically for the Client in the course of the Project for the Term.  <br />
+11.4 Intellectual Property Rights in the design assets prepared specifically for the Project and the text contained on the website and/or application created shall be owned by the Client. <br />
+11.5 The final product produced in the course of the Project contains a number of open source libraries, languages and tools the Intellectual Property Rights to which are owned by their original owners and covered under the licenses listed in Schedule 1. Some 3rd-party software may contain or require other open-source licensed software, which has not been listed here for sake of brevity.</p>
+
+	<p>12. Hosting<br />
+12.1 The Code for the Project is currently held privately in a repository on an in-house project hosting platform, ‘Stash’. No individual or organisation has access to this other than the Company. The Website and Database are currently hosted by Amazon Web Services. No individual or organisation has access to these other than the Company.<br />
+12.2 In the event of compromisation of the repository on Stash, or the Website or Database on Amazon (by means such as hacking or the legal requirement for Software to be passed on to a governmental body), the Company shall provide a backup of the Software, and use all reasonable endeavours to set the Project up on a new hosting platform to avoid further downtime. The Company will not be held liable for such an event unless the downtime is of a reasonable enough length to have caused considerable damage to the Client’s business or reputation.<br />
+12.3 The Company shall not liable for any downtime resulting from technical problems of the hosting company, however, the Company will use all reasonable endeavours to maintain the Client’s online presence and correct any faults resulting from hosting issues.<br />
+12.4 The Company will add its own accreditation to any work produced on any format unless by prior agreement with the Client.<br />
+12.5 Where the Company or the hosting company wishes to undertake maintenance which will result in downtime, the Company will provide the Customer with reasonable notice of that downtime. <br />
+12.6 Except in relation to scheduled downtime notified to the Customer in accordance with clause 12.5, the Supplier shall use its reasonable endeavours to maintain availability of 99.99% in relation to the hosted services. </p>
+
+	<p>13. Confidentiality <br />
+13.1 Each party agrees that it shall not at any time during this Agreement, and for a period of five years after termination of this Agreement, disclose to any person any Confidential Information, except as permitted by clause 13.2.<br />
+13.2 Each party may disclose the other party’s Confidential Information:<br />
+13.2.1 to its employees, officers, representatives or advisers who need to know such information for the purposes of carrying out the party’s obligations under this Agreement. Each party shall procure that its employees, officers, representatives or advisers that it discloses Confidential Information to comply with this clause 13; and<br />
+13.2.2 as may be required by law, a court of competent jurisdiction or any governmental or regulatory authority.  <br />
+13.3 No party shall use any other party’s Confidential Information for any purpose other than to perform its obligations under this Agreement. </p>
+
+	<p>14. Limitation of Liability <br />
+14.1 Nothing in this Agreement shall limit or exclude the liability of either party for:<br />
+14.1.1 death or personal injury resulting from negligence; or<br />
+14.1.2 fraud or fraudulent misrepresentation; or <br />
+14.1.3 breach of the terms implied by section 12 of the Sale of Goods Act 1979.<br />
+14.2 Without prejudice to clause 14.1, the Company’s total liability arising under or in connection with this Agreement, whether arising in contract, tort (including negligence) or restitution, or breach of statutory duty or misrepresentation, or otherwise, shall be limited to the value of the Project Proposal. <br />
+14.3 The Company shall not be held liable for:<br />
+14.3.1 any liability resulting from the infringement of third party Intellectual Property Rights as a result of information provided by the Client for use in the Project. The Client must ensure that any text provided for use on the Project does not infringe any Intellectual Property Rights;<br />
+14.3.2 any damages resulting from loss of profits, revenue, contracts or any other direct loss resulting from any work provided by the Company, as all works are subject to being signed off as satisfactory by the Client; or<br />
+14.3.3 any damages resulting from delay in Launch.</p>
+
+	<p>15. Termination<br />
+15.1 The Company may terminate this Agreement immediately at any time if the Client:<br />
+15.1.1 is in breach of any of his obligations hereunder; or<br />
+15.1.2 the Client has entered into liquidation (other than for the purposes of a bona fide amalgamation or reconstruction) whether compulsory or voluntarily or compounds with his creditors generally or has an administrator, administrative receiver or receiver appointed over all or a substantial part of his undertakings or assets; or<br />
+15.1.3 the Client has become bankrupt or shall be deemed unable to pay his debts by virtue of Section 123 of the Insolvency Act 1986.<br />
+15.2 In the event of termination in accordance with clause 15.1.1 above, the Company shall retain any sums already paid to it by the Client.<br />
+15.3 Following expiration of the Initial Term, either party may terminate this agreement in respect of Post-Launch Services at any time by giving 3 (three) months notice in writing to the other party.  <br />
+15.4 If, as a result of significant change within the Company, the Client determines in its reasonable opinion that the Company no longer has the capacity to provide the Post-Launch Services in accordance with this Agreement, and the Company is unable to provide evidence to rebut this assertion, the Client shall be entitled to terminate this Agreement by giving 10 (ten) Business Days’ notice in writing to the Company. </p>
+
+	<p>16. Termination and the delivery of content &amp; materials<br />
+16.1 Following termination of this Agreement in accordance with clause 15 above, the Client will have the right to nominate a new partner to carry out any future work.<br />
+16.2 Following the appointment of a new partner, the Company will provide assistance to the Client to move existing data and code to that partner and any such work will be charged using the hourly rates detailed in the Project Proposal. This may involve, but is not limited to:<br />
+16.2.1 modification of the Code in order to remove any CMS functionality;<br />
+16.2.2 providing all of the Code that has been written specifically for the client along with the CMS code and any other code that is the IP of Parallax Agency Ltd in an encrypted format;<br />
+16.2.3 exporting of databases into .sql format;<br />
+16.2.4 any Domain Name Server (DNS) management;<br />
+16.2.5 account management;<br />
+16.2.6 email setup; and<br />
+16.2.7 transfer of ownership of application in the Apple App Store.<br />
+16.3 The Company will provide the Code and the Database to the new partner as follows:<br />
+16.3.1 the ‘front end’ of the Code (structure, style and function code written that will run independently of the platform it is hosted on) will be provided in HTML, CSS and JavaScript; and <br />
+16.3.2 the ‘back end’ of the Code, written in PHP to support the function of the CMS, will be replaced with appropriate code to ensure the functionality of the Project is not compromised or Code that is IP of The Company will be encrypted.<br />
+16.4 PHP code is executed server-side and can be contained in separate files or snippets can be interspersed between parts of the HTML code. PHP code written within HTML will likely contain either code to support the function of the app, or the function of the CMS.</p>
+
+	<p>17. Variation and Amendments<br />
+17.1 If the Client wishes to vary any details of the project they must notify the Company in writing (email is acceptable) as soon as possible. The Company shall use reasonable endeavours to make the required changes and any additional costs incurred shall be invoiced separately.<br />
+17.2 If, due to circumstances beyond the Company’s control, the Company has to make any change in the arrangements relating to the provision of the Services it shall notify the Client as soon practicable. <br />
+17.3 The Company reserves the right to make changes to these Conditions from time to time and shall notify the Client of such changes in writing as soon as reasonably practicable. </p>
+
+	<p>18. Indemnities<br />
+18.1 Each party shall indemnify the other against all damages, costs, claims and expenses suffered by either party arising from loss or damage to any equipment, by his agents or employees either directly or due to provision of contaminated files.</p>
+
+	<p>19. Force Majeure<br />
+19.1 Neither the Client nor the Company shall be liable for any failure or delay in performing their obligations under these Terms and Conditions where such failure or delay results from any cause that is beyond the reasonable control of that Party. Such causes include, but are not limited to: power failure, internet service provider failure, industrial action, civil unrest, fire, flood, storms, earthquakes, acts of terrorism, acts of war, governmental action or any other event that is beyond the control of the Party in question.<br />
+19.2 Where such failure or delay continues for a period of 30 (thirty) days the affected party shall be entitled to terminate this Agreement by giving 30 (thirty) days written notice to the defaulting party.  </p>
+
+	<p>20. General<br />
+20.1 This Agreement and the documents referred to in it, contain everything agreed between the Parties in relation to the performance of the Parties’ obligations under this Agreement. Amendments to this Agreement will only be validly made where set out in a written document signed by both Parties. <br />
+20.2 The Supplier shall not assign, sub-contract or otherwise transfer this Agreement or any right or obligation imposed under this Agreement without first securing the Customer’s consent in writing.  <br />
+20.3 If at any time either party has a claim against the other which it does not pursue quickly, that shall not mean that the claim can’t be pursued subsequently, when the party concerned is ready.<br />
+20.4 If a court decides that part of this Agreement is not enforceable in law, that decision does not alter the enforceability of the rest of the Agreement.<br />
+20.5 No party not a signatory to this Agreement will be entitled to enforce any right or obligation detailed in this Agreement whether under the Contracts (Rights of Third Parties) Act 1999 or otherwise. <br />
+20.6 The Parties agree that any notice issued under this Agreement must be made in writing to the relevant company’s registered address and shall be deemed to have been received 2 days after the date on which it was posted. Any notice given by fax on any day shall be deemed to have been received at the beginning of the next working day, so long as a confirmation of successful send receipt is received. <br />
+20.7 This Agreement (and any non-contractual matters arising in relation to its subject matter) will be governed by English law and be subject to the exclusive jurisdiction of the English courts.</p>
+
+	<p><strong>Schedule 1 —  Open Source Software</strong></p>
+
+	<p>CakePHP is Copyright the Cake Software Foundation, Inc. and is licensed under the MIT license http://opensource.org/licenses/MIT </p>
+
+	<p>jQuery &amp; jQuery UI is Copyright 2013 The jQuery Foundation. and is licensed under the MIT license http://opensource.org/licenses/MIT </p>
+
+	<p>MySQL is Copyright MySQL AB and is licensed under the GPL. http://www.gnu.org/licenses/gpl-faq.html </p>
+
+	<p>PHP is Copyright the PHP Group and is Licensed under the PHP License 3.01 http://www.php.net/license/3_01.txt </p>
+
+	<p>Colorpicker.js is Copyright Stefan Petre www.eyecon.ro and is licensed under the MIT license. http://opensource.org/licenses/MIT </p>
+
+	<p>Apache Cordova is Copyright the Apache Software Foundation and is licensed under the Apache License, Version 2.0 http://www.apache.org/licenses/LICENSE-2.0</p>
+
+	<p>jdPicker 1.0 Copyright &#169; 2007-2008 Jonathan Leighton &amp; Torchbox Ltd and is licensed under the MIT license.  http://opensource.org/licenses/MIT </p>
+
+	<p>InfoBox is Copyright 2010 Gary Little  and is licensed under the Apache License, Version 2.0 http://www.apache.org/licenses/LICENSE-2.0</p>
+
+	<p>json2.js is in the Public Domain. </p>
+
+	<p>GoCardless PHP API is Copyright &#169; 2011 GoCardless and is licensed under the MIT license. http://opensource.org/licenses/MIT </p>
+
+	<p>The final product contains commercially licensed software. The software is licensed only for the use of Parallax Agency Ltd. and you would need to obtain your own license to use on your own host.</p>
+
+	<p>PrinceXML is Copyright YesLogic Pty Ltd. and is licensed under commerical terms to run on 1 server only http://www.princexml.com/license/ </p>
+
+	<p>NewRelic Agent is Copyright NewRelic Inc. https://newrelic.com/docs/licenses/php-agent-licenses </p></div>
+</section>
+</main><footer class="site-section site-footer js-site-footer padding-top-medium js-in-view" data-offset="100" data-bg="dark">
+    <div class="site-container">
+        <div class="footer-item -address trim fade-up">
+            <h6 class="footer-item__title caption">Leeds HQ</h6>
+            <address class="footer-item__address echo">
+                The Old Brewery<br>
+                Leeds, LS2 7ES
+            </address>
+        </div>
+        <div class="footer-item -address trim fade-up fade-up-2">
+            <h6 class="footer-item__title caption">London</h6>
+            <address class="footer-item__address echo">
+                3rd Floor, 6 Duke Street<br>
+                London, W1U 3EN
+            </address>
+        </div>
+        <div class="footer-item -email fade-up fade-up-3">
+            <a href="mailto:info@parall.ax" class="footer-item__email echo">info@parall.ax</a>
+        </div>
+        <div class="footer-item -subscribe fade-up fade-up-4"><form action="https://createsend.com/t/r/s/ktjujkt/" method="post" class="subscribe js-subscribe" accept-charset="utf-8">
+    <label for="footer-subscribe-email" class="caption">Enter email to subscribe...</label>
+    <input type="email" name="cm-ktjujkt-ktjujkt" id="footer-subscribe-email" class="caption js-subscribe-input" required>
+    <button type="submit"><div><span class="sr-only">Submit</span></div></button>
+</form>
+</div>
+        <div class="caption footer-item footer-legal fade-up fade-up-5">
+            <span class="footer-legal__item">&copy; Parallax Agency Ltd 2018</span><span class="footer-legal__bull"></span><a href="privacy.html" class="footer-legal__item">Privacy</a><span class="footer-legal__bull"></span><a href="terms.html" class="footer-legal__item">Terms</a><span class="footer-legal__bull"></span><a href="../hub/digital-events-leeds.html" class="footer-legal__item">Leeds Digital Events</a>        </div>
+        <div class="footer-item footer-serverless fade-up fade-up-6">
+            <a href="https://serverless.com/partners/" target="_blank">
+                <img src="../parallax-2016/img/svg/serverless-partner-logo-1be2a27825.svg" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="big-squiggle"><div></div></div>
+</footer>
+</div>
+
+        <div class="gumshoe-offset js-gumshoe-offset"></div>
+
+                <script src="../parallax-2016/vendor/js/imgix-48f405e816.min.js"></script>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a2d6172b61","applicationID":"20305294","transactionName":"MVYGYRFRChBZVkxfDAgcJVYXWQsNF1ZNRRcJXjtFAlcBEBdRUUUTClId","queueTime":0,"applicationTime":120,"atts":"HREFF1lLGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from parall.ax/pages/terms by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 May 2018 13:42:19 GMT -->
+</html>
