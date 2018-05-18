@@ -8,11 +8,11 @@
     height: 353px;
     width: 100%;
     top: 80px;
-    right: -50px;
+    right: -10px;
     background-image: url(../img/intro/computer.svg);
     background-repeat: no-repeat;
-    -webkit-background-size: 243px 243px;
-    -moz-background-size: 243px 243px;
+    -webkit-background-size: 343px 343px;
+    -moz-background-size: 343px 343px;
     background-size: 100%;
     background-position: center;
     image-rendering: -webkit-optimize-contrast;
