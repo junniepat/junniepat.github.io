@@ -1318,7 +1318,7 @@
                 g.reqPage()
             })
         }
-        a.replace ? window.history.replaceState({}, "", a.url) : window.history.pushState({}, "", "#/" ), a.scrollBefore && TweenLite.to(a.scrollBefore.target, a.scrollBefore.time, {
+        a.replace ? window.history.replaceState({}, "", a.url) : window.history.pushState({}, "", a.url ), a.scrollBefore && TweenLite.to(a.scrollBefore.target, a.scrollBefore.time, {
             scrollTo: a.scrollBefore.to,
             ease: a.scrollBefore.ease,
             autoKill: !1
