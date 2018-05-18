@@ -14661,3 +14661,17 @@ ul {
 .-color-domopult-secondary-bg {
     background-color: #5952cc
 }
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+   .cb-slider-item {
+        background-color: #f2f2f2;
+    }
+    
+    .cb-slider-item:nth-child(2) {
+    background: red;
+}
+}
