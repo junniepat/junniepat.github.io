@@ -14669,6 +14669,7 @@ ul {
 @media only screen and (max-width: 800px) {
    .cb-slider-item {
         background-color: #f2f2f2;
+       border-bottom: 1px solid #555;
     }
     
     .cb-slider-item:nth-child(2) {
