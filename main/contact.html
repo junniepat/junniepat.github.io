@@ -89,7 +89,7 @@
                         </li>
                     </ul>
                     <div class="act-buttons">
-                        <button class="btn btn-success-gradiant font-14">Get a Quote</button>
+                        <button class="btn btn-success-gradiant font-14">Request a Demo</button>
                     </div>
                 </div>
             </nav>
@@ -173,7 +173,7 @@
                                                         <div class="m-r-20 align-self-center"> <img src="assets/images/contact/icon1.png" alt="lloydant"> </div>
                                                         <div class="">
                                                             <h6 class="font-medium">Address</h6>
-<p class="">#25b, Chukwuka Utazi Street, <br> Liberty Estate, Independence Layout, Enugu.</p>
+<p class="">#26B, Chukwuka Utazi Street, <br> Liberty Estate, Independence Layout, Enugu.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -182,8 +182,7 @@
                                                         <div class="m-r-20 align-self-center"> <img src="assets/images/contact/icon2.png" alt="lloydant"> </div>
                                                         <div class="">
                                                             <h6 class="font-medium">Phone</h6>
-                                                            <p class="">251 546 9442
-                                                                <br> 630 446 8851</p>
+<p class="">+234 816 4958 768</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -208,19 +207,57 @@
                 <!-- ============================================================== -->
                 <!-- End Contact 3  -->
                 <!-- ============================================================== -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1619902.0054433027!2d-122.68851282163044!3d37.534535608111824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1507725785789" width="100" height="450" style="border:0"></iframe>
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+<div style='overflow:hidden;height:440px;width:100%;'>
+    <div id='gmap_canvas' style='height:440px;width:100%;'></div>
+   
+    <style>
+        #gmap_canvas img {
+            max-width: none !important;
+            background: none !important
+        }
+    </style>
+</div>
+<script type='text/javascript'>
+    function init_map() {
+        var myOptions = {
+            zoom: 10,
+            center: new google.maps.LatLng(6.4378831, 7.512798299999986),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+        marker = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(6.4378831, 7.512798299999986)
+        });
+        infowindow = new google.maps.InfoWindow({
+            content: '<strong>LloydAnt</strong><br>26b. chukwuka Utazi street, liberty estate,independence layout,Enugu, Nigeria<br>'
+        });
+        google.maps.event.addListener(marker, 'click', function () {
+            infowindow.open(map, marker);
+        });
+        infowindow.open(map, marker);
+    }
+    google.maps.event.addDomListener(window, 'load', init_map);
+</script>
                 <!-- ============================================================== -->
                 <!-- Call to action -->
                 <!-- ============================================================== -->
-                <div class="spacer">
-                    <div class="container">
-                        <div class="row justify-content-center m-b-30">
-                            <div class="col-md-7 text-center">
-                                <h2 class="title">Are you happy with what we offer? Grab your lloydant Copy Now</h2>
-                                <h6 class="subtitle">Yeah ! Its pretty cool about what you are offering and i starterd to feel in love with your Amazing UI Kit. I want it Yea!</h6> <a class="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse" href="#"><span>Buy lloydant <i class="ti-arrow-right"></i></span></a> </div>
-                        </div>
-                    </div>
-                </div>
+<div class="spacer" style="background: url('images/about.png'); background-size:cover;">
+    <div class="container">
+        <div class="row justify-content-center m-b-30">
+            <div class="col-md-7 text-center">
+                <h2 class="title">Want to work with us?</h2>
+                <h6 class="subtitle">Do you think we're amazing and you could help us do more, Apply Now.</h6>
+                <a class="btn btn-info-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse" href="#">
+                    <span>Apply Here
+                        <i class="ti-arrow-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
                 <!-- ============================================================== -->
                 <!-- End Call to action -->
                 <!-- ============================================================== -->
@@ -242,17 +279,15 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6 m-b-30">
                         <h5 class="m-b-20">Address</h5>
-                        <p>#25b, Chukwuka Utazi Street, Liberty Estate, Independence Layout, Enugu.</p>
+                        <p>#26B, Chukwuka Utazi Street, Liberty Estate, Independence Layout, Enugu.</p>
                     </div>
                     <div class="col-lg-3 col-md-6 m-b-30">
                         <h5 class="m-b-20">Phone</h5>
-                        <p>Reception : +205 123 4567
-                            <br/>Office : +207 235 7890</p>
+<p>Office : +234 816 4958 768</p>
                     </div>
                     <div class="col-lg-3 col-md-6 m-b-30">
                         <h5 class="m-b-20">Email</h5>
-                        <p>Office : <a href="#" class="link">info@lloydant.com</a>
-                            <br/>Site : <a href="#" class="link">lloydant@lloydant.com</a></p>
+                        <p>Office : <a href="#" class="link">info@lloydant.com</a></p>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="m-b-20">Social</h5>

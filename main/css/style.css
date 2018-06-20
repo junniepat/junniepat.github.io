@@ -2832,7 +2832,7 @@ File: scss
   .po-absolute {
     position: relative; }
   .topbar {
-    background: #ffffff;
+    background: #0eb0ed;
     position: relative; }
     .topbar.animated {
       -webkit-animation-duration: 0s;
