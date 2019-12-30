@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--<3-->
+<html>
+
+<head>
+    <title>
+        Etch-A-Sketch
+    </title>
+
+    <style type="text/css">
+        #container {
+            display: block;
+            margin: 0 0 20px 325px;
+        }
+        .grid {
+            border: 1px solid green;
+        }
+        #clear {
+            border: 1px solid green;
+            padding: 10px;
+            font-weight: bold;
+            background-color: #D3D3D3;
+            border-radius: 5px;
+            margin: 20px 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="clear">Reset Grid</button>
+    <div id="container"></div>
+    <script>
+        let size = 16;
+        container = document.querySelector('#container');
+        container.addEventListener("mouseover", function (event) {
+            if (event.target.id != "container") {
+                event.target.style.backgroundColor = "#D60270";
+                setTimeout(function () {
+                    event.target.style.backgroundColor = "#9B4F96";
+                    setTimeout(function () {
+                        event.target.style.backgroundColor = "#0038A8";
+                    }, 1500);
+                }, 1500);
+            }
+        });
+        function createGrid() {
+            const totalPixels = 666;
+            let columnWidth = totalPixels / size;
+            container.style.gridTemplateColumns =
+            "repeat(" + size + "," + columnWidth + "px [col-start])";
+            for (i = 0; i < size * size; i++) {
+                let div = document.createElement('div');
+                div.setAttribute('class', 'grid');
+                div.style.padding = (columnWidth / 2) - 1 + "px";
+                container.appendChild(div);
+            }   
+        }
+        createGrid();
+        function eraseGrid() {
+            let divs = document.querySelectorAll('.grid');
+            divs.forEach((div) => {
+                container.removeChild(div);
+            });
+        }
+        clear = document.querySelector('#clear');
+        clear.addEventListener('click', () => {
+            eraseGrid();
+            size = prompt('Enter length of the new grid.');
+            if(size > 100) {
+                size = 100;
+            }
+                createGrid();
+        });
+    </script>
+</body>
+
+</html>
