@@ -298,100 +298,63 @@ header>h1, h4 {
   }
   
   
-  /* menu */
-  
-  .header .menu {
-	clear: both;
-	max-height: 0;
-	transition: max-height .2s ease-out;
-	width: 70%;
+  nav {
 	margin: 0 auto;
-  }
-  
-  /* menu icon */
-  
-  .header .menu-icon {
-	cursor: pointer;
-	display: inline-block;
-  /*   float: right; */
-	padding: 28px 20px;
-	position: relative;
-	user-select: none;
-  }
-  
-  .header .menu-icon .navicon {
-	background: #333;
+
+	background-color: var(--bluedark-color);
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+	max-width: 1000px;
+	margin: 0 auto !important;
+}
+
+
+
+.navigation li:first-child {
 	display: block;
-	height: 2px;
-	position: relative;
-	transition: background .2s ease-out;
-	width: 18px;
-  }
-  
-  .header .menu-icon .navicon:before,
-  .header .menu-icon .navicon:after {
-	background: #333;
-	content: '';
-	display: block;
-	height: 100%;
-	position: absolute;
-	transition: all .2s ease-out;
-	width: 100%;
-  }
-  
-  .header .menu-icon .navicon:before {
-	top: 5px;
-  }
-  
-  .header .menu-icon .navicon:after {
-	top: -5px;
-  }
-  
-  /* menu btn */
-  
-  .header .menu-btn {
+}
+.navigation li {
 	display: none;
-  }
-  
-  .header .menu-btn:checked ~ .menu {
-	max-height: 240px;
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon {
-	background: transparent;
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon:before {
-	transform: rotate(-45deg);
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon:after {
-	transform: rotate(45deg);
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-	top: 0;
-  }
-  
-  /* 48em = 768px */
-  
-  @media (min-width: 48em) {
-	.header li {
-	  float: left;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+}
+.navigation a:hover {
+	color: white;
+	background-color: var(--bluedark-color);
+	border-bottom: 2px solid #f2f2f2;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
 	}
-	.header li a {
-	  padding: 20px 30px;
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
 	}
-	.header .menu {
-	  clear: none;
-  /*     float: right; */
-	  max-height: none;
+	.navigation a {
+		text-align: center;
 	}
-	.header .menu-icon {
-	  display: none;
+	.navigation li:first-child {
+		display: none;
 	}
-  }
+}
   
 
   .logo {
