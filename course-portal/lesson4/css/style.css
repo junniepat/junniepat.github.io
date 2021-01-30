@@ -204,6 +204,10 @@ a:visited {
 	margin: 10px;
 }
 
+.social-icons {
+	margin-top: 20px;
+}
+
 
 
 /* profile photo float right */
@@ -436,16 +440,25 @@ main {
 /* FOOTER ONLY: unvisited link, visited link, selected link  */
 .footer-links {
 	text-align: center;
+	height: 50px;
 }
 
 .footer-links p {
 	color: #fff;
+	height: 10px;
 }
 
 .footer-bottom {
 	background: var(--bluedark-color); 
 	height: 90px;
-	line-height: 90px;
+	line-height: 10px;
+	padding-top: 30px;
+}
+
+.navlinks li {
+	list-style: none;
+	color: #fff;
+	margin-left: 0px;
 }
 
 footer a, footer a:link, footer a:visited, footer span {
