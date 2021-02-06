@@ -105,10 +105,11 @@ a:visited {
   
 
 .forecast-item {
-	background: #fff;
-	width: 50px;
-	height: 50px;
+    background: #fff;
+	width: 100px;
+	height: 100px;
 	/* padding: 1.5vw 2vw; */
+	text-align: center;
 	margin: 0 auto;
 }
 
@@ -155,13 +156,7 @@ a:visited {
   }
   
 
-.forecast-item {
-	background: #fff;
-	width: 50px;
-	height: 50px;
-	/* padding: 1.5vw 2vw; */
-	margin: 0 auto;
-}
+
 
 
 
