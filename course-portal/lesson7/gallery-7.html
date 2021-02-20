@@ -56,47 +56,47 @@
         </div>
         <div class="gallery">
           <figure class="gallery-item">
-              <img src="./images/weather1.jpg" data-src="./images/weather1.jpg" />
+              <img src="https://via.placeholder.com/252x90.png?text=Metrologg+weather+site+page" data-src="./images/weather1.jpg" alt="image2" />
               <h4>The Dark Night</h4>
           </figure>
 
           <figure class="gallery-item">
-            <img data-src="./images/weather2.jpg" />
+            <img src="https://via.placeholder.com/252x90.png?text=Metrologg+weather+site+page" data-src="./images/weather2.jpg" alt="image3" />
             <h4>The Moon Clouds</h4>
         </figure>
 
         <figure class="gallery-item">
-            <img data-src="./images/weather3.jpg" />
+            <img src="https://via.placeholder.com/252x90.png?text=Metrologg+weather+site+page" data-src="./images/weather3.jpg" alt="image4" />
             <h4>The Forest clouds</h4>
         </figure>
 
         <figure class="gallery-item">
-            <img data-src="./images/weather4.jpg" />
+            <img src="https://via.placeholder.com/252x90.png?text=Metrologg+weather+site+page" data-src="./images/weather4.jpg" alt="image5" />
             <h4>The Fog</h4>
         </figure>
 
         <figure class="gallery-item">
-            <img src="./images/weather5.jpg" data-src="./images/weather5.jpg" />
+            <img src="https://via.placeholder.com/252x90.png?text=Metrologg+weather+site+page" data-src="./images/weather5.jpg" alt="image6" />
             <h4>The Lone Road</h4>
         </figure>
 
         <figure class="gallery-item">
-            <img data-src="./images/weather6.jpg" />
+            <img  src="https://via.placeholder.com/252x90.png?text=Metrologg+weather+site+page" data-src="./images/weather6.jpg" alt="image7" />
             <h4>The Hill Top</h4>
         </figure>
 
         <figure class="gallery-item">
-            <img data-src="./images/weather7.jpg" />
+            <img src="https://via.placeholder.com/252x90.png?text=Metrologg+weather+site+page" data-src="./images/weather7.jpg" alt="image8" />
             <h4>The Dusty Cloud</h4>
         </figure>
 
         <figure class="gallery-item">
-            <img data-src="./images/weather8.jpg" />
+            <img src="https://via.placeholder.com/252x90.png?text=Metrologg+weather+site+page" data-src="./images/weather8.jpg" alt="image9" />
             <h4>The Sleepy Clouds</h4>
         </figure>
 
         <figure class="gallery-item">
-            <img src="./images/weather9.jpg" data-src="./images/weather9.jpg" />
+            <img src="https://via.placeholder.com/252x90.png?text=Metrologg+weather+site+page" data-src="./images/weather9.jpg" alt="image10" />
             <h4>The Outrageous Rain Night</h4>
         </figure>
 
@@ -152,33 +152,36 @@
     <script type="text/javascript">
         console.log("screem")
         const images = document.querySelectorAll("[data-src]");
-        function preloadImage(img) {
-            const src = img.getAttribute("data-src");
-            if(!src) {
-                return;
-            }
-            img.src = src;
-        }
-        
-        const imgOptions = {
-            threshold: 0,
-            rootMargin: "0px 0px 500px 0px"
-        };
-        
-        const imgObserver = new IntersectionObserver((entries, imgObserver) => {
-            entries.forEach(entry => {
-                if(!entry.isIntersecting) {
-                    return;
-                } else {
-                    preloadImage(entry.target);
-                    imgObserver.unobserve(entry.target);
-                }
-            })
-        }, imgOptions);
-        
-        images.forEach(image => {
-            imgObserver.observe(image);
-        }) 
+
+function preloadImage(img) {
+  const src = img.getAttribute("data-src");
+  if (!src) {
+    return;
+  }
+
+  img.src = src;
+  img.removeAttribute('data-src');
+}
+
+const imgOptions = {
+  threshold: 1,
+  rootMargin: "0px 0px 10px 0px",
+};
+
+const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      preloadImage(entry.target);
+      imgObserver.unobserve(entry.target);
+    }
+  });
+}, imgOptions);
+
+images.forEach(image => {
+  imgObserver.observe(image);
+});
             </script>
     <script src="./js/script.js"></script>
     <script src="./js/checkDate.js"></script>

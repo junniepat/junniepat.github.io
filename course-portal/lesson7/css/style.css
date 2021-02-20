@@ -147,6 +147,15 @@ a:visited {
 	border-radius: 10px;
 }
 
+.gallery-item img[data-src] {
+    filter: blur(5px);
+    }
+
+.gallery-item img{
+    filter: blur(0px);
+    transition: filter 0.5s;
+  }
+
 @media only screen and (max-width: 32.5em){
 	.hero-summary {
 		top: 0px !important;
