@@ -123,6 +123,10 @@ a:visited {
 	grid-gap: 1rem;
 }
 
+figure .gallery-item {
+    margin: 0 !important;
+}
+
 @media (min-width: 600px) {
 	.gallery { grid-template-columns: repeat(2, 1fr); }
   }
@@ -137,14 +141,16 @@ a:visited {
 	width: 100%;
 	border-radius: 10px;
 	padding: 5px; 
-	text-align: center;
+    text-align: center;
+    margin: 0 !important;
 }
 
 
 .gallery-item img {
 	width: 100%;
 	height: 250px;
-	border-radius: 10px;
+    border-radius: 10px;
+    margin: 0 !important;
 }
 
 .gallery-item img[data-src] {
@@ -155,6 +161,8 @@ a:visited {
     filter: blur(0px);
     transition: filter 0.5s;
   }
+
+ 
 
 @media only screen and (max-width: 32.5em){
 	.hero-summary {
