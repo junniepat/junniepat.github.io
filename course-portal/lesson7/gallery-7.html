@@ -1,0 +1,200 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- metadata -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Patrick Igwe | WDD230 Assignment Portal</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <meta name="author" content="Patrick Igwe">
+    <meta name="description" content="Assignment portal for the course WDD 230: Web Frontend Development I assignment portal for Patrick Igwe taken at Brigham Young University - Idaho (BYUi)."> 
+    <!-- css | scripts -->
+    <link rel="stylesheet" href="css/style.css"/>
+
+  </head>
+
+  <body onload="datFuncbanner()">
+      <!-- header area -->
+    <header>
+        <div style="height: 50px; line-height: 50px; background: #FBAF07; text-align: center" id="announement">
+            Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+        </div>
+        <div class="main-head">
+            <div class="header-row">
+                <div class="header-item"><img src="./images/logo.png" alt="logo" width="100"/> </div>
+                <div class="header-item" style="text-align: left">
+                    <h1 style="color: #fff; margin-bottom: 10px">Metrologg</h1>
+                    <span style="color: #fff;">Making data</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav class="header">
+            <ul class="navigation">
+                <li><a class="ham" href="#" style="font-size: 30px">☰</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Partner</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="https://junniepat.github.io/course-portal/lesson7/gallery-7.html">Gallery</a></li>
+            </ul>
+    </nav>
+        
+        </div>
+    </header>
+
+ 
+    <!-- main area -->
+    <main>
+        <div class="mainHead">
+            <h1>Image Gallery</h1>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-item">
+              <img src="./images/weather1.jpg" data-src="./images/weather1.jpg" />
+              <h4>The Dark Night</h4>
+          </figure>
+
+          <figure class="gallery-item">
+            <img data-src="./images/weather2.jpg" />
+            <h4>The Moon Clouds</h4>
+        </figure>
+
+        <figure class="gallery-item">
+            <img data-src="./images/weather3.jpg" />
+            <h4>The Forest clouds</h4>
+        </figure>
+
+        <figure class="gallery-item">
+            <img data-src="./images/weather4.jpg" />
+            <h4>The Fog</h4>
+        </figure>
+
+        <figure class="gallery-item">
+            <img src="./images/weather5.jpg" data-src="./images/weather5.jpg" />
+            <h4>The Lone Road</h4>
+        </figure>
+
+        <figure class="gallery-item">
+            <img data-src="./images/weather6.jpg" />
+            <h4>The Hill Top</h4>
+        </figure>
+
+        <figure class="gallery-item">
+            <img data-src="./images/weather7.jpg" />
+            <h4>The Dusty Cloud</h4>
+        </figure>
+
+        <figure class="gallery-item">
+            <img data-src="./images/weather8.jpg" />
+            <h4>The Sleepy Clouds</h4>
+        </figure>
+
+        <figure class="gallery-item">
+            <img src="./images/weather9.jpg" data-src="./images/weather9.jpg" />
+            <h4>The Outrageous Rain Night</h4>
+        </figure>
+
+
+        </div>
+
+    
+
+
+    </main>
+
+    <!-- footer area -->
+    <footer>
+        <div class="footer-row">
+            <div class="footer-item">
+                <div class="mapouter">
+                    <div class="gmap_canvas" style="height: 250px">
+                        <iframe style="width: 100% !important;" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <a href="https://fmovies2.org"></a><br><style>.mapouter{position:relative;text-align:right;height:250px;width:100%;}</style>
+                        <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div>
+                    </div>
+            </div>
+
+            <div class="footer-item">
+                <h4>Contact Information</h4>
+                <ul class="navlinks">
+                    <li><img src="./images/005-placeholder.svg" width="15" style="margin-right: 20px "/> Address: No. 1 city centre, Emirate avenue</li>
+                    <li><img src="./images/001-telephone.svg" width="15" style="margin-right: 20px "/> Phone: +971 56 378 1235</li>
+                    <li><img src="./images/006-envelope.svg" width="15" style="margin-right: 20px "/> Email: patrickoigwe@gmail.com</li>
+                </ul>
+
+                <div class="social-icons">
+                    <!-- icons -->
+                    <img src="./images/003-facebook.svg" width="20" style="margin-right: 20px "/>
+                    <img src="./images/004-instagram.svg" width="20" style="margin-right: 20px "/>
+                    <img src="./images/002-twitter.svg" width="20" style="margin-right: 20px "/>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <span id="currentYear"> </span>  &nbsp; | &nbsp;
+                <span>Patrick Igwe</span>  &nbsp; | &nbsp;
+                <span>Nigeria</span>  &nbsp; | &nbsp;
+                <a href="https://www.byui.edu/online" target="_blank">BYUi Online</a>  
+              
+                <p id="updateDate"></p>
+              </div>
+        </div>
+    </footer> 
+
+  
+    <script type="text/javascript">
+        console.log("screem")
+        const images = document.querySelectorAll("[data-src]");
+        function preloadImage(img) {
+            const src = img.getAttribute("data-src");
+            if(!src) {
+                return;
+            }
+            img.src = src;
+        }
+        
+        const imgOptions = {
+            threshold: 0,
+            rootMargin: "0px 0px 500px 0px"
+        };
+        
+        const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+            entries.forEach(entry => {
+                if(!entry.isIntersecting) {
+                    return;
+                } else {
+                    preloadImage(entry.target);
+                    imgObserver.unobserve(entry.target);
+                }
+            })
+        }, imgOptions);
+        
+        images.forEach(image => {
+            imgObserver.observe(image);
+        }) 
+            </script>
+    <script src="./js/script.js"></script>
+    <script src="./js/checkDate.js"></script>
+    <script src="./js/navigation.js"></script>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    
+    <script type="text/javascript">
+        WebFont.load({
+        google: {
+            families: [
+            'Poppins'
+            ]
+        }
+        });
+    </script>
+  </body>
+</html>
+
