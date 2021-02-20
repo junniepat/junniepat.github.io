@@ -2,14 +2,14 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    max-width: 80rem;
+    max-width: 50rem;
     display: flex;
     flex-wrap: wrap;
   }
   
   .lazy-loadImages--item {
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
     margin: 1rem;
     background: #f2f2f2;
   }
