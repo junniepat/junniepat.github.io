@@ -19,7 +19,7 @@ body {
   thead th {
     color: white;
     background-color: rgb(98, 140, 166);
-    padding: 1rem;
+    padding: 0.5rem;
   }
   
   table,
@@ -32,7 +32,7 @@ body {
   
   td {
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
   }
   tr:nth-child(even) {
     background-color: rgb(197, 233, 206);
