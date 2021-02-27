@@ -11,14 +11,14 @@ body {
   }
   
   caption {
-    background-color: rgb(127, 185, 194);
+    background-color: #7fb9c2;
     padding: 1rem;
     font-size: 2.5rem;
   }
   
   thead th {
     color: white;
-    background-color: rgb(98, 140, 166);
+    background-color: #628ca6;
     padding: 0.5rem;
   }
   
@@ -35,10 +35,10 @@ body {
     padding: 0.5rem;
   }
   tr:nth-child(even) {
-    background-color: rgb(197, 233, 206);
+    background-color: #e7f0ed;
   }
   tr {
-    background-color: rgb(231, 240, 237);
+    background-color: #e7ffed;
   }
   tfoot {
     font-size: 1rem;
@@ -46,10 +46,10 @@ body {
 
   
   tfoot tr {
-    background-color: rgb(127, 185, 194);
+    background-color: #7fb9c2;
   }
   
   .highlight {
-    background-color: rgb(98, 140, 166);
+    background-color: #628ca6;
     color: white;
   }
