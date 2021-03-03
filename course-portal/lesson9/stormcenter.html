@@ -1,0 +1,209 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- metadata -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Patrick Igwe | WDD230 Assignment Portal</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <meta name="author" content="Patrick Igwe">
+    <meta name="description" content="Assignment portal for the course WDD 230: Web Frontend Development I assignment portal for Patrick Igwe taken at Brigham Young University - Idaho (BYUi)."> 
+    <!-- css | scripts -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <style>.mapouter{position:relative;text-align:right;height:250px;width:100%;}</style>
+    <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style>
+  </head>
+
+  <body onload="datFuncbanner()">
+      <!-- header area -->
+    <header>
+        <div style="height: 50px; line-height: 50px; background: #FBAF07; text-align: center" id="announement">
+            Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+        </div>
+        <div class="main-head">
+            <div class="header-row">
+                <div class="header-item"><img src="./images/logo.png" alt="logo" width="100"/> </div>
+                <div class="header-item" style="text-align: left">
+                    <h1 style="color: #fff; margin-bottom: 10px">Metrologg</h1>
+                    <span style="color: #fff;">Making data</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav class="header">
+            <ul class="navigation">
+                <li><a class="ham" href="#" style="font-size: 30px">☰</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Partner</a></li>
+                <li><a href="https://junniepat.github.io/course-portal/lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="https://junniepat.github.io/course-portal/lesson7/gallery-7.html">Gallery</a></li>
+            </ul>
+    </nav>
+        
+      
+    </header>
+
+ 
+    <!-- main area -->
+    <main>
+
+        <div class="mainHead">
+            <h1>Storm Center</h1>
+        </div>
+
+        <div class="form-horizontal">
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend class="legend-title">Reporter's Information</legend>
+                    <label class="form-control">First Name*<input type="text" name="fname" required></label>
+                    <label class="form-control">Last Name*:<input type="text" name="lname" required /> </label>
+                    <label class="form-control">Phone*<input type="tel" name="phone" placeholder="5555555555" required />
+                    </label>
+                    <label class="form-control">
+                        Zip Code*<input type="number" name="zip" placeholder="90210" required />
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend class="legend-title">Storm Data</legend>
+                    <label class="form-control">Storm Date
+                        <input type="date" name="date">
+                    </label>
+
+                    <div class="form-group">
+                        <label class="form-control">Storm Type</label>
+                        <select name="subject" class="formbut">
+                            <option selected disabled>Please Select</option>
+                            <option value="flood">Flash Flood</option>
+                            <option value="hail">Hail</option>
+                            <option value="hurricane">Hurricane</option>
+                            <option value="thunderstorm">Thunderstorm</option>
+                            <option value="tornado">Tornado</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                    <label class="form-control">Storm Region</label>
+                    <select name="select region" class="formbut">
+                        <option selected disabled>Please Select</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda_springs">Soda Springs</option>
+                        <option value="fist_haven">Fish Haven</option>
+                    </select>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend class="legend-title">Storm Severity</legend>
+                    <label class="form-control">User in Danger</label>
+                    <!-- name left the same on all radio buttons. This means when one is selected, the other gets deselected. Otherwise you could click them all. -->
+                    <label class="form-radio">
+                        <input type="radio" name="danger" value="yes" />&nbsp; Yes
+                    </label>
+                    <label class="form-radio">
+                        <input type="radio" name="danger" value="no" />&nbsp; No
+                    </label>
+                    <label class="form-radio">
+                        <input type="radio" name="danger" value="maybe" />&nbsp; Maybe
+                    </label>
+
+                    <div id="rate" style="margin-top: 20px">
+                        <label for="rating">Storm Intensity (on a scale of 1-10)</label>
+                    </div>
+                    <label class="flexly" for="rating">Rating: 
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">3</span>
+                    </label>
+            
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                </fieldset>
+
+                <fieldset id="comments">
+                    <legend class="legend-title">Additional Information or Comments</legend>
+                    <label><input type="text" class="txtarea"></label>
+                </fieldset>
+                
+                <input type="submit" value="Report Weather Event" class="form-btn">
+            </form>
+        </div>
+
+    
+    </main>
+
+    <!-- footer area -->
+    <footer>
+        <div class="footer-row">
+            <div class="footer-item">
+                <div class="mapouter">
+                    <div class="gmap_canvas" style="height: 250px">
+                        <iframe style="width: 100% !important;" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                        <a href="https://fmovies2.org"></a><br></div>
+                    </div>
+            </div>
+
+            <div class="footer-item">
+                <h4>Contact Information</h4>
+                <ul class="navlinks">
+                    <li><img src="./images/005-placeholder.svg" alt="address" width="15" style="margin-right: 20px "/> Address: No. 1 city centre, Emirate avenue</li>
+                    <li><img src="./images/001-telephone.svg" alt="phone" width="15" style="margin-right: 20px "/> Phone: +971 56 378 1235</li>
+                    <li><img src="./images/006-envelope.svg" alt="email" width="15" style="margin-right: 20px "/> Email: patrickoigwe@gmail.com</li>
+                </ul>
+
+                <div class="social-icons">
+                    <!-- icons -->
+                    <img src="./images/003-facebook.svg" alt="facebook" width="20" style="margin-right: 20px "/>
+                    <img src="./images/004-instagram.svg" alt="instagram" width="20" style="margin-right: 20px "/>
+                    <img src="./images/002-twitter.svg" alt="twitter" width="20" style="margin-right: 20px "/>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <span id="currentYear"> </span>  &nbsp; | &nbsp;
+                <span>Patrick Igwe</span>  &nbsp; | &nbsp;
+                <span>Nigeria</span>  &nbsp; | &nbsp;
+                <a href="https://www.byui.edu/online" target="_blank">BYUi Online</a>  
+              
+                <p id="updateDate"></p>
+              </div>
+        </div>
+    </footer> 
+
+  
+    <script src="./js/loading.js"> </script>
+    <script src="./js/script.js"></script>
+    <script src="./js/checkDate.js"></script>
+    <script src="./js/navigation.js"></script>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    
+    <script>
+        WebFont.load({
+        google: {
+            families: [
+            'Poppins'
+            ]
+        }
+        });
+    </script>
+  </body>
+</html>
+
