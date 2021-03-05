@@ -20,9 +20,10 @@ fetch(requestURL)
         'Order:' + ' ' + prophets[i].order + ' ' + 'Birth place:' + ' ' + prophets[i].birthplace + ' ' + 'Children:' + ' ' + prophets[i].numofchildren;
 
 
-        card.appendChild(image);
         card.appendChild(h2);
         card.appendChild(p);
+        card.appendChild(image);
+
 
 
         document.querySelector('div.cards').appendChild(card);
