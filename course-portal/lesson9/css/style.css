@@ -499,8 +499,7 @@ main {
 	margin: 0 auto;
 	padding: 1.5em;
 	max-width: 70%;
-	background-color: var(--white-color);
-	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);;
+
 }
 
 .card {
@@ -758,4 +757,91 @@ form select.formbut {
     background: var(--bluedark-color);
 	color: white;
 	transition: 3s;
+}
+
+
+/* Town index page */
+
+.mastArticle {
+	min-height: 150px;
+}
+
+.mastImage {
+	border-radius: 10px;
+	height: 400px; 
+	width: 100%; 
+	background-size: contain; 
+	background-position: center !important; 
+	background: url('../images/towns/header.jpg');
+	margin-bottom: 30px;
+}
+
+#cards {
+	display: grid;
+	padding: 5px;
+	grid-gap: 1rem;
+}
+
+  @media (min-width: 900px) {
+	#cards { grid-template-columns: repeat(3, 1fr); }
+	.homeSection {
+		width: 350px;
+		min-height: 120px;
+	}
+  }
+
+  @media (min-width: 600px) and (max-width: 770px) {
+	#cards { grid-template-columns: repeat(1, 1fr); }
+
+	.homeSection {
+		width: 100%;
+		min-height: 120px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.homeSection:nth-child(odd) img {
+		grid-column: 1;
+	}
+	
+	.homeSection:nth-child(odd) .homeTownText {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+  }
+
+  @media (max-width: 600px) {
+	#cards { grid-template-columns: repeat(1, 1fr); }
+
+	.homeSection {
+		width: 100%;
+		min-height: 120px;
+	}
+
+	.homeSection:nth-child(odd) img {
+		grid-column: 1;
+		background: red;
+	}
+	
+	.homeSection:nth-child(odd) .homeTownText {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+  }
+  
+
+.homeSection {
+	background-color: var(--white-color);
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+	padding: 5px; 
+	text-align: center;
+	margin: 0 auto;
+}
+
+.homeSection h3 {
+	height: 40px;
+	font-style: italic;
 }
