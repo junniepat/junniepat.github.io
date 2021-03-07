@@ -798,10 +798,14 @@ form select.formbut {
 		min-height: 120px;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+		flex-grow: 1;
 	}
 
 	.homeSection:nth-child(odd) img {
 		grid-column: 1;
+		min-height: 120px;
+		flex-grow: 1;
+		justify-self: center;
 	}
 	
 	.homeSection:nth-child(odd) .homeTownText {
@@ -817,11 +821,13 @@ form select.formbut {
 	.homeSection {
 		width: 100%;
 		min-height: 120px;
+		flex-grow: 1;
 	}
 
 	.homeSection:nth-child(odd) img {
 		grid-column: 1;
-		background: red;
+		flex-grow: 1;
+		justify-self: center;
 	}
 	
 	.homeSection:nth-child(odd) .homeTownText {
