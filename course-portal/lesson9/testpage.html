@@ -1,0 +1,23 @@
+<html>
+
+<head>
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+var arr = [
+  "apple",
+  ["banana", "strawberry", "apple"]
+];
+
+function countItems(arr, item) {
+    return arr.length == 0 ? 0 :  1 + countItems(arr.slice(1))
+}
+var numberCount = countItems(arr);
+console.log(numberCount);
+</script>
+</body>
+
+</html>
