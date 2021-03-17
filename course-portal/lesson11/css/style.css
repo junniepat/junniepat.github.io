@@ -197,8 +197,8 @@ figure .gallery-item {
 	top: 30px;
 	left: 30px;
 	position: absolute;
-	height: 220px;
-	width: 25%;
+	min-height: 220px;
+	min-width: 25%;
 	background: #e90;
 	border-radius: 5px;
 	margin: 7px;
