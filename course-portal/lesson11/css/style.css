@@ -200,8 +200,8 @@ figure .gallery-item {
 	position: absolute;
 	min-height: 220px;
 	min-width: 25%;
-	background: #e90;
-	border-radius: 5px;
+	background: #F6CB42;
+	border-radius: 2px;
 	margin: 7px;
 	padding: 15px;
 }
@@ -871,4 +871,13 @@ form select.formbut {
 .hero-summary b {
 	display: inline-block;
 	min-width: 130px;
+}
+
+
+.EventsRow {
+	min-height: 30px;
+	background: #DEE4F6;
+	border-left: 5px solid #7e8bb1;
+	padding: 10px;
+	margin-bottom: 10px;
 }
