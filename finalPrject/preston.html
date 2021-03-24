@@ -1,0 +1,172 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- metadata -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Patrick Igwe | WDD230 Assignment Portal</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <meta name="author" content="Patrick Igwe">
+    <meta name="description" content="Assignment portal for the course WDD 230: Web Frontend Development I assignment portal for Patrick Igwe taken at Brigham Young University - Idaho (BYUi)."> 
+    <!-- css | scripts -->
+    <link rel="stylesheet" href="css/style.css"/>
+
+  </head>
+
+  <body onload="datFuncbanner()">
+      <!-- header area -->
+    <header>
+        <div style="height: 50px; line-height: 50px; background: #FBAF07; text-align: center" id="announement">
+            Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+        </div>
+
+        <div class="main-head">
+            <div class="header-row">
+                <div class="header-item"><img src="./images/logo.png" alt="logo" width="100"/> </div>
+                <div class="header-item" style="text-align: left">
+                    <h1 style="color: #fff; margin-bottom: 10px">Metrologg</h1>
+                    <span style="color: #fff;">Making data accessible</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav class="header">
+            <ul class="navigation">
+                <li><a class="ham" href="#" style="font-size: 30px">☰</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="preston.html">Preston</a></li>
+                <li><a href="sodaSprings.html">Soda Springs</a></li>
+                <li><a href="fishHaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+    </nav>
+        
+        
+    </header>
+
+ 
+    <!-- main area -->
+    <main>
+        <div class="mainHead">
+            <h1>Preston, Idaho</h1>
+        </div>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/preston.jpeg">
+                <source media="(max-width: 800px)" srcset="images/preston.jpeg">
+                <source media="(max-width: 1200px)" srcset="images/preston.jpeg">
+                <img class="heroimg" src="images/preston.jpeg" alt="Preston Idaho">
+              </picture>
+            <div class="hero-summary">
+                <span><b>Weather Summary</b></span>
+                <p>
+                    <b>Currently:</b> <span id="currently"></span> <br/>
+                    <b>Temperature:</b> <span id="temperature">54</span> &deg; C<br/>
+                    <b>Wind Chill:</b> <span id="windchill_no"></span> <br/>
+                    <b>Humidity:</b> <span id="humidity"></span>%<br/>
+                    <b>Wind Speed:</b> <span id="speed">13</span> mph <br/>
+                </p>
+            </div>
+        </div>
+
+        <div class="forecast-contain">
+            <h4>Five Day forecast</h4>
+            <div class="forecast">
+            </div>
+        </div>
+
+        <div class="EventsRow">
+            <h3>Upcoming Events</h3>
+            <div class="EventsItems">
+            </div>
+        </div>
+ 
+        <div class="ArticleRow">
+            
+            <div class="Article-item">
+                <img src="./images/prestonest.jpeg" alt="preston" width="150" />
+                <h3>About Preston</h3>
+                <p>Preston is a city in Franklin County, Idaho, United States. The population was 5,204 at the 2010 
+                    census. The city is the county seat of Franklin County. It is part of the Logan, Utah-Idaho
+                     Metropolitan Statistical Area.
+                </p>
+
+                <p>For several years the city held a "Napoleon Dynamite Festival" in the summer. Many of the featured festival themes 
+                    related to events occurring during the film. For example: Tetherball Tournament, Tater Tot Eating Contest, Moon Boot 
+                    Dance, Impersonation, Look-A-Like Contest, Football Throwing Contest and more. In 2004 there was a single day event 
+                    that drew approximately 300 people. Although this was not a large crowd, it did help raise $1,500 for the Preston 
+                    School District Education Foundation. In 2005 an estimated 6,000 people attended the event, but that number dropped 
+                    to an estimated 400 people in 2006. The 2007 and 2008 event was held along with the 'That Famous Preston Night Rodeo' 
+                    in Preston. There are no plans for reviving the event.[10] 'That Famous Preston Night Rodeo' is usually held in late July, 
+                    along with the Franklin County parade. 
+<br/><br/>
+                    The rodeo's name ('That Famous Preston Night Rodeo') comes from it being the first rodeo held during night time. It includes 
+                    many events such as bull riding, barrel racing, and other popular events. The Franklin county parade includes floats and advertisements of local businesses. The rodeo and parade remain one of the town's most popular local events and traditions.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer area -->
+    <footer>
+        <div class="footer-row">
+            <div class="footer-item">
+                <div class="mapouter">
+                    <div class="gmap_canvas" style="height: 250px">
+                        <iframe style="width: 100% !important;" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=Preston,%20Idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                       <br></div>
+                    </div>
+            </div>
+
+            <div class="footer-item">
+                <h4>Contact Information</h4>
+                <ul class="navlinks">
+                    <li><img src="./images/005-placeholder.svg" alt="address" width="15" style="margin-right: 20px "/> Address: No. 1 Idaho state, United States</li>
+                    <li><img src="./images/001-telephone.svg" alt="phone" width="15" style="margin-right: 20px "/> Phone: +971 56 378 1235</li>
+                    <li><img src="./images/006-envelope.svg" alt="email" width="15" style="margin-right: 20px "/> Email: patrickoigwe@gmail.com</li>
+                </ul>
+
+                <div class="social-icons">
+                    <!-- icons -->
+                    <a target="_blank" href="https://facebook.com/"><img src="./images/003-facebook.svg" alt="facebook" width="20" style="margin-right: 20px "/></a>
+                    <a target="_blank" href="https://instagram.com/"><img src="./images/004-instagram.svg" alt="instagram" width="20" style="margin-right: 20px "/></a>
+                    <a target="_blank" href="https://twitter.com/"><img src="./images/002-twitter.svg" alt="twitter" width="20" style="margin-right: 20px "/></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <span id="currentYear"> </span>  &nbsp; | &nbsp;
+                <span>Patrick Igwe</span>  &nbsp; | &nbsp;
+                <span>Nigeria</span>  &nbsp; | &nbsp;
+                <a href="https://www.byui.edu/online" target="_blank">BYUi Online</a>  
+              
+                <p id="updateDate"></p>
+              </div>
+        </div>
+    </footer> 
+
+  
+
+    <script src="./js/script.js"></script>
+    <script src="./js/checkDate.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/windChill.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+        google: {
+            families: [
+            'Poppins'
+            ]
+        }
+        });
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,170 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- metadata -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Patrick Igwe | WDD230 Assignment Portal</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <meta name="author" content="Patrick Igwe">
+    <meta name="description" content="Assignment portal for the course WDD 230: Web Frontend Development I assignment portal for Patrick Igwe taken at Brigham Young University - Idaho (BYUi)."> 
+    <!-- css | scripts -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <style>.mapouter{position:relative;text-align:right;height:250px;width:100%;}</style>
+    <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style>
+  </head>
+
+  <body onload="datFuncbanner()">
+      <!-- header area -->
+    <header>
+        <div style="height: 50px; line-height: 50px; background: #FBAF07; text-align: center" id="announement">
+            Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+        </div>
+        <div class="main-head">
+            <div class="header-row">
+                <div class="header-item"><img src="./images/logo.png" alt="logo" width="100"/> </div>
+                <div class="header-item" style="text-align: left">
+                    <h1 style="color: #fff; margin-bottom: 10px">Metrologg</h1>
+                    <span style="color: #fff;">Making data accessible</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav class="header">
+            <ul class="navigation">
+                <li><a class="ham" href="#" style="font-size: 30px">☰</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodaSprings.html">Soda Springs</a></li>
+                <li><a href="fishHaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li class="active"><a href="gallery.html">Gallery</a></li>
+            </ul>
+    </nav>
+        
+      
+    </header>
+
+ 
+    <!-- main area -->
+    <main>
+        <div class="mainHead">
+            <h1>Image Gallery</h1>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-item">
+              <img src="https://via.placeholder.com/252x90.png?text=Metrologg+weather+site+page" data-src="./images/weather1.jpg" alt="image2" />
+              <h4>The Dark Night</h4>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="https://via.placeholder.com/252x90.png?text=Metrologg+weather+site+page" data-src="./images/weather2.jpg" alt="image3" />
+            <h4>The Moon Clouds</h4>
+        </figure>
+
+        <figure class="gallery-item">
+            <img src="https://via.placeholder.com/252x90.png?text=Metrologg+weather+site+page" data-src="./images/weather3.jpg" alt="image4" />
+            <h4>The Forest clouds</h4>
+        </figure>
+
+        <figure class="gallery-item">
+            <img src="https://via.placeholder.com/252x90.png?text=Metrologg+weather+site+page" data-src="./images/weather4.jpg" alt="image5" />
+            <h4>The Fog</h4>
+        </figure>
+
+        <figure class="gallery-item">
+            <img src="https://via.placeholder.com/252x90.png?text=Metrologg+weather+site+page" data-src="./images/weather5.jpg" alt="image6" />
+            <h4>The Lone Road</h4>
+        </figure>
+
+        <figure class="gallery-item">
+            <img  src="https://via.placeholder.com/252x90.png?text=Metrologg+weather+site+page" data-src="./images/weather6.jpg" alt="image7" />
+            <h4>The Hill Top</h4>
+        </figure>
+
+        <figure class="gallery-item">
+            <img src="https://via.placeholder.com/252x90.png?text=Metrologg+weather+site+page" data-src="./images/weather7.jpg" alt="image8" />
+            <h4>The Dusty Cloud</h4>
+        </figure>
+
+        <figure class="gallery-item">
+            <img src="https://via.placeholder.com/252x90.png?text=Metrologg+weather+site+page" data-src="./images/weather8.jpg" alt="image9" />
+            <h4>The Sleepy Clouds</h4>
+        </figure>
+
+        <figure class="gallery-item">
+            <img src="https://via.placeholder.com/252x90.png?text=Metrologg+weather+site+page" data-src="./images/weather9.jpg" alt="image10" />
+            <h4>The Outrageous Rain Night</h4>
+        </figure>
+
+
+        </div>
+
+    
+
+
+    </main>
+
+    <!-- footer area -->
+    <footer>
+        <div class="footer-row">
+            <div class="footer-item">
+                <div class="mapouter">
+                    <div class="gmap_canvas" style="height: 250px">
+                        <iframe style="width: 100% !important;" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                        <a href="https://fmovies2.org"></a><br></div>
+                    </div>
+            </div>
+
+            <div class="footer-item">
+                <h4>Contact Information</h4>
+                <ul class="navlinks">
+                    <li><img src="./images/005-placeholder.svg" alt="address" width="15" style="margin-right: 20px "/> Address: No. 1 Idaho state, United States</li>
+                    <li><img src="./images/001-telephone.svg" alt="phone" width="15" style="margin-right: 20px "/> Phone: +971 56 378 1235</li>
+                    <li><img src="./images/006-envelope.svg" alt="email" width="15" style="margin-right: 20px "/> Email: patrickoigwe@gmail.com</li>
+                </ul>
+
+                <div class="social-icons">
+                    <!-- icons -->
+                    <a target="_blank" href="https://facebook.com/"><img src="./images/003-facebook.svg" alt="facebook" width="20" style="margin-right: 20px "/></a>
+                    <a target="_blank" href="https://instagram.com/"><img src="./images/004-instagram.svg" alt="instagram" width="20" style="margin-right: 20px "/></a>
+                    <a target="_blank" href="https://twitter.com/"><img src="./images/002-twitter.svg" alt="twitter" width="20" style="margin-right: 20px "/></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <span id="currentYear"> </span>  &nbsp; | &nbsp;
+                <span>Patrick Igwe</span>  &nbsp; | &nbsp;
+                <span>Nigeria</span>  &nbsp; | &nbsp;
+                <a href="https://www.byui.edu/online" target="_blank">BYUi Online</a>  
+              
+                <p id="updateDate"></p>
+              </div>
+        </div>
+    </footer> 
+
+  
+    <script src="./js/loading.js"> </script>
+    <script src="./js/script.js"></script>
+    <script src="./js/checkDate.js"></script>
+    <script src="./js/navigation.js"></script>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    
+    <script>
+        WebFont.load({
+        google: {
+            families: [
+            'Poppins'
+            ]
+        }
+        });
+    </script>
+  </body>
+</html>
+
