@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,6 +13,7 @@
     <link rel="stylesheet" href="css/style.css"/>
     <style>.mapouter{position:relative;text-align:right;height:250px;width:100%;}</style>
     <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style>
+    <script defer src="./js/all.js"></script>
   </head>
 
   <body>
@@ -38,9 +38,9 @@
                 <li><a class="ham" href="#" style="font-size: 30px">☰</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html"><span>Our</span> city</a></li>
-                <li><a href="directory.html">Directory</a></li>
+                <li class="active"><a href="directory.html">Directory</a></li>
                 <li><a href="membership.html">Join</a></li>
-                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
     </nav>
         
@@ -67,20 +67,10 @@
 	
 	<section class="content">
 		
-		<input type="radio" name="view-filter" id="list-view" class="list-view-radio view-radio" checked><label for="list-view"><i class="fa fa-list-ul"></i> List View</label>
-		<input type="radio" name="view-filter" id="grid-view" class="grid-view-radio view-radio"><label for="grid-view"><i class="fa fa-th"></i> Grid View</label>
+		<input type="radio" name="view-filter" id="list-view" class="list-view-radio view-radio" checked><label for="list-view"><i class="fas fa-list"></i> List View</label>
+		<input type="radio" name="view-filter" id="grid-view" class="grid-view-radio view-radio"><label for="grid-view"><i class="fas fa-th"></i> Grid View</label>
 		
 		<div class="directory-container">
-		
-			<article class="directory-item">
-				<img src="http://www.placecage.com/g/300/300">
-				<div class="entry-content">
-					<h1 class="entry-title">HIANS Technology Limited</h1>
-					<p>Address: Road 9/15 Housing Estate, Trans-Ekulu, Enugu, Nigeria</p>
-                    <span></span>
-				</div>
-			</article>
-
 		</div>
 		
 	</section>

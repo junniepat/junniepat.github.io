@@ -1445,11 +1445,15 @@ form {
   
   .directory-item {
 	width: 100%;
+	min-height: 200px;
 	color: #333;
 	float: none;
 	margin-bottom: 2.1875rem;
-	text-align: center;
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
   }
+  
   @media screen and (min-width: 40rem) {
 	.directory-item {
 	  float: left;
@@ -1503,7 +1507,7 @@ form {
   }
   .view-radio + label {
 	transition: all 0.2s ease-in-out;
-	color: #FFFFFF;
+	color: #333;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 1.5rem;
@@ -1511,11 +1515,11 @@ form {
 	margin: 0 2.1875rem 2.1875rem 0;
   }
   .view-radio + label:hover {
-	color: #F8F2B4;
+	color: #3354d0;
   }
   
   .view-radio:checked + label {
-	color: #F8F2B4;
+	color: #3354d0;
   }
   
   .list-view-radio:checked ~ .directory-container .directory-item {
@@ -1543,4 +1547,9 @@ form {
   }
   .list-view-radio:checked ~ .directory-container .directory-item .entry-content {
 	overflow: hidden;
+  }
+
+  .entry-content h3 {
+	  font-size: medium;
+	  font-weight: normal;
   }

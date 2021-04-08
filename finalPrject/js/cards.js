@@ -1,4 +1,4 @@
-const requestURL = "./directory.json";
+const requestURL = "https://junniepat.github.io/finalPrject/directory.json";
 
 fetch(requestURL)
     .then(function (response) {
@@ -6,11 +6,11 @@ fetch(requestURL)
     })
 
 .then(function (jsonObject) {
-    console.log("jsonObject", jsonObject)
-const towns = jsonObject['towns'];
+    console.log("jsonObject", jsonObject.length)
+const business = jsonObject;
     
 // loop through the data array assign the variables to each
-for (let i=0; i < towns.length; i++) {
+for (let i=0; i < business.length; i++) {
     
 
     
@@ -18,32 +18,31 @@ for (let i=0; i < towns.length; i++) {
 
 
             let card = document.createElement('article');
-            let h2 = document.createElement('h2');
-            let motto = document.createElement('h3');
-            let year = document.createElement('p');
-            let pop = document.createElement('p');
-            let rain = document.createElement('p');
             let image = document.createElement('img');
+            let h2 = document.createElement('h2');
+            let address = document.createElement('h3');
+            let link = document.createElement('a');
+
             let textWriteup = document.createElement('div')
 
-            h2.textContent = towns[i].name;
-            motto.textContent = towns[i].motto;    
-            year.textContent = "Year Founded:" + " " + towns[i].yearFounded;
-            pop.textContent = "Population:" + " " + towns[i].currentPopulation;
-            rain.textContent = "Annual Rain Fall:" + " " +  towns[i].averageRainfall;
-            image.setAttribute('src', `images/towns/${towns[i].photo}`);
-            image.setAttribute('alt', towns[i].name);
+            h2.textContent = business[i].company_name;
+            address.textContent = business[i].address;    
+            link.textContent = "visit website";
+
+            link.setAttribute('href', `${business[i].web_url}`);
+            link.setAttribute('target', `_blank`);
+
+            image.setAttribute('src', `images/business/${business[i].image}`);
+            image.setAttribute('alt', business[i].name);
             image.setAttribute('class', 'townPhoto');
-            card.setAttribute('class', "homeSection" );
-            textWriteup.setAttribute('class', 'homeTownText');
+            card.setAttribute('class', "directory-item" );
+            textWriteup.setAttribute('class', 'entry-content');
 
             card.appendChild(textWriteup);
             textWriteup.appendChild(h2);
-            textWriteup.appendChild(motto);
-            textWriteup.appendChild(year);
-            textWriteup.appendChild(pop);
-            textWriteup.appendChild(rain);
-            card.appendChild(image);
+            textWriteup.appendChild(address);
+            textWriteup.appendChild(link);
+            // card.appendChild(image);
 
         document.querySelector('.directory-container').appendChild(card);
    
