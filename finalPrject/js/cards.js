@@ -1,4 +1,4 @@
-const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+const requestURL = "./directory.json";
 
 fetch(requestURL)
     .then(function (response) {
@@ -6,6 +6,7 @@ fetch(requestURL)
     })
 
 .then(function (jsonObject) {
+    console.log("jsonObject", jsonObject)
 const towns = jsonObject['towns'];
     
 // loop through the data array assign the variables to each
@@ -14,7 +15,7 @@ for (let i=0; i < towns.length; i++) {
 
     
     // Add data to the cards
-    if (towns[i].name == 'Preston' || towns[i].name == 'Fish Haven' || towns[i].name == 'Soda Springs') {
+
 
             let card = document.createElement('article');
             let h2 = document.createElement('h2');
@@ -44,12 +45,8 @@ for (let i=0; i < towns.length; i++) {
             textWriteup.appendChild(rain);
             card.appendChild(image);
 
-        document.querySelector('#cards').appendChild(card);
-    }
-
-    else {
-        document.querySelector('.NoData').innerHTML = " "
-    }
+        document.querySelector('.directory-container').appendChild(card);
+   
         
 
 }

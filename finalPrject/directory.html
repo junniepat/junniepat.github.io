@@ -1,0 +1,180 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- metadata -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Patrick Igwe | WDD230 Assignment Portal</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <meta name="author" content="Patrick Igwe">
+    <meta name="description" content="Assignment portal for the course WDD 230: Web Frontend Development I assignment portal for Patrick Igwe taken at Brigham Young University - Idaho (BYUi)."> 
+    <!-- css | scripts -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <style>.mapouter{position:relative;text-align:right;height:250px;width:100%;}</style>
+    <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style>
+  </head>
+
+  <body>
+      <!-- header area -->
+    <header>
+
+        <div class="main-head">
+            <div class="header-row">
+                <div class="header-item"><img src="./images/logo.png" alt="logo" width="100"/> </div>
+                <div class="header-item" style="text-align: left">
+                    <h1>Enugu Chamber</h1>
+   
+                    <span style="">Creating Business links far and beyond</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav class="header">
+            <ul class="navigation">
+                <li><a class="ham" href="#" style="font-size: 30px">☰</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"><span>Our</span> city</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="membership.html">Join</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+    </nav>
+        
+      
+    </header>
+
+ 
+    <!-- main area -->
+ 
+    <main style="background: transparent;">
+
+<div class="abtmast">
+
+</div>
+
+<div class="abtMission1">
+    <h1>The Chamber's Directory</h1>
+ 
+</div>
+
+
+<div class="wrap">
+	<!-- Begin Your Code -->
+	
+	<section class="content">
+		
+		<input type="radio" name="view-filter" id="list-view" class="list-view-radio view-radio" checked><label for="list-view"><i class="fa fa-list-ul"></i> List View</label>
+		<input type="radio" name="view-filter" id="grid-view" class="grid-view-radio view-radio"><label for="grid-view"><i class="fa fa-th"></i> Grid View</label>
+		
+		<div class="directory-container">
+		
+			<article class="directory-item">
+				<img src="http://www.placecage.com/g/300/300">
+				<div class="entry-content">
+					<h1 class="entry-title">HIANS Technology Limited</h1>
+					<p>Address: Road 9/15 Housing Estate, Trans-Ekulu, Enugu, Nigeria</p>
+                    <span></span>
+				</div>
+			</article>
+
+		</div>
+		
+	</section>
+
+	<!-- End Your Code -->
+</div><!-- .wrap -->
+
+
+<div style="clear: both"></div>
+    
+
+    <div style="background: #F6CB42;">
+        <div class="cta-area">
+            <div class="cta-area-item" style="padding-top: 5%">
+                <h1>Become a member</h1>
+                <p>
+                 As a registered member, you get to enjoy access to the following:
+     
+                 Business opportunities with 60% of the Enugu business community, increase 
+                 in sales opportunities, reduced cost of doing business, business entrepreneurial 
+                 development, discount on chamber’s services, discount for participation at the trade fair 
+                 and so much more.
+                </p>
+
+                <button class="btn-chamber">Join the Chamber</button>
+            </div>
+
+            <div  class="cta-area-item" style="text-align: right">
+                <img src="./images/ctaimg.png" alt="ctaimage" width="500" />
+            </div>
+          
+        </div>
+    </div>
+
+    </main>
+
+    <!-- footer area -->
+    <footer>
+        <div class="footer-row">
+            <div class="footer-item">
+                <div class="mapouter">
+                    <div class="gmap_canvas" style="height: 250px">
+                        <iframe style="width: 100% !important;" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=Enugu, %20 Nigeria&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                       <br></div>
+                    </div>
+            </div>
+
+
+            <div class="footer-item">
+                <h4>Contact Information</h4>
+                <ul class="navlinks">
+                    <li><img src="./images/005-placeholder.svg" alt="address" width="15" style="margin-right: 20px "/> Address: ECCIMA Secretariat, ECCIMA House, Old Trade Fair Complex, Abakiliki Road, GRA, Enugu.</li>
+                    <li><img src="./images/001-telephone.svg" alt="phone" width="15" style="margin-right: 20px "/> Phone: +234 706 694 4052</li>
+                    <li><img src="./images/006-envelope.svg" alt="email" width="15" style="margin-right: 20px "/> Email: patrickoigwe@gmail.com</li>
+                </ul>
+
+                <div class="social-icons">
+                    <!-- icons -->
+                    <a target="_blank" href="https://facebook.com/"><img src="./images/003-facebook.svg" alt="facebook" width="20" style="margin-right: 20px "/></a>
+                    <a target="_blank" href="https://instagram.com/"><img src="./images/004-instagram.svg" alt="instagram" width="20" style="margin-right: 20px "/></a>
+                    <a target="_blank" href="https://twitter.com/"><img src="./images/002-twitter.svg" alt="twitter" width="20" style="margin-right: 20px "/></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <span id="currentYear"> </span>  &nbsp; | &nbsp;
+                <span>Patrick Igwe</span>  &nbsp; | &nbsp;
+                <span>Nigeria</span>  &nbsp; | &nbsp;
+                <a href="https://www.byui.edu/online" target="_blank">BYUi Online</a>  
+              
+                <p id="updateDate"></p>
+              </div>
+        </div>
+    </footer> 
+
+  
+    <script src="./js/loading.js"> </script>
+    <script src="./js/script.js"></script>
+    <script src="./js/checkDate.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/cards.js"></script>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    
+    <script>
+        WebFont.load({
+        google: {
+            families: [
+            'Poppins'
+            ]
+        }
+        });
+    </script>
+  </body>
+</html>
+
