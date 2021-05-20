@@ -15,9 +15,8 @@ if (closed === null) {
 
 function closeFunc(ev) {
   console.log(ev.target.id);
-
   let itemIndex ;
-  var toDoList = getLS("toDoLists")
+  var todoList = getLS("toDoLists")
     todoList.forEach(objectItem => {
         if (String(objectItem.id) == ev.target.id) {
             itemIndex = todoList.indexOf(objectItem)
@@ -31,16 +30,19 @@ function closeFunc(ev) {
 
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector("ul");
-list.addEventListener(
-  "click",
+list.addEventListener("click",
   function (ev) {
     if (ev.target.tagName === "LI") {
       ev.target.classList.toggle("checked");
     }
 
+    console.log('tot', toDoList)
+
     const newState = toDoList.map((obj) =>
-      obj.id === ev.target.id ? { ...obj, completed: true } : obj
+    parseInt(obj.id) === parseInt(ev.target.id) ? { ...obj, completed: true } : obj
     );
+    console.log(typeof ev.target.id)
+    console.log(newState)
     cleanLS();
     saveLS("toDoLists", newState);
   },
