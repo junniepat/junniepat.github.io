@@ -8,8 +8,7 @@
     data = JSON.stringify(data);
 
      localStorage.setItem(id, data)
-}
-
+  }
 
 export function cleanLS() {
     localStorage.clear();
