@@ -8,7 +8,7 @@ import {saveLS, cleanLS, getLS} from './ls.js';
 var toDoList = getLS("toDoLists")
 
 var closed = document.querySelector(".close");
-if (closed === null) {
+if (closed === null) { 
 } else {
   closed.addEventListener("click", closeFunc);
 }
