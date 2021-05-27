@@ -12,5 +12,5 @@
 
 
 export function cleanLS() {
-    localStorage.removeAll()
+    localStorage.clear();
 }
