@@ -6,6 +6,23 @@ import Todo from "./utilities.js"
 
 var toDoList = JSON.parse(localStorage.getItem("toDoLists") || "[]");
 
+var closed = document.querySelector('.close');
+if(closed === null) {
+}
+else {
+  closed.addEventListener('click', closeFunc);
+}
+
+function closeFunc(ev) {
+  console.log(ev.target.id)
+  var index = toDoList.findIndex(function(item){
+    return item.id === ev.target.id;
+  })
+  const removedItem = toDoList.splice(index, 1);
+console.log('hbb', toDoList);
+}
+
+
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
@@ -31,12 +48,12 @@ document.querySelector('.showtoDoLists').addEventListener('click', showtoDoLists
 
 function saveTodo(toDoList) {
   var toDoList = JSON.parse(localStorage.getItem("toDoLists") || "[]");
-  var inputValue = document.getElementById("todoItem").value;
+  var inputValue = new Todo(document.getElementById("todoItem").value);
 
   if (inputValue === '') {
     alert("You must write something!");
   } else {
-    toDoList.push({ id: new Date(), content: inputValue, completed: false });
+    toDoList.push(inputValue);
     localStorage.setItem("toDoLists", JSON.stringify(toDoList));
 
     showtoDoLists()
@@ -45,6 +62,7 @@ function saveTodo(toDoList) {
   document.getElementById("todoItem").value = "";
 }
 document.querySelector('.addBtn').addEventListener('click', saveTodo);
+
 
 
 function showCompleted() {
@@ -61,6 +79,8 @@ function showCompleted() {
   genericDisplay(completedList)
 }
 document.querySelector('.showCompleted').addEventListener('click', showCompleted);
+
+
 
 function showActive() {
   var toDoList = JSON.parse(localStorage.getItem("toDoLists") || "[]");
@@ -97,6 +117,7 @@ function genericDisplay(toDoList){
     var txt = document.createTextNode("\u00D7");
     button.className = "close";
     button.appendChild(txt);
+    button.setAttribute('id', toDoList[i].id)
 
     li.appendChild(h2);
     li.appendChild(sub)

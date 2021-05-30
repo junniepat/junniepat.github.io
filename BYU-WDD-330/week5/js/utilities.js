@@ -1,7 +1,7 @@
 export default class Todo {
     constructor(content){
-        this.Id = Date.now();
-        this.Content = content;
-        this.Completed = false;
+        this.id = Date.now();
+        this.content = content;
+        this.completed = false;
     }
 }
