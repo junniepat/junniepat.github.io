@@ -1,17 +1,9 @@
-// import {Todo} from './todo';
+(function() {
+  showtoDoLists();
+
+})(window);
+
 var toDoList = JSON.parse(localStorage.getItem("toDoLists") || "[]");
-showtoDoLists(toDoList);
-showActive(toDoList);
-showCompleted(toDoList);
-
-let deleteButtons = document.querySelectorAll("button.close");
-deleteButtons.forEach((deleteButton) => {
-  console.log('data', deleteButton)
-  deleteButton.addEventListener("click", (e) => {
-    console.log('data', e)
-  });
-});
-
 
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
@@ -27,119 +19,16 @@ list.addEventListener('click', function(ev) {
   localStorage.setItem("toDoLists", JSON.stringify(newState));
 }, false);
 
-
-
-function showCompleted(toDoList) {
-
-    let completedList = [];
-    for(let i = 0; i < toDoList.length; i++) {
-        if(toDoList[i].completed === true)
-        completedList.push(toDoList[i])
-    }
-    
-    document.getElementById('myUL').innerHTML = "";
-    document.getElementById('details').innerHTML = completedList.length + " tasks completed"
-
-    for (let i = 0; i < completedList.length; i++ ) {
-        let li = document.createElement("li");
-        let h2 = document.createElement('h2');
-        let sub =document.createElement('sub');
-        var span = document.createElement("span");
-        let p = document.createElement('p');
-
-        h2.textContent = toDoList[i].content
-        sub.textContent = toDoList[i].id.toLocaleString();
-
-        if(toDoList[i].completed === true) {
-            li.setAttribute('class', 'checked')
-        }
-
-        var txt = document.createTextNode("\u00D7");
-        span.className = "close";
-        span.appendChild(txt);
-
-        li.appendChild(h2);
-        li.appendChild(sub);
-        li.appendChild(span);
-        li.setAttribute('id', toDoList[i].id);
-
-        document.getElementById('myUL').appendChild(li);
-    }
-}
-
-function showActive(toDoList) {
-    document.getElementById('myUL').innerHTML = "";
-
-    let completedList = [];
-    for(let i = 0; i < toDoList.length; i++) {
-        if(toDoList[i].completed === false)
-        completedList.push(toDoList[i])
-    }
-    document.getElementById('details').innerHTML = completedList.length + " tasks left"
-
-    for (let i = 0; i < completedList.length; i++ ) {
-        let li = document.createElement("li");
-        let h2 = document.createElement('h2');
-        let sub =document.createElement('sub');
-        var span = document.createElement("span");
-        let p = document.createElement('p');
- 
-        h2.textContent = toDoList[i].content
-        sub.textContent = toDoList[i].id.toLocaleString();
-
-        if(toDoList[i].completed === true) {
-            li.setAttribute('class', 'checked')
-        }
-
-        var txt = document.createTextNode("\u00D7");
-        span.className = "close";
-        span.appendChild(txt);
-
-        li.appendChild(h2);
-        li.appendChild(sub)
-        li.appendChild(span)
-        li.setAttribute('id', toDoList[i].id)
-
-        document.getElementById('myUL').appendChild(li);
-    }
-}
-
-
-
-function showtoDoLists(toDoList) {
+function showtoDoLists() {
   var toDoList = JSON.parse(localStorage.getItem("toDoLists") || "[]");
     document.getElementById('myUL').innerHTML = "";
     document.getElementById('details').innerHTML = toDoList.length + " tasks"
-
-    for (let i = 0; i < toDoList.length; i++ ) {
-        let li = document.createElement("li");
-        let h2 = document.createElement('h2');
-        let sub =document.createElement('sub');
-        var button = document.createElement("button");
-        let p = document.createElement('p');
-
-        h2.textContent = toDoList[i].content
-        sub.textContent = toDoList[i].id.toLocaleString();
-
-        if(toDoList[i].completed === true) {
-            li.setAttribute('class', 'checked')
-        }
-
-        var txt = document.createTextNode("\u00D7");
-        button.className = "close";
-        button.appendChild(txt);
-
-        li.appendChild(h2);
-        li.appendChild(sub)
-        li.appendChild(button)
-        li.setAttribute('id', toDoList[i].id)
-        
-
-        document.getElementById('myUL').appendChild(li);
-    }
+    genericDisplay(toDoList);
 }
 
-function saveTodo() {
+
+function saveTodo(toDoList) {
+  var toDoList = JSON.parse(localStorage.getItem("toDoLists") || "[]");
   var inputValue = document.getElementById("todoItem").value;
 
   if (inputValue === '') {
@@ -154,3 +43,61 @@ function saveTodo() {
   document.getElementById("todoItem").value = "";
 }
 
+
+
+function showCompleted() {
+  var toDoList = JSON.parse(localStorage.getItem("toDoLists") || "[]");
+  let completedList = [];
+  for(let i = 0; i < toDoList.length; i++) {
+      if(toDoList[i].completed === true)
+      completedList.push(toDoList[i])
+  }
+  
+  document.getElementById('myUL').innerHTML = "";
+  document.getElementById('details').innerHTML = completedList.length + " tasks completed"
+
+  genericDisplay(completedList)
+}
+
+function showActive() {
+  var toDoList = JSON.parse(localStorage.getItem("toDoLists") || "[]");
+  document.getElementById('myUL').innerHTML = "";
+
+  let completedList = [];
+  for(let i = 0; i < toDoList.length; i++) {
+      if(toDoList[i].completed === false)
+      completedList.push(toDoList[i])
+  }
+  document.getElementById('details').innerHTML = completedList.length + " tasks left"
+  genericDisplay(completedList)
+
+}
+
+function genericDisplay(toDoList){
+  for (let i = 0; i < toDoList.length; i++ ) {
+    let li = document.createElement("li");
+    let h2 = document.createElement('h2');
+    let sub =document.createElement('sub');
+    var button = document.createElement("button");
+    let p = document.createElement('p');
+
+    h2.textContent = toDoList[i].content
+    sub.textContent = toDoList[i].id.toLocaleString();
+
+    if(toDoList[i].completed === true) {
+        li.setAttribute('class', 'checked')
+    }
+
+    var txt = document.createTextNode("\u00D7");
+    button.className = "close";
+    button.appendChild(txt);
+
+    li.appendChild(h2);
+    li.appendChild(sub)
+    li.appendChild(button)
+    li.setAttribute('id', toDoList[i].id)
+    
+
+    document.getElementById('myUL').appendChild(li);
+}
+}
