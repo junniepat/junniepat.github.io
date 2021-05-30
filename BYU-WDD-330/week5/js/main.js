@@ -1,25 +1,33 @@
 import Todo from "./utilities.js";
+import {saveLS, cleanLS, getLS} from './ls.js';
 
 (function () {
   showtoDoLists();
 })(window);
 
-var toDoList = JSON.parse(localStorage.getItem("toDoLists") || "[]");
+var toDoList = getLS("toDoLists")
 
-// var closed = document.querySelector(".close");
-// if (closed === null) {
-// } else {
-//   closed.addEventListener("click", closeFunc);
-// }
+var closed = document.querySelector(".close");
+if (closed === null) {
+} else {
+  closed.addEventListener("click", closeFunc);
+}
 
-// function closeFunc(ev) {
-//   console.log(ev.target.id);
-//   var index = toDoList.findIndex(function (item) {
-//     return item.id === ev.target.id;
-//   });
+function closeFunc(ev) {
+  console.log(ev.target.id);
 
-//   console.log("hbb", index);
-// }
+  let itemIndex ;
+  var toDoList = getLS("toDoLists")
+    todoList.forEach(objectItem => {
+        if (String(objectItem.id) == ev.target.id) {
+            itemIndex = todoList.indexOf(objectItem)
+        }
+    });
+    todoList.splice(itemIndex, 1)
+    console.log(todoList);
+    cleanLS();
+    saveLS("toDoLists", todoList);
+}
 
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector("ul");
@@ -33,58 +41,52 @@ list.addEventListener(
     const newState = toDoList.map((obj) =>
       obj.id === ev.target.id ? { ...obj, completed: true } : obj
     );
-    localStorage.clear();
-    localStorage.setItem("toDoLists", JSON.stringify(newState));
+    cleanLS();
+    saveLS("toDoLists", newState);
   },
   false
 );
 
 function showtoDoLists() {
-  var toDoList = JSON.parse(localStorage.getItem("toDoLists") || "[]");
+  var toDoList = getLS("toDoLists")
   document.getElementById("myUL").innerHTML = "";
   document.getElementById("details").innerHTML = toDoList.length + " tasks";
   genericDisplay(toDoList);
 }
-document
-  .querySelector(".showtoDoLists")
-  .addEventListener("click", showtoDoLists);
+document.querySelector(".showtoDoLists").addEventListener("click", showtoDoLists);
 
 function saveTodo(toDoList) {
-  var toDoList = JSON.parse(localStorage.getItem("toDoLists") || "[]");
+  var toDoList = getLS("toDoLists")
   var inputValue = new Todo(document.getElementById("todoItem").value);
-
   if (inputValue === "") {
     alert("You must write something!");
   } else {
     toDoList.push(inputValue);
-    localStorage.setItem("toDoLists", JSON.stringify(toDoList));
-
+    saveLS("toDoLists", toDoList);
     showtoDoLists();
   }
-
   document.getElementById("todoItem").value = "";
 }
 document.querySelector(".addBtn").addEventListener("click", saveTodo);
 
+
 function showCompleted() {
-  var toDoList = JSON.parse(localStorage.getItem("toDoLists") || "[]");
+  var toDoList = getLS("toDoLists")
   let completedList = [];
   for (let i = 0; i < toDoList.length; i++) {
     if (toDoList[i].completed === true) completedList.push(toDoList[i]);
   }
-
   document.getElementById("myUL").innerHTML = "";
-  document.getElementById("details").innerHTML =
-    completedList.length + " tasks completed";
+  document.getElementById("details").innerHTML = completedList.length + " tasks completed";
 
   genericDisplay(completedList);
 }
-document
-  .querySelector(".showCompleted")
-  .addEventListener("click", showCompleted);
+document.querySelector(".showCompleted").addEventListener("click", showCompleted);
+
+
 
 function showActive() {
-  var toDoList = JSON.parse(localStorage.getItem("toDoLists") || "[]");
+  var toDoList = getLS("toDoLists")
   document.getElementById("myUL").innerHTML = "";
 
   let completedList = [];
@@ -104,24 +106,20 @@ function genericDisplay(toDoList) {
     let sub = document.createElement("sub");
     var button = document.createElement("button");
     let p = document.createElement("p");
-
     h2.textContent = toDoList[i].content;
-    sub.textContent = toDoList[i].id.toLocaleString();
+    sub.textContent = toDoList[i].id;
 
     if (toDoList[i].completed === true) {
       li.setAttribute("class", "checked");
     }
-
     var txt = document.createTextNode("\u00D7");
     button.className = "close";
     button.appendChild(txt);
     button.setAttribute("id", toDoList[i].id);
-
     li.appendChild(h2);
     li.appendChild(sub);
     li.appendChild(button);
     li.setAttribute("id", toDoList[i].id);
-
     document.getElementById("myUL").appendChild(li);
   }
 }
