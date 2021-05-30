@@ -1,4 +1,4 @@
-export class Todo {
+export default class Todo {
     constructor(content){
         this.Id = Date.now();
         this.Content = content;

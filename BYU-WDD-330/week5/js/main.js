@@ -1,6 +1,7 @@
+import Todo from "./utilities.js"
+
 (function() {
   showtoDoLists();
-
 })(window);
 
 var toDoList = JSON.parse(localStorage.getItem("toDoLists") || "[]");
@@ -25,6 +26,7 @@ function showtoDoLists() {
     document.getElementById('details').innerHTML = toDoList.length + " tasks"
     genericDisplay(toDoList);
 }
+document.querySelector('.showtoDoLists').addEventListener('click', showtoDoLists);
 
 
 function saveTodo(toDoList) {
@@ -42,7 +44,7 @@ function saveTodo(toDoList) {
 
   document.getElementById("todoItem").value = "";
 }
-
+document.querySelector('.addBtn').addEventListener('click', saveTodo);
 
 
 function showCompleted() {
@@ -58,6 +60,7 @@ function showCompleted() {
 
   genericDisplay(completedList)
 }
+document.querySelector('.showCompleted').addEventListener('click', showCompleted);
 
 function showActive() {
   var toDoList = JSON.parse(localStorage.getItem("toDoLists") || "[]");
@@ -72,6 +75,9 @@ function showActive() {
   genericDisplay(completedList)
 
 }
+document.querySelector('.showActive').addEventListener('click', showActive);
+
+
 
 function genericDisplay(toDoList){
   for (let i = 0; i < toDoList.length; i++ ) {
@@ -101,3 +107,4 @@ function genericDisplay(toDoList){
     document.getElementById('myUL').appendChild(li);
 }
 }
+
