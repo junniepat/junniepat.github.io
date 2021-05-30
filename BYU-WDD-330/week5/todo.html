@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset = "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/todo.css">
+<title>WDD 330 Assignments - Week 5 TO-DO Tutorial</title>
+
+<body onload="showtoDoLists()"> 
+    <main>
+<div class="todoContainer">
+    <h2 style="margin:5px">My To Do List</h2>
+
+   <ul id="myUL">
+   </ul>
+   <span id="details"></span>
+   <button class="sort" onClick="showtoDoLists()">All</button>
+   <button class="sort" onClick="showActive()">Active</button>
+   <button class="sort" onClick="showCompleted()">completed</button>
+
+   <div class="todoField">
+     <input id="todoItem" placeholder="Add a todo item"/>
+     <button onClick="saveTodo()" class="addBtn">save</button>
+   </div>
+
+
+</div>
+
+
+    </main>
+
+<script src="./js/main.js"></script>
+
+</body>
+</html>
