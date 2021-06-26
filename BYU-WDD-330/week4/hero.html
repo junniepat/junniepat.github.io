@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us"> 
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel=stylesheet href="hero.css">
+<title>Hero Form</title> 
+</head> 
+<!-- Doesn't show the alert for using X in the HTML below the name inputs
+    chapter 8 of JS Novice to Ninja -->
+<body> 
+    
+    <form id="hero">
+
+        <label for="heroName">Name:
+            <input type="text" id="heroName" name="heroName"
+            autofocus placeholder="Your Super Hero Name"
+            maxlength=32 required>
+        </label>
+        <label for="realName">Real Name:
+            <input type="password" name="realName" 
+                id="realName">
+        </label>
+
+        <!-- super powers checkbox -->
+        <p>Super Powers:</p>
+        <label for="flight">Flight:
+            <input type="checkbox" id="flight" value="Flight"
+                name="powers">
+        </label>
+        <label for="strength">SuperStrength:
+            <input type="checkbox" id="strength" value="Strength"
+                name="powers">
+        </label>
+        <label for="speed">Super Speeds:
+            <input type="checkbox" id="speed" value="Super Speed"
+                name="powers">
+        </label>
+        <label for="energy">Energy Blasts:
+            <input type="checkbox" id="energy" value="Energy Blasts"
+                name="powers">
+        </label>
+        <label for="telekinesis">Telekinesis:
+            <input type="checkbox" id="telekinesis" value="Telekinesis"
+                name="powers">
+        </label>
+
+        <!-- radio buttons -->
+        <p>What type of hero are you?</p>
+        <label for="hero">Hero:
+            <input type="radio" name="category" value="Hero" id="hero">
+        </label>
+        <label for="villain">Villain:
+            <input type="radio" name="category" value="Villain" id="villain">
+        </label>
+        <label for="anti-hero">Anti-Hero:
+            <input type="radio" name="category" value="Antihero" id="anti-hero">
+        </label>
+
+        <!--adding number input -->
+        <label for="age">Age:
+            <input type="number" id="age" name="age" min=0 step=1>
+        </label>
+
+        <!--select list for superhero city-->
+        <label for="City">Base of Operations:
+            <select name="city" id="city">
+                <option value="" selected>Choose a City</option>
+                <option value="Metropolis">Metropolis</option>
+                <option value="Gotham City">Gotham City</option>    
+                <option value="Keystone City">Keystone city</option>    
+                <option value="Coast City">Coast City</option>  
+                <option value="Star City">Star City</option>
+            </select>
+        </label>
+
+        <!--textarea to add heros story-->
+        <label for="origin">Origin Story:
+            <textarea id="origin" name="origin" rows="20" cols="60"></textarea>
+        </label>
+        
+        <!--buttons-->
+        <button type="submit" id="submit" disabled>Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <script src="hero.js"></script>
+
+</body>
+
+</html>

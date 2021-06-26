@@ -1,0 +1,53 @@
+main {
+    display: block;
+}
+
+h1 {
+    background-color: #3b5768;
+    color: #f4f6f6;
+    padding: 50px;
+    max-width: 100%;
+    text-align: center;
+}
+
+
+main {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h2 {
+    background-color: #3b5768;
+    color: #f4f6f6;
+    padding: 25px;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+div {
+    margin: 0 5%;
+}
+
+@media only screen and (min-width: 600px) {
+    li {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div {
+        max-width: 40%;
+    }
+
+    div p {
+        width: 100px;
+    }
+}

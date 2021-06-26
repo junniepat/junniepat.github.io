@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+    background: #f2f2f2;
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 80%;
+    margin: 5% auto;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 30px 0;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+ul, ol {
+    padding: 0px;
+}
+
+div, ol {
+    text-align: left;
+}
+
+div, ul, ol {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+a:link {
+    text-decoration: none;
+}
