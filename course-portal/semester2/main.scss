@@ -1,0 +1,145 @@
+@import "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap";
+
+$break-small: 600px;
+$break-medium: 1000px;
+$break-large: 1200px;
+
+$header-color: #6495ED;
+$visited-color: #DEB887;
+$link-color: #FAEBD7;
+$white: #fff;
+$med-boxShadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$base-font: Arial, Helvetica, sans-serif;
+$font-family:  'Lora', serif;
+
+ /* Global styles */
+ *, *:before, *:after {
+     box-sizing: border-box;
+     
+}
+
+@mixin breakpoint($break) {
+    @if $break == large {
+        @media only screen and (max-width: $break-large) { @content; }
+    }
+    @else if $break == medium {
+        @media only screen and (max-width: $break-medium) { @content; }
+    }
+@else if $break == small {
+@media only screen and (max-width: $break-small) { @content; }
+} @else {
+@media only screen and ($break) { @content; }
+}
+}            
+
+html {
+	font-family: $font-family;
+}
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: $base-font;
+	padding: 0;
+	margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 { font-family: $font-family; }
+
+div {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+}
+header {
+	background: $header-color;
+	color: $white;
+	text-align: right;
+	padding: 30px;
+	h1 {
+		a {
+			color: $white;
+		}
+	}
+}
+nav {
+	ul {
+		text-align: right;
+		list-style: none;
+		li {
+			margin: 10px 0;
+			a {
+				color: $link-color;
+				&:hover {
+					color: $white;
+					text-decoration: underline;
+				}
+				&:visited {
+					color: $visited-color;
+				}
+			}
+		}
+	}
+}
+main {
+	background: $link-color;
+	padding: 50px;
+}
+article {
+	background: $white;
+	box-shadow: $med-boxShadow;
+	padding: 20px;
+	margin-bottom: 60px;
+}
+.post-date {
+	color: #9D9D9D;
+}
+.post-content {
+	h2 {
+		a {
+			color: #000;
+			text-decoration: none;
+		}
+	}
+}
+p {
+	a {
+		color: $header-color;
+		text-decoration: none;
+		&:hover {
+			color: $visited-color;
+			text-decoration: underline;
+		}
+		&:visited {
+			color: $visited-color;
+			text-decoration: underline;
+		}
+	}
+}
+figure {
+	text-align: center;
+}
+
+@include breakpoint(small) { 
+
+div {
+display: block; 
+}
+
+article {
+    background: $white;
+		box-shadow: $med-boxShadow;
+		padding: 30px;
+		margin: 0px;
+ }
+
+ figure {
+		img {
+			width: 100%;
+		}
+}
+}
+
+
+
+
